@@ -3,7 +3,57 @@ guid: 22c89dacef63d7643aece51f9d1ee9dc
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fridge
+    second: {fileID: 2100000, guid: 81c0c0fd143fad04c8d911f284941a60, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: cbf3f33d5a568ca49b8138976c4c4cd3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: 927516d36bcb1964895004a18d7f16d5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: beige_wall_001
+    second: {fileID: 2100000, guid: 84907a2ac43e32a4990337af2fd798cf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: beige_wall_002
+    second: {fileID: 2100000, guid: 75bf9fcddb953f54694fc0ea639ec457, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fabric_pattern_05
+    second: {fileID: 2100000, guid: c8003cd3f88f564449684086a48ec491, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fabric_pattern_07
+    second: {fileID: 2100000, guid: 5167973859b19ed4398357706b4339f1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: laminate_floor
+    second: {fileID: 2100000, guid: 853a02982b1b0ca4f89586c4e7e93e20, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: leather_red_03
+    second: {fileID: 2100000, guid: 6a8056f53a0647342b8cf6da6e2b10b2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wood_table_001
+    second: {fileID: 2100000, guid: 20cdb81d856d8e241a705628563ceb01, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
