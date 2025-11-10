@@ -13,6 +13,7 @@ public class ObjectGrabbable : MonoBehaviour
         objectRigidbody = GetComponent<Rigidbody>();
         objectRenderer = GetComponent<MeshRenderer>();
         currentTime = Mathf.PI;
+        objectRenderer.material.EnableKeyword("_EMISSION");
     }
     public void Grab(Transform objectGrabPointTransform)
     {
