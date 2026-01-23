@@ -13,7 +13,11 @@ public class ObjectGrabbable : MonoBehaviour
         objectRigidbody = GetComponent<Rigidbody>();
         objectRenderer = GetComponent<MeshRenderer>();
         currentTime = Mathf.PI;
-        objectRenderer.material.EnableKeyword("_EMISSION");
+
+        foreach (Material mat in objectRenderer.materials)
+        {
+            mat.EnableKeyword("_EMISSION");
+        }     
     }
     public void Grab(Transform objectGrabPointTransform)
     {
@@ -39,14 +43,21 @@ public class ObjectGrabbable : MonoBehaviour
     {
             currentTime += Time.deltaTime * 5f;
             Color highlight = new Color(Mathf.Cos(currentTime)/2 + 0.5f, Mathf.Cos(currentTime)/2 + 0.5f, 0);
-            objectRenderer.material.SetColor("_EmissionColor", highlight);
-            objectRenderer.material.EnableKeyword("_EMMISION");
+        foreach (Material mat in objectRenderer.materials)
+        {
+            mat.SetColor("_EmissionColor", highlight);
+            mat.EnableKeyword("_EMMISION");
+        }
+        
         Debug.Log(highlight);
     }
     public void unhighlight()
     {
-            objectRenderer.material.DisableKeyword("_EMMISION");
-            objectRenderer.material.SetColor("_EmissionColor", Color.black);
+        foreach (Material mat in objectRenderer.materials)
+        {
+            mat.DisableKeyword("_EMMISION");
+            mat.SetColor("_EmissionColor", Color.black);
+        }
             currentTime = Mathf.PI;
     }
 }
