@@ -23,21 +23,30 @@ public class Pickup : MonoBehaviour
                 {
                     if (raycastHit.transform.TryGetComponent(out objectGrabbable))
                     {
-                        isGrabbed = true;
-                        objectGrabbable.unhighlight();
-                        TextMeshProUGUI.text = objectGrabbable.objectDescription;
-                        objectGrabbable.Grab(objectGrabPointTransform);
+                        if (!objectGrabbable.nonGrabbable)
+                        {
+                            isGrabbed = true;
+                            objectGrabbable.unhighlight();
+                            TextMeshProUGUI.text = objectGrabbable.objectDescription;
+                            objectGrabbable.Grab(objectGrabPointTransform);
+                        }
+                        else
+                        {
+                            objectGrabbable.Interact();
+                        }
                     }
                 }
             }
             else
             {
+                if (!objectGrabbable.nonGrabbable)
+                {
                 isGrabbed = false;
                 objectGrabbable.Drop();
                 objectGrabbable = null;
                 TextMeshProUGUI.text = null;
+                }
             }
-
         }
         else
         {

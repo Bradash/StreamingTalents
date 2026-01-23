@@ -249,6 +249,83 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4.0707107, y: 2.141421, z: 0.9999999}
   m_Center: {x: 0.9646447, y: 0.9999989, z: -0.000000059604645}
+--- !u!1001 &312293620
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 182296964034960725, guid: 324a9ea57f7125b4e87be4dd9900b467, type: 3}
+      propertyPath: interactOnce
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 182296964034960725, guid: 324a9ea57f7125b4e87be4dd9900b467, type: 3}
+      propertyPath: nonGrabbable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 182296964034960725, guid: 324a9ea57f7125b4e87be4dd9900b467, type: 3}
+      propertyPath: objectDescription
+      value: Coffee
+      objectReference: {fileID: 0}
+    - target: {fileID: 278932432731684609, guid: 324a9ea57f7125b4e87be4dd9900b467, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.483
+      objectReference: {fileID: 0}
+    - target: {fileID: 278932432731684609, guid: 324a9ea57f7125b4e87be4dd9900b467, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 278932432731684609, guid: 324a9ea57f7125b4e87be4dd9900b467, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -11.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 278932432731684609, guid: 324a9ea57f7125b4e87be4dd9900b467, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 278932432731684609, guid: 324a9ea57f7125b4e87be4dd9900b467, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 278932432731684609, guid: 324a9ea57f7125b4e87be4dd9900b467, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 278932432731684609, guid: 324a9ea57f7125b4e87be4dd9900b467, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 278932432731684609, guid: 324a9ea57f7125b4e87be4dd9900b467, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 278932432731684609, guid: 324a9ea57f7125b4e87be4dd9900b467, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 278932432731684609, guid: 324a9ea57f7125b4e87be4dd9900b467, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1483808990980352827, guid: 324a9ea57f7125b4e87be4dd9900b467, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3124491660192867856, guid: 324a9ea57f7125b4e87be4dd9900b467, type: 3}
+      propertyPath: m_Name
+      value: Pickup (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3124491660192867856, guid: 324a9ea57f7125b4e87be4dd9900b467, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 324a9ea57f7125b4e87be4dd9900b467, type: 3}
 --- !u!1 &511744837
 GameObject:
   m_ObjectHideFlags: 0
@@ -491,6 +568,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectDescription: It's all the photos of me and him
   objectHighlight: 0
+  nonGrabbable: 0
+  interactOnce: 0
+  gameMaster: {fileID: 0}
 --- !u!65 &576768688
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -821,7 +901,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: -1246822234137420708, guid: 22c89dacef63d7643aece51f9d1ee9dc, type: 3}
   m_PrefabInstance: {fileID: 1832954904}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &657991622
+--- !u!114 &657991626
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -830,10 +910,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 657991621}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d210b08816bb9f43ac00177a5a4eeb5, type: 3}
+  m_Script: {fileID: 11500000, guid: a4ff0fafc50fc1a48a756a9f3bdc365f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objectDescription: My PC
   objectHighlight: 0
+  nonGrabbable: 1
+  interactOnce: 0
+  gameMaster: {fileID: 0}
 --- !u!1 &688904182 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5902971270548390587, guid: 22c89dacef63d7643aece51f9d1ee9dc, type: 3}
@@ -1250,6 +1334,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectDescription: I forgot to return this, long ago.
   objectHighlight: 0
+  nonGrabbable: 0
+  interactOnce: 0
+  gameMaster: {fileID: 0}
 --- !u!65 &870274024
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1740,7 +1827,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 182296964034960725, guid: 324a9ea57f7125b4e87be4dd9900b467, type: 3}
       propertyPath: objectDescription
-      value: I delete this on blender everytime
+      value: The food
       objectReference: {fileID: 0}
     - target: {fileID: 278932432731684609, guid: 324a9ea57f7125b4e87be4dd9900b467, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1748,11 +1835,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 278932432731684609, guid: 324a9ea57f7125b4e87be4dd9900b467, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.25
+      value: 0.276
       objectReference: {fileID: 0}
     - target: {fileID: 278932432731684609, guid: 324a9ea57f7125b4e87be4dd9900b467, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -15.04
+      value: -12.992
       objectReference: {fileID: 0}
     - target: {fileID: 278932432731684609, guid: 324a9ea57f7125b4e87be4dd9900b467, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1784,7 +1871,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3124491660192867856, guid: 324a9ea57f7125b4e87be4dd9900b467, type: 3}
       propertyPath: m_Name
-      value: Pickup (2)
+      value: Food
       objectReference: {fileID: 0}
     - target: {fileID: 3124491660192867856, guid: 324a9ea57f7125b4e87be4dd9900b467, type: 3}
       propertyPath: m_IsActive
@@ -1892,6 +1979,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectDescription: I can't show this to anyone
   objectHighlight: 0
+  nonGrabbable: 0
+  interactOnce: 0
+  gameMaster: {fileID: 0}
 --- !u!65 &1339913398
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3138,7 +3228,7 @@ PrefabInstance:
       addedObject: {fileID: 576768687}
     - targetCorrespondingSourceObject: {fileID: -1246822234137420708, guid: 22c89dacef63d7643aece51f9d1ee9dc, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 657991622}
+      addedObject: {fileID: 657991626}
     - targetCorrespondingSourceObject: {fileID: -5902971270548390587, guid: 22c89dacef63d7643aece51f9d1ee9dc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 688904186}
@@ -3211,6 +3301,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectDescription: All my old drawings are in here
   objectHighlight: 0
+  nonGrabbable: 0
+  interactOnce: 0
+  gameMaster: {fileID: 0}
 --- !u!54 &1832954911
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3857,6 +3950,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectDescription: Just a mug.
   objectHighlight: 0
+  nonGrabbable: 0
+  interactOnce: 0
+  gameMaster: {fileID: 0}
 --- !u!65 &2077230947
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4110,6 +4206,7 @@ SceneRoots:
   - {fileID: 1531754515}
   - {fileID: 1012572832}
   - {fileID: 4547857492341508841}
+  - {fileID: 312293620}
   - {fileID: 826108815}
   - {fileID: 656522589}
   - {fileID: 615644983}

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Android;
 
 public class ObjectGrabbable : MonoBehaviour
 {
@@ -8,6 +9,10 @@ public class ObjectGrabbable : MonoBehaviour
     public bool objectHighlight;
     private MeshRenderer objectRenderer;
     private float currentTime;
+    public bool nonGrabbable;
+    public bool interactOnce;
+    bool interacted;
+    public GameMaster gameMaster;
     private void Awake()
     {
         objectRigidbody = GetComponent<Rigidbody>();
@@ -28,6 +33,19 @@ public class ObjectGrabbable : MonoBehaviour
     {
         this.objectGrabPointTransform = null;
         objectRigidbody.useGravity = true;
+    }
+    public void Interact()
+    {
+        if (interactOnce && !interacted)
+        {
+            gameMaster.quest1Progress++;
+            interacted = true;
+        }
+        if (!interactOnce)
+        {
+            gameMaster.computerInteract();
+        }
+     
     }
     private void FixedUpdate()
     {
