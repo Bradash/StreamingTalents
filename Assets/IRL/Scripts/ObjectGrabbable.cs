@@ -11,8 +11,7 @@ public class ObjectGrabbable : MonoBehaviour
     private float currentTime;
     public bool nonGrabbable;
     public bool interactOnce;
-    bool interacted;
-    public GameMaster gameMaster;
+    public bool interacted;
     private void Awake()
     {
         objectRigidbody = GetComponent<Rigidbody>();
@@ -38,12 +37,7 @@ public class ObjectGrabbable : MonoBehaviour
     {
         if (interactOnce && !interacted)
         {
-            gameMaster.quest1Progress++;
             interacted = true;
-        }
-        if (!interactOnce)
-        {
-            gameMaster.computerInteract();
         }
      
     }
