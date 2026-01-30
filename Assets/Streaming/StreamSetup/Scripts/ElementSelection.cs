@@ -7,11 +7,13 @@ using UnityEngine.SceneManagement;
 public class ElementSelection : MonoBehaviour
 {
     [SerializeField] List<string> elementName = new List<string>();
-    [SerializeField] List<Image> elementImage = new List<Image>();
+    [SerializeField] List<Sprite> elementImage = new List<Sprite>();
     int currentElement = 0;
 
     [SerializeField] TextMeshProUGUI nameText;
-    [SerializeField] Image image;
+    [SerializeField] Sprite image;
+
+    [SerializeField] GameObject IMG_Image;
 
     void Start()
     {
@@ -22,6 +24,7 @@ public class ElementSelection : MonoBehaviour
     {
         currentElement = (currentElement + 1) % elementName.Count;
         nameText.text = elementName[currentElement];
+        IMG_Image.GetComponent<Image>().sprite = elementImage[currentElement];
         Debug.Log($"current element: {currentElement}");
     }
 
@@ -37,6 +40,7 @@ public class ElementSelection : MonoBehaviour
         }
 
         nameText.text = elementName[currentElement];
+        IMG_Image.GetComponent<Image>().sprite = elementImage[currentElement];
         Debug.Log($"current element: {currentElement}");
     }
 
