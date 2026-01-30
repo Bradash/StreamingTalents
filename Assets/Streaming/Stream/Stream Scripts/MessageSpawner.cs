@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using static UnityEditor.PlayerSettings;
@@ -43,7 +43,7 @@ public class MessageSpawner : MonoBehaviour
             }
             else
             {
-                messageCounter += (Time.deltaTime * ((Mathf.Log10(veiwCount)+1)*2))/16;
+                messageCounter += (Time.deltaTime * ((Mathf.Log10(veiwCount) + 1) * 2)) / 16;
             }
         }
     }
@@ -64,12 +64,23 @@ public class MessageSpawner : MonoBehaviour
     void RepositionMessages()
     {
         float y = 0f;
+        //float yTotal = 0f;
 
-        foreach (ChatMessage msg in messages)
+        //for (int i = messages.Count - 1; i >= 0; i--)
+        //{
+        //    RectTransform rt = messages[i].GetComponent<RectTransform>();
+        //    rt.anchoredPosition = new Vector2(0f, y);
+        //    y += (messages[i].Height / 100);
+        //    yTotal += y;
+        //    print(messages[i].Height / 100);
+        //
+        //}
+
+            foreach (ChatMessage msg in messages)
         {
             RectTransform rt = msg.GetComponent<RectTransform>();
+            y += (msg.Height / 100);
             rt.anchoredPosition = new Vector2(0f, y);
-            y += (msg.Height/100);
             print(msg.Height / 100);
         }
     }

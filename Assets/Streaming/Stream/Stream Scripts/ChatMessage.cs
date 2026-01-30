@@ -4,7 +4,6 @@ using UnityEngine.UI;
 
 public class ChatMessage : MonoBehaviour
 {
-    public RectTransform contentRect1;
     public RectTransform contentRect2;
     public TMP_Text txt;
 
@@ -18,7 +17,7 @@ public class ChatMessage : MonoBehaviour
         }
         if (Random.Range(1, 3) == 2)
         {
-            txt.text = "vbufireovbfjbdejvbijbrfeivbufrbivbufireovbfjbdejvbijbrfeivbufrbi";
+            txt.text = "vbufireovbfjbdejvbijbrfeivbufrbivbufireovbfjbdejv";
         }
         if (Random.Range(1, 3) == 2)
         {
@@ -30,9 +29,8 @@ public class ChatMessage : MonoBehaviour
     public void ForceRebuild()
     {
         Canvas.ForceUpdateCanvases();
-        LayoutRebuilder.ForceRebuildLayoutImmediate(contentRect1);
         LayoutRebuilder.ForceRebuildLayoutImmediate(contentRect2);
-        Height = contentRect1.rect.height + contentRect2.rect.height;
+        Height = contentRect2.rect.height;
     }
 
 
@@ -40,9 +38,7 @@ public class ChatMessage : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        print(Height);
-        print(contentRect1.rect.height);
-        print(contentRect2.rect.height);
+
     }
 }
 
