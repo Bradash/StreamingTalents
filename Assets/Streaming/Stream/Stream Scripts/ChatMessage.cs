@@ -5,25 +5,31 @@ using UnityEngine.UI;
 public class ChatMessage : MonoBehaviour
 {
     public RectTransform contentRect2;
-    public TMP_Text txt;
+    public TMP_Text message;
+    public TMP_Text username;
+    public Usernames[] names;  // Assign your ScriptableObjects here in the inspector
 
     public float Height { get; private set; }
 
     void Start()
     {
-        if (Random.Range(1, 3) == 2)
+        if (Random.Range(1, 1) == 1)
         {
-            txt.text = "Beep";
+            message.text = "Beep";
         }
-        if (Random.Range(1, 3) == 2)
+        var randomUser = GetRandomUsername();
+        if (randomUser != null)
         {
-            txt.text = "vbufireovbfjbdejvbijbrfeivbufrbivbufireovbfjbdejv";
-        }
-        if (Random.Range(1, 3) == 2)
-        {
-            txt.text = "I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you";
+            username.text = randomUser.messageText;
         }
         ForceRebuild();
+    }
+
+    public Usernames GetRandomUsername()
+    {
+        if (names.Length == 0) return null;
+        int index = Random.Range(0, names.Length);
+        return names[index];
     }
 
     public void ForceRebuild()

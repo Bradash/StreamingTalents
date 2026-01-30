@@ -48,6 +48,7 @@ public class MessageSpawner : MonoBehaviour
         }
     }
 
+    
     public void SpawnMessage()
     {
         GameObject go = Instantiate(Chatter.gameObject, container);

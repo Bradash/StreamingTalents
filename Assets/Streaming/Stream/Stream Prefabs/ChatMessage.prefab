@@ -477,7 +477,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 6
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -539,9 +539,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c02da68aae625f4a9441637f1521a26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  contentRect1: {fileID: 4566228465025514581}
   contentRect2: {fileID: 953579420396295553}
-  txt: {fileID: 6600081352088793254}
+  message: {fileID: 6600081352088793254}
+  username: {fileID: 4575051130665264630}
+  names:
+  - {fileID: 11400000, guid: 47996c06aedad2844b24a19110130e7c, type: 2}
+  - {fileID: 11400000, guid: 7843b9af2a65074418c7565cb25fc370, type: 2}
+  - {fileID: 11400000, guid: fdc7e987b2567a546af9e60d0e77e6ac, type: 2}
+  - {fileID: 11400000, guid: 015e663a5648e7340a5f8222676ed542, type: 2}
 --- !u!1 &7099051536210792018
 GameObject:
   m_ObjectHideFlags: 0
