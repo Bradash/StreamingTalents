@@ -8,6 +8,8 @@ public class ChatMessage : MonoBehaviour
     public TMP_Text message;
     public TMP_Text username;
     public Usernames[] names;  // Assign your ScriptableObjects here in the inspector
+    public Image profileImage;        // The UI Image
+    public Sprite[] profilePictures;  // Drag sprites here
 
     public float Height { get; private set; }
 
@@ -17,11 +19,15 @@ public class ChatMessage : MonoBehaviour
         {
             message.text = "Beep";
         }
+
         var randomUser = GetRandomUsername();
         if (randomUser != null)
         {
             username.text = randomUser.messageText;
         }
+
+        SetRandomProfilePicture();
+
         ForceRebuild();
     }
 
@@ -39,7 +45,16 @@ public class ChatMessage : MonoBehaviour
         Height = contentRect2.rect.height;
     }
 
+    void SetRandomProfilePicture()
+    {
+        if (profilePictures.Length == 0)
+            return;
 
+        int index = Random.Range(0, profilePictures.Length);
+        profileImage.sprite = profilePictures[index];
+
+        profileImage.preserveAspect = true;
+    }
 
     // Update is called once per frame
     void Update()
