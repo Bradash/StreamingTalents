@@ -21,6 +21,7 @@ public class GameMaster : MonoBehaviour
                 questName = "I need to pick up the food";
                 break;
             case 3:
+                questName = null;
                 int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
                 SceneManager.LoadScene(currentSceneIndex + 1);
                 break;
@@ -28,7 +29,7 @@ public class GameMaster : MonoBehaviour
     }
     public void objectInteract()
     {
-        switch (quest1Progress)
+        switch (quest1Progress) 
         {
             case 0:
                 break;
@@ -42,6 +43,7 @@ public class GameMaster : MonoBehaviour
                 break;
             case 3:
                 gameObjects[1].SetActive(false);
+                gameObjects[3].SetActive(true);
                 break;
         }
     }
