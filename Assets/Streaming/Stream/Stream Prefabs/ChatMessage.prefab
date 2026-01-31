@@ -595,6 +595,13 @@ MonoBehaviour:
   profilePictures:
   - {fileID: 21300000, guid: 4990857cb37c5e440b4db7f100173dfc, type: 3}
   - {fileID: 21300000, guid: f2bc126bc6ab7094eb5dfa33500c7cf8, type: 3}
+  messages1:
+  - {fileID: 11400000, guid: 50f86a8758f28b048a1bdae7db5e0ff9, type: 2}
+  - {fileID: 11400000, guid: e0b65152e5c2ad747a490389db7e9734, type: 2}
+  - {fileID: 11400000, guid: 660d714d7bd2f3749a060d5400a5ded5, type: 2}
+  messages2: []
+  messages3: []
+  gameState: {fileID: 11400000, guid: 8725bd622a6e22b40ba728d27a147157, type: 2}
 --- !u!1 &7099051536210792018
 GameObject:
   m_ObjectHideFlags: 0

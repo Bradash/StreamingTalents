@@ -286,6 +286,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   streamstate: 0
+  narrativeState: 0
+  gameState: {fileID: 11400000, guid: 8725bd622a6e22b40ba728d27a147157, type: 2}
 --- !u!4 &315245524
 Transform:
   m_ObjectHideFlags: 0

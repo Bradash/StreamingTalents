@@ -10,8 +10,6 @@ public class MessageSpawner : MonoBehaviour
     private readonly List<ChatMessage> messages = new();
     ChatMessage currentChat;
 
-    float spacing = 6f;
-
     float veiwCount;
     float messageCounter;
     float pilledUpMessages;
@@ -44,6 +42,12 @@ public class MessageSpawner : MonoBehaviour
             else
             {
                 messageCounter += (Time.deltaTime * ((Mathf.Log10(veiwCount) + 1) * 2)) / 16;
+                pilledUpMessages += Time.deltaTime * Random.Range(0.1f, 0.6f);
+                if (pilledUpMessages >= 3)
+                {
+                    messageCounter += Mathf.Log10(veiwCount);
+                    pilledUpMessages -= 3;
+                }
             }
         }
     }
@@ -79,10 +83,13 @@ public class MessageSpawner : MonoBehaviour
 
             foreach (ChatMessage msg in messages)
         {
-            RectTransform rt = msg.GetComponent<RectTransform>();
-            y += (msg.Height / 100);
-            rt.anchoredPosition = new Vector2(0f, y);
-            print(msg.Height / 100);
+            if (msg != null)
+            {
+                RectTransform rt = msg.GetComponent<RectTransform>();
+                y += (msg.Height / 100);
+                rt.anchoredPosition = new Vector2(0f, y);
+                //print(msg.Height / 100);
+            }
         }
     }
 
