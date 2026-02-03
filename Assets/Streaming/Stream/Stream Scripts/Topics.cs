@@ -1,14 +1,14 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Messages", menuName = "Scriptable Objects/Messages")]
-public class Messages : ScriptableObject
+[CreateAssetMenu(fileName = "Topics", menuName = "Scriptable Objects/Topics")]
+public class Topics : ScriptableObject
 {
-    public string Archtype;  
+    public string Archtype;
     public int NarrativeStage;
 
     [TextArea]
-    public string message;
-    public int moodChange;      
+    public string TopicName;
+    public int moodChange;
     public int viewerChange;
     public string DeerEmotion;
 
@@ -20,6 +20,4 @@ public class Messages : ScriptableObject
     public string OniReaction;
     [TextArea]
     public string DragonReactione;
-
-
 }
