@@ -31,6 +31,6 @@ public class UIStatsManager : MonoBehaviour
         moneyText.text = "Money: $" + money;
         goalText.text = "Goal:  $" + goal;
         ViewersText.text = "Viewers: " + viewers;
-        HappinessText.text = "Happiness: " + happiness + "%";
+        HappinessText.text = "Viewer Mood: " + happiness + "%";
     }
 }
