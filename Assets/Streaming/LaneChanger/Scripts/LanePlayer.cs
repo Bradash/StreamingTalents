@@ -40,4 +40,9 @@ public class LanePlayer : MonoBehaviour
             transform.position = pos;
         }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Destroy(gameObject);
+    }
 }
