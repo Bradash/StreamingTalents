@@ -10,7 +10,7 @@ public class MessageSpawner : MonoBehaviour
     private readonly List<ChatMessage> messages = new();
     ChatMessage currentChat;
 
-    float veiwCount;
+    float viewCount;
     float messageCounter;
     float pilledUpMessages;
     //int maxMessages = 13;
@@ -25,7 +25,7 @@ public class MessageSpawner : MonoBehaviour
     void Start()
     {
         messageCounter = 0;
-        veiwCount = 100; //Testing
+        viewCount = 100; //Testing
     }
 
     // Update is called once per frame
@@ -41,11 +41,11 @@ public class MessageSpawner : MonoBehaviour
             }
             else
             {
-                messageCounter += (Time.deltaTime * ((Mathf.Log10(veiwCount) + 1) * 2)) / 16;
+                messageCounter += (Time.deltaTime * ((Mathf.Log10(viewCount) + 1) * 2)) / 16;
                 pilledUpMessages += Time.deltaTime * Random.Range(0.1f, 0.6f);
                 if (pilledUpMessages >= 3)
                 {
-                    messageCounter += Mathf.Log10(veiwCount);
+                    messageCounter += Mathf.Log10(viewCount);
                     pilledUpMessages -= 3;
                 }
             }
