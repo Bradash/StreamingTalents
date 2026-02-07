@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class ChatMessage : MonoBehaviour
@@ -7,7 +8,7 @@ public class ChatMessage : MonoBehaviour
     public RectTransform contentRect2;
     public TMP_Text message;
     public TMP_Text username;
-    public Usernames[] names;  // Assign your ScriptableObjects here in the inspector
+    public Usernames[] names;
     public Image profileImage;        // The UI Image
     public Sprite[] profilePictures;  // Drag sprites here
     public Messages[] messages1;    // Stage 1
@@ -15,14 +16,24 @@ public class ChatMessage : MonoBehaviour
     public Messages[] messages3;    // Stage 3
     public GameState gameState;
 
+    public Messages messageData;   // The picked ScriptableObject
+
+    private bool effectsApplied;
+    private bool committed;
+    private bool banned;
+
+    private int appliedMood;
+    private int appliedViewers;
+
     public float Height { get; private set; }
 
     void Start()
     {
-        var randomMessage = GetRandomMessage();
-        if (randomMessage != null)
+        messageData = GetRandomMessage();
+        if (messageData != null)
         {
-            message.text = randomMessage.message;
+            message.text = messageData.message;
+            ApplyEffects();
         }
 
         var randomUser = GetRandomUsername();
@@ -34,6 +45,49 @@ public class ChatMessage : MonoBehaviour
         SetRandomProfilePicture();
 
         ForceRebuild();
+    }
+
+    void ApplyEffects()
+    {
+        if (effectsApplied || messageData == null) return;
+
+        appliedMood = messageData.moodChange;
+        appliedViewers = messageData.viewerChange;
+
+        UIStatsManager.Instance.AddMood(appliedMood);
+        UIStatsManager.Instance.AddViewers(appliedViewers);
+
+        effectsApplied = true;
+    }
+
+    void RemoveEffects()
+    {
+        if (!effectsApplied || committed) return;
+
+        UIStatsManager.Instance.AddMood(-appliedMood);
+        UIStatsManager.Instance.AddViewers(-appliedViewers);
+
+        effectsApplied = false;
+    }
+
+    public void BanMessage()
+    {
+        if (banned) return;
+
+        RemoveEffects();
+
+        UIStatsManager.Instance.AddViewers(-5);
+
+        username.color = Color.red;
+        username.fontStyle = FontStyles.Bold;
+        username.text = "Banned";
+
+
+        message.color = Color.red;
+        message.fontStyle = FontStyles.Bold;
+        message.text = "Message removed";
+
+        banned = true;
     }
 
     public Usernames GetRandomUsername()
@@ -90,7 +144,24 @@ public class ChatMessage : MonoBehaviour
         //print(transform.position.y);
         if (transform.position.y > 6)
         {
+            RemoveEffects();
             Destroy(gameObject);
+        }
+    }
+
+    //Remove later
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        print("Clicker");
+        if (eventData.button == PointerEventData.InputButton.Left)
+        {
+            print("left");
+            //OnLeftClick();
+        }
+        else if (eventData.button == PointerEventData.InputButton.Right)
+        {
+            print("Right");
+            BanMessage();
         }
     }
 }
