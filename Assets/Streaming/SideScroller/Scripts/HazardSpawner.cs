@@ -7,9 +7,12 @@ public class HazardSpawner : MonoBehaviour
     public float enemySpeed = 5f;
     public List<GameObject> hazards;
 
-    public float spawnDelay = 2f;
+    public float spawnDelay = 3f;
     float spawnTimer = 0f;
     int difficulty = 1;
+
+    public delegate void ResetGameState();
+    public static event ResetGameState resetGameState;
 
     void Update()
     {
@@ -26,5 +29,14 @@ public class HazardSpawner : MonoBehaviour
                 spawnDelay -= 0.05f;
             }
         }
+    }
+
+    public void RestartGame()
+    {
+        resetGameState?.Invoke();
+        enemySpeed = 5f;
+        spawnDelay = 3f;
+        spawnTimer = 0f;
+        difficulty = 1;
     }
 }
