@@ -14,11 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Archtype: 
   NarrativeStage: 0
-  TopicName: 
-  moodChange: 0
+  TopicName: Fanart
+  moodChange: -99
   viewerChange: 0
-  DeerEmotion: 
-  DeerReaction: 
+  DeerEmotion: 0
+  WolfEmotion: 0
+  UnicornEmotion: 0
+  DragonEmotion: 1
+  DeerReaction: I hate you all
   WolfReaction: 
-  OniReaction: 
-  DragonReactione: 
+  UnicornReaction: 
+  DragonReaction: Keep up the good work Dragons

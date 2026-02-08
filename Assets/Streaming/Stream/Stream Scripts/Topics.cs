@@ -22,7 +22,7 @@ public class Topics : ScriptableObject
     [TextArea]
     public string UnicornReaction;
     [TextArea]
-    public string DragonReactione;
+    public string DragonReaction;
 
     public enum DeerEmotionBase
     {

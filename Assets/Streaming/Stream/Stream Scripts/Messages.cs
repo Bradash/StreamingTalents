@@ -21,9 +21,9 @@ public class Messages : ScriptableObject
     [TextArea]
     public string WolfReaction;
     [TextArea]
-    public string OniReaction;
+    public string UnicornReaction;
     [TextArea]
-    public string DragonReactione;
+    public string DragonReaction;
 
 
 }

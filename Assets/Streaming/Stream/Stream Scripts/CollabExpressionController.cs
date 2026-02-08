@@ -45,16 +45,16 @@ public class CollabExpressionController : MonoBehaviour
         currentCollab = 2;
     }
 
-    public void RespondToMessage(OtherEmotionBase emotion)
+    public void RespondToMessage(OtherEmotionBase emotion, float duration)
     {
         print("Working");
         if (currentRoutine != null)
             StopCoroutine(currentRoutine);
 
-        currentRoutine = StartCoroutine(ResponseRoutine(emotion));
+        currentRoutine = StartCoroutine(ResponseRoutine(emotion, duration));
     }
 
-    IEnumerator ResponseRoutine(OtherEmotionBase emotion)
+    IEnumerator ResponseRoutine(OtherEmotionBase emotion, float duration)
     {
         Sprite target = GetSprite(emotion);
         if (target == null)
@@ -64,7 +64,7 @@ public class CollabExpressionController : MonoBehaviour
 
         yield return StartCoroutine(Bob());
 
-        yield return new WaitForSeconds(respondTime);
+        yield return new WaitForSeconds(duration);
 
         collabVtuberImage.sprite = DragonEmotionSprites[0].sprite;
     }
@@ -80,7 +80,6 @@ public class CollabExpressionController : MonoBehaviour
         {
             t += Time.deltaTime;
             float y = Mathf.Sin((t / bobDuration) * Mathf.PI) * bobHeight;
-            print(y);
             rt.localPosition = startPos + Vector2.up * y;
             yield return null;
         }

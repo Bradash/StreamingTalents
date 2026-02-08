@@ -77,6 +77,7 @@ public class ChatMessage : MonoBehaviour
     {
         if (bonusApplied || messageData == null) return;
 
+        if (DialogueController.Instance.IsTalking) return;
         // Play streamer reaction here
         // uiStatsManager.PlayReaction(messageData.DeerReaction);
 
@@ -86,13 +87,20 @@ public class ChatMessage : MonoBehaviour
         int collab = CollabExpressionController.Instance.currentCollab;
 
         print(collab);
+        
+        //DialogueController.Instance.ReactionRoutine(messageData.DeerReaction, messageData.OniReaction, messageData.UnicornEmotion);
+
+        if (collab == 0)
+        {
+            DialogueController.Instance.startChain(messageData.DeerReaction, null, messageData.DragonEmotion);
+        }
         if (collab == 1)
         {
-            CollabExpressionController.Instance.RespondToMessage(messageData.UnicornEmotion);
+            DialogueController.Instance.startChain(messageData.DeerReaction, messageData.UnicornReaction, messageData.UnicornEmotion);
         }
         if (collab == 2)
         {
-            CollabExpressionController.Instance.RespondToMessage(messageData.DragonEmotion);
+            DialogueController.Instance.startChain(messageData.DeerReaction, messageData.DragonReaction, messageData.DragonEmotion);
         }
 
         bonusApplied = true;
