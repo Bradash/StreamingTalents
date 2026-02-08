@@ -14,7 +14,7 @@ public class ChatMessage : MonoBehaviour
     public Messages[] messages1;    // Stage 1
     public Messages[] messages2;    // Stage 2
     public Messages[] messages3;    // Stage 3
-    public GameState gameState;
+    public narrativeState gameState;
 
     public Messages messageData;   // The picked ScriptableObject
 
@@ -135,19 +135,19 @@ public class ChatMessage : MonoBehaviour
 
     public Messages GetRandomMessage()
     {
-        if (gameState.narrativeState == 1)
+        if (gameState.narState == 1)
         {
             if (messages1.Length == 0) return null;
             int index = Random.Range(0, messages1.Length);
             return messages1[index];
         }
-        if (gameState.narrativeState == 2)
+        if (gameState.narState == 2)
         {
             if (messages2.Length == 0) return null;
             int index = Random.Range(0, messages2.Length);
             return messages2[index];
         }
-        if (gameState.narrativeState == 3)
+        if (gameState.narState == 3)
         {
             if (messages3.Length == 0) return null;
             int index = Random.Range(0, messages3.Length);
