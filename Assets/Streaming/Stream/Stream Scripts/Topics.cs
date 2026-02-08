@@ -10,14 +10,34 @@ public class Topics : ScriptableObject
     public string TopicName;
     public int moodChange;
     public int viewerChange;
-    public string DeerEmotion;
+    public DeerEmotionBase DeerEmotion;
+    public OtherEmotionBase WolfEmotion;
+    public OtherEmotionBase UnicornEmotion;
+    public OtherEmotionBase DragonEmotion;
 
     [TextArea]
     public string DeerReaction;
     [TextArea]
     public string WolfReaction;
     [TextArea]
-    public string OniReaction;
+    public string UnicornReaction;
     [TextArea]
     public string DragonReactione;
+
+    public enum DeerEmotionBase
+    {
+        Neutral,
+        Smile,
+        Angry,
+        Scared,
+        Laugh
+    }
+    public enum OtherEmotionBase
+    {
+        Neutral,
+        Smile,
+        Angry,
+        Scared,
+        Laugh
+    }
 }

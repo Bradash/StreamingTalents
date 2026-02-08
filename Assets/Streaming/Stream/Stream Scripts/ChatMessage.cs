@@ -25,10 +25,13 @@ public class ChatMessage : MonoBehaviour
     private int appliedMood;
     private int appliedViewers;
 
+    private bool bonusApplied;
     public float Height { get; private set; }
 
     void Start()
     {
+        bonusApplied = false;
+
         messageData = GetRandomMessage();
         if (messageData != null)
         {
@@ -68,6 +71,31 @@ public class ChatMessage : MonoBehaviour
         UIStatsManager.Instance.AddViewers(-appliedViewers);
 
         effectsApplied = false;
+    }
+
+    public void ReadMessage()
+    {
+        if (bonusApplied || messageData == null) return;
+
+        // Play streamer reaction here
+        // uiStatsManager.PlayReaction(messageData.DeerReaction);
+
+        UIStatsManager.Instance.AddMood(appliedMood/2);
+        UIStatsManager.Instance.AddViewers(appliedViewers/2);
+
+        int collab = CollabExpressionController.Instance.currentCollab;
+
+        print(collab);
+        if (collab == 1)
+        {
+            CollabExpressionController.Instance.RespondToMessage(messageData.UnicornEmotion);
+        }
+        if (collab == 2)
+        {
+            CollabExpressionController.Instance.RespondToMessage(messageData.DragonEmotion);
+        }
+
+        bonusApplied = true;
     }
 
     public void BanMessage()
@@ -150,15 +178,15 @@ public class ChatMessage : MonoBehaviour
     }
 
     //Remove later
-    public void OnPointerClick(PointerEventData eventData)
+    void OnMouseOver()
     {
         print("Clicker");
-        if (eventData.button == PointerEventData.InputButton.Left)
+        if (Input.GetMouseButtonDown(0))
         {
             print("left");
-            //OnLeftClick();
+            ReadMessage();
         }
-        else if (eventData.button == PointerEventData.InputButton.Right)
+        else if (Input.GetMouseButtonDown(1))
         {
             print("Right");
             BanMessage();

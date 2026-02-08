@@ -908,7 +908,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.86415094, g: 0.86415094, b: 0.86415094, a: 1}
+  m_Color: {r: 0.5921569, g: 0.5921569, b: 0.5921569, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1424,6 +1424,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1778507302}
   - component: {fileID: 1778507301}
+  - component: {fileID: 1778507303}
   m_Layer: 0
   m_Name: 'CollabAvatar '
   m_TagString: Untagged
@@ -1475,7 +1476,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 862d398db910785409cc7e73251c0c20, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1496,11 +1497,40 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4, y: -1.5, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1778507303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778507300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6950ddaeee454364898c8db977b63363, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collabVtuberImage: {fileID: 1778507301}
+  currentCollab: 0
+  DragonEmotionSprites:
+  - emotion: 0
+    sprite: {fileID: 21300000, guid: 1f5de93e1acddae458f592fab7c3862f, type: 3}
+  - emotion: 1
+    sprite: {fileID: 21300000, guid: 39eab33bcc65c394593b6e6042614b29, type: 3}
+  - emotion: 2
+    sprite: {fileID: 21300000, guid: 862d398db910785409cc7e73251c0c20, type: 3}
+  - emotion: 3
+    sprite: {fileID: 21300000, guid: adca94207f4a85544aaa5e74c82a962d, type: 3}
+  - emotion: 4
+    sprite: {fileID: 21300000, guid: cae09accac26f8d4ab867d02691f1906, type: 3}
+  UnicornEmotionSprites: []
+  respondTime: 2.55
+  bobHeight: 0.1
+  bobDuration: 0.25
 --- !u!1 &1918269128
 GameObject:
   m_ObjectHideFlags: 0

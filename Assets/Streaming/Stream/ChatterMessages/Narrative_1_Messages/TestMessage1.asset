@@ -17,6 +17,10 @@ MonoBehaviour:
   message: Wow, you are such kawaii gamer girl! Can I get a meow?
   moodChange: -2
   viewerChange: -20
+  DeerEmotion: 0
+  WolfEmotion: 0
+  UnicornEmotion: 0
+  DragonEmotion: 2
   DeerReaction: Cringe
   WolfReaction: 
   OniReaction: 

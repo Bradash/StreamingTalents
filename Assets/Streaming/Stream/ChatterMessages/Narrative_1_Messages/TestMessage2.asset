@@ -17,6 +17,10 @@ MonoBehaviour:
   message: You arn't a real gamer.
   moodChange: -3
   viewerChange: -40
+  DeerEmotion: 0
+  WolfEmotion: 0
+  UnicornEmotion: 0
+  DragonEmotion: 3
   DeerReaction: No, get a life loser
   WolfReaction: 
   OniReaction: 

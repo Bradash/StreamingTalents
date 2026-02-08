@@ -66,6 +66,19 @@ public class UIStatsManager : MonoBehaviour
 
         //Checks
 
+        if (viewers < 0)
+        {
+            viewers = 0;
+        }
+        if (mood < 0)
+        {
+            mood = 0;
+        }
+        if (mood > 99.9)
+        {
+            mood = 99.9f;
+        }
+
 
         moneyText.text = "Money: $" + Mathf.FloorToInt(money);
         goalText.text = "Goal:  $" + Mathf.FloorToInt(goal);

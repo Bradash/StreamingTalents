@@ -1,4 +1,5 @@
 using UnityEngine;
+using static Topics;
 
 [CreateAssetMenu(fileName = "Messages", menuName = "Scriptable Objects/Messages")]
 public class Messages : ScriptableObject
@@ -10,7 +11,10 @@ public class Messages : ScriptableObject
     public string message;
     public int moodChange;      
     public int viewerChange;
-    public string DeerEmotion;
+    public DeerEmotionBase DeerEmotion;
+    public OtherEmotionBase WolfEmotion;
+    public OtherEmotionBase UnicornEmotion;
+    public OtherEmotionBase DragonEmotion;
 
     [TextArea]
     public string DeerReaction;
