@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4b2eb73f1f91bc44b814a7e3f9a8e784, type: 3}
-  m_Name: TestMessage2
+  m_Name: Messages 3
   m_EditorClassIdentifier: 
-  Archtype: '"Something"'
-  NarrativeStage: 1
-  message: You arn't a real gamer.
-  moodChange: -3
-  viewerChange: -40
+  Archtype: 
+  NarrativeStage: 0
+  message: what's this about?
+  moodChange: 0
+  viewerChange: 3
   DeerEmotion: 0
   WolfEmotion: 0
   UnicornEmotion: 0
-  DragonEmotion: 3
-  DeerReaction: No, get a life loser
-  WolfReaction: 
-  UnicornReaction: 
-  DragonReaction: Says the loser
+  DragonEmotion: 0
+  DeerReaction: Just chatting with fans and having a good time.
+  WolfReaction: Just chatting with fans and having a good time.
+  UnicornReaction: We're VTubers! This is just a chill stream.
+  DragonReaction: What does it look like?
