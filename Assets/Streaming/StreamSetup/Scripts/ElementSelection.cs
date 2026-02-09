@@ -9,6 +9,7 @@ public class ElementSelection : MonoBehaviour
     [SerializeField] List<string> elementName = new List<string>();
     [SerializeField] List<Sprite> elementImage = new List<Sprite>();
     int currentElement = 0;
+    public int selectionType; //1 = collab, 2 = game
 
     [SerializeField] TextMeshProUGUI nameText;
     [SerializeField] Sprite image;
@@ -46,7 +47,16 @@ public class ElementSelection : MonoBehaviour
 
     public void StartGame()
     {
-        GameManager.SelectedMinigame = currentElement;
+        if (selectionType == 2)
+        {
+            GameManager.SelectedMinigame = currentElement;
+            print("Game" + GameManager.SelectedMinigame);
+        }
+        if (selectionType == 1)
+        {
+            GameManager.SelectedCollab = currentElement;
+            print("Collab " + GameManager.SelectedCollab);
+        }
         SceneManager.LoadScene("Stream View");
     }
 }

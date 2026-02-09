@@ -36,13 +36,24 @@ public class CollabExpressionController : MonoBehaviour
             return;
         }
 
+        currentCollab = UIStatsManager.Instance.collab;
+
+        print(currentCollab);
+
         Instance = this;
-
+        if (currentCollab == 1)
+        {
+            collabVtuberImage.sprite = UnicornEmotionSprites[0].sprite;
+        }
+        else if (currentCollab == 2)
+        {
+            collabVtuberImage.sprite = DragonEmotionSprites[0].sprite;
+        }
+        else
+        {
+            collabVtuberImage.sprite = null;
+        }
         startPos = collabVtuberImage.transform.localPosition;
-        collabVtuberImage.sprite = DragonEmotionSprites[0].sprite;
-
-        //testing
-        currentCollab = 2;
     }
 
     public void RespondToMessage(OtherEmotionBase emotion, float duration)
@@ -58,7 +69,18 @@ public class CollabExpressionController : MonoBehaviour
     {
         Sprite target = GetSprite(emotion);
         if (target == null)
-            target = DragonEmotionSprites[0].sprite;
+            if (currentCollab == 1)
+            {
+                target = UnicornEmotionSprites[0].sprite;
+            }
+            else if (currentCollab == 2)
+            {
+                target = DragonEmotionSprites[0].sprite;
+            }
+            else
+            {
+                target = null;
+            }
 
         collabVtuberImage.sprite = target;
 
@@ -66,7 +88,19 @@ public class CollabExpressionController : MonoBehaviour
 
         yield return new WaitForSeconds(duration);
 
-        collabVtuberImage.sprite = DragonEmotionSprites[0].sprite;
+        
+        if (currentCollab == 1)
+        {
+            collabVtuberImage.sprite = UnicornEmotionSprites[0].sprite;
+        }
+        else if (currentCollab == 2)
+        {
+            collabVtuberImage.sprite = DragonEmotionSprites[0].sprite;
+        }
+        else
+        {
+            collabVtuberImage.sprite = null;
+        }
     }
 
     IEnumerator Bob()
