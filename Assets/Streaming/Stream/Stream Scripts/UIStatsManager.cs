@@ -17,6 +17,8 @@ public class UIStatsManager : MonoBehaviour
     public float viewers;
     public float mood;
     public float points;
+    public int collab;
+    public int game;
 
     int currentday;
 
@@ -36,13 +38,17 @@ public class UIStatsManager : MonoBehaviour
 
         Instance = this;
 
-        //testing
-        currentday = 1;
+        collab = GameManager.SelectedCollab;
+        print(GameManager.SelectedCollab);
+        game = GameManager.SelectedMinigame;
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void Start()
     {
+
+        currentday = GameManager.currentday;
+
         if (currentday == 1)//Day check later
         {
             money = 0;
@@ -51,7 +57,9 @@ public class UIStatsManager : MonoBehaviour
             mood = 50;
             points = 100;
             maxTime = 80;
-            time = 80;
+            time = 10;
+            collab = 0;
+            game = 0;
         }
         if (currentday == 2)//Day check later
         {
@@ -61,6 +69,8 @@ public class UIStatsManager : MonoBehaviour
             points = 100;
             maxTime = 300;
             time = 300;
+            collab = collab;
+            game = game;
         }
     }
 
@@ -117,7 +127,7 @@ public class UIStatsManager : MonoBehaviour
             time = 0;
             print("End scene");
             //transition to next scene
-            UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+            UnityEngine.SceneManagement.SceneManager.LoadScene(3);
         }
 
 

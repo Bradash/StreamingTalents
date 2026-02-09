@@ -554,6 +554,7 @@ MonoBehaviour:
   elementImage:
   - {fileID: 21300000, guid: 8bf4fe4ed549afb49bd909c530674c2f, type: 3}
   - {fileID: 21300000, guid: be908b4ca4958544c8ef2b871558d0b3, type: 3}
+  selectionType: 2
   nameText: {fileID: 547530445}
   image: {fileID: 21300000, guid: 8bf4fe4ed549afb49bd909c530674c2f, type: 3}
   IMG_Image: {fileID: 1438244700}
@@ -1321,6 +1322,18 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 495938959}
+        m_TargetAssemblyTypeName: ElementSelection, Assembly-CSharp
+        m_MethodName: StartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1968558971}
         m_TargetAssemblyTypeName: ElementSelection, Assembly-CSharp
         m_MethodName: StartGame
         m_Mode: 1
@@ -3296,6 +3309,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: e303247c912977045a59acc7deceb566, type: 3}
   - {fileID: 21300000, guid: 1624abe9301eda944bfa84652371b1c8, type: 3}
   - {fileID: 21300000, guid: 360558167f0371a4a903967ba0fd141b, type: 3}
+  selectionType: 1
   nameText: {fileID: 1157059773}
   image: {fileID: 0}
   IMG_Image: {fileID: 1339088363}
