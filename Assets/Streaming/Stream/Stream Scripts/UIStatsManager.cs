@@ -22,7 +22,7 @@ public class UIStatsManager : MonoBehaviour
 
     int currentday;
 
-    float time;
+    float time = 20;
     float maxTime;
 
 
@@ -48,6 +48,7 @@ public class UIStatsManager : MonoBehaviour
     {
 
         currentday = GameManager.currentday;
+        print("Day:" + GameManager.currentday);
 
         if (currentday == 1)//Day check later
         {

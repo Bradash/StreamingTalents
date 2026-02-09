@@ -57,6 +57,7 @@ public class ElementSelection : MonoBehaviour
             GameManager.SelectedCollab = currentElement;
             print("Collab " + GameManager.SelectedCollab);
         }
+
         SceneManager.LoadScene("Stream View");
     }
 }
