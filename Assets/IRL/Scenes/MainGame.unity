@@ -3332,7 +3332,7 @@ AudioSource:
   m_Resource: {fileID: 8300000, guid: 39c99e0ce5f7aa646a969e204c611de9, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.4
-  m_Pitch: 0.26
+  m_Pitch: 0.8
   Loop: 1
   Mute: 0
   Spatialize: 0
@@ -4572,7 +4572,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9106385484927469525, guid: 22c89dacef63d7643aece51f9d1ee9dc, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
