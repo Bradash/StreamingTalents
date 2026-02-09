@@ -17,8 +17,8 @@ MonoBehaviour:
   message: ts is so boring
   moodChange: -4
   viewerChange: -6
-  DeerEmotion: 3
-  WolfEmotion: 3
+  DeerEmotion: 0
+  WolfEmotion: 0
   UnicornEmotion: 0
   DragonEmotion: 2
   DeerReaction: I'm sorry to hear that...?
