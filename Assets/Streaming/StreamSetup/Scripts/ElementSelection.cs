@@ -46,6 +46,7 @@ public class ElementSelection : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene(elementName[currentElement]);
+        GameManager.SelectedMinigame = currentElement;
+        SceneManager.LoadScene("Stream View");
     }
 }
