@@ -13,8 +13,13 @@ MonoBehaviour:
   m_Name: Messages
   m_EditorClassIdentifier: 
   Archtype: 
+<<<<<<< HEAD
   NarrativeStage: 1
   message: Wow you are so cool Deer girl
+=======
+  NarrativeStage: 0
+  message: sup
+>>>>>>> cherrybranch
   moodChange: 0
   viewerChange: 0
   DeerEmotion: 0

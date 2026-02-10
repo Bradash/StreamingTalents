@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Messages 1
   m_EditorClassIdentifier: 
   Archtype: 
+<<<<<<< HEAD
   NarrativeStage: 1
   message: Like you so cool deer girl
   moodChange: 2
@@ -25,3 +26,17 @@ MonoBehaviour:
   WolfReaction: 
   UnicornReaction: 
   DragonReaction: You are loser
+=======
+  NarrativeStage: 0
+  message: yo
+  moodChange: 0
+  viewerChange: 0
+  DeerEmotion: 0
+  WolfEmotion: 0
+  UnicornEmotion: 0
+  DragonEmotion: 0
+  DeerReaction: 
+  WolfReaction: 
+  UnicornReaction: 
+  DragonReaction: 
+>>>>>>> cherrybranch
