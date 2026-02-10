@@ -39,7 +39,7 @@ public class Player : MonoBehaviour
 
     void PlayerInput()
     {
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.Space))
         {
             direction = 1;
         }

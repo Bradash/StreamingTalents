@@ -1,0 +1,28 @@
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class menuScript : MonoBehaviour
+{
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+    public void Play()
+    {
+        GameManager.currentday = 1;
+        SceneManager.LoadScene(0);
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
+}

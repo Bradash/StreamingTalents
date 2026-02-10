@@ -21,7 +21,7 @@ public class HazardSpawner : MonoBehaviour
 
         if (spawnTimer < 0)
         {
-            Instantiate(hazards[(int)Random.Range(0, hazards.Count)], new Vector3(transform.position.x, Random.Range(-3f, 3f), transform.position.z), Quaternion.identity);
+            Instantiate(hazards[(int)Random.Range(0, hazards.Count)], new Vector3(transform.position.x, transform.position.y + Random.Range(-2.5f, 2.5f), transform.position.z), Quaternion.identity);
             spawnTimer = spawnDelay;
             if (difficulty < 20)
             {
