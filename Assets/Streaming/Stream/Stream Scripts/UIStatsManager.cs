@@ -53,12 +53,12 @@ public class UIStatsManager : MonoBehaviour
         if (currentday == 1)//Day check later
         {
             money = 0;
-            goal = 100;
+            goal = 30;
             viewers = 100;
             mood = 50;
             points = 100;
             maxTime = 80;
-            time = 10;
+            time = 60;
             collab = 0;
             game = 0;
         }
