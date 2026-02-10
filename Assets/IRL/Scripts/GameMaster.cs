@@ -1,3 +1,4 @@
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -7,6 +8,16 @@ public class GameMaster : MonoBehaviour
     public int quest1Progress;
     public string questName;
     public GameObject[] gameObjects;
+    public TextMeshProUGUI taskText;
+    public TextMeshProUGUI dayText;
+    public void Start()
+    {
+        dayText.text = "Day: " + loadDay();
+    }
+    public int loadDay()
+    {
+        return GameManager.currentday;
+    }
     public void computerInteract()
     {
         switch (quest1Progress)
@@ -36,14 +47,17 @@ public class GameMaster : MonoBehaviour
             case 1:
                 gameObjects[0].SetActive(true);
                 gameObjects[2].SetActive(true);
+                taskText.text = "Task: \r\nOpen Door";
                 break;
             case 2:
                 gameObjects[1].SetActive(true);
                 gameObjects[0].SetActive(false);
+                taskText.text = "Task: \r\nGet Food";
                 break;
             case 3:
                 gameObjects[1].SetActive(false);
                 gameObjects[3].SetActive(true);
+                taskText.text = "Task: \r\nGo to PC";
                 break;
         }
     }
