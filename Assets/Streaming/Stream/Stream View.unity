@@ -2193,6 +2193,8 @@ MonoBehaviour:
   viewers: 0
   mood: 0
   points: 0
+  collab: 0
+  game: 0
 --- !u!1 &920810658
 GameObject:
   m_ObjectHideFlags: 0
@@ -4866,7 +4868,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 862d398db910785409cc7e73251c0c20, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5c4de631f7fadfa43b15bd2fb8fced13, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4886,8 +4888,8 @@ Transform:
   m_GameObject: {fileID: 1778507300}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4, y: -1.5, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_LocalPosition: {x: -4, y: -0.45, z: 0}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -4908,18 +4910,26 @@ MonoBehaviour:
   currentCollab: 0
   DragonEmotionSprites:
   - emotion: 0
-    sprite: {fileID: 21300000, guid: 1f5de93e1acddae458f592fab7c3862f, type: 3}
+    sprite: {fileID: 21300000, guid: 5c4de631f7fadfa43b15bd2fb8fced13, type: 3}
   - emotion: 1
-    sprite: {fileID: 21300000, guid: 39eab33bcc65c394593b6e6042614b29, type: 3}
+    sprite: {fileID: 21300000, guid: 822e678ff8204414492b6aa2b8892425, type: 3}
   - emotion: 2
-    sprite: {fileID: 21300000, guid: 862d398db910785409cc7e73251c0c20, type: 3}
+    sprite: {fileID: 21300000, guid: 1a53ee9e74853cf43b01f817f3e0dc9d, type: 3}
   - emotion: 3
-    sprite: {fileID: 21300000, guid: adca94207f4a85544aaa5e74c82a962d, type: 3}
+    sprite: {fileID: 21300000, guid: e016d701da60df147b0dab4788e55312, type: 3}
   - emotion: 4
-    sprite: {fileID: 21300000, guid: cae09accac26f8d4ab867d02691f1906, type: 3}
+    sprite: {fileID: 21300000, guid: 0d56b5c1763e9f542be10c5dd4d9d52f, type: 3}
   UnicornEmotionSprites:
   - emotion: 0
-    sprite: {fileID: 21300000, guid: f2bc126bc6ab7094eb5dfa33500c7cf8, type: 3}
+    sprite: {fileID: 21300000, guid: 98a41115817451d41a44136ae954bc27, type: 3}
+  - emotion: 1
+    sprite: {fileID: 21300000, guid: 8d7cd0a1a67d8d14187b77d19425b377, type: 3}
+  - emotion: 2
+    sprite: {fileID: 21300000, guid: 65d123c8baa16534394e9813ebf31c3a, type: 3}
+  - emotion: 3
+    sprite: {fileID: 21300000, guid: ec15069ea7a8e77448e9e8e487eaf100, type: 3}
+  - emotion: 4
+    sprite: {fileID: 21300000, guid: 7f59f93d35618f9419c82b9753370dab, type: 3}
   respondTime: 2.55
   bobHeight: 0.1
   bobDuration: 0.25
