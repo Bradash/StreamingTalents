@@ -1981,7 +1981,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: e303247c912977045a59acc7deceb566, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3479,7 +3479,7 @@ MonoBehaviour:
   - Ada Oni
   - Ember Dragon
   elementImage:
-  - {fileID: 21300000, guid: 00d224ab0ea170f41af752fee1d5502e, type: 3}
+  - {fileID: 21300000, guid: e303247c912977045a59acc7deceb566, type: 3}
   - {fileID: 21300000, guid: 8d7cd0a1a67d8d14187b77d19425b377, type: 3}
   - {fileID: 21300000, guid: 822e678ff8204414492b6aa2b8892425, type: 3}
   selectionType: 1
