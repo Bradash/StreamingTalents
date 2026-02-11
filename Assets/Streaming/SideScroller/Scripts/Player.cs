@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
 
@@ -8,11 +9,14 @@ public class Player : MonoBehaviour
 {
     public TextMeshProUGUI scoreText;
 
-    public float speed = 7.5f;
+    public float speed = 5f;
     int direction = -1;
     float score;
     bool isAlive = true;
     Vector3 initialPos;
+
+    bool canMove = false;
+    public float startDelay = 1f;
 
     [SerializeField] GameObject gameOver;
 
@@ -20,11 +24,12 @@ public class Player : MonoBehaviour
     {
         initialPos = transform.position;
         HazardSpawner.resetGameState += ResetPlayer;
+        StartCoroutine(LockMovement());
     }
 
     void Update()
     {
-        if (isAlive)
+        if (isAlive && canMove)
         {
             PlayerInput();
 
@@ -64,6 +69,14 @@ public class Player : MonoBehaviour
         score = 0;
         direction = -1;
         isAlive = true;
+        canMove = false;
         gameOver.SetActive(false);
+        StartCoroutine(LockMovement());
+    }
+
+    IEnumerator LockMovement()
+    {
+        yield return new WaitForSeconds(startDelay);
+        canMove = true;
     }
 }

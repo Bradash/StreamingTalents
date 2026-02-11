@@ -1803,7 +1803,7 @@ Transform:
   m_GameObject: {fileID: 597595075}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7, y: 1, z: 0}
+  m_LocalPosition: {x: 7, y: 1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1821,7 +1821,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f827d030666f0845bc4483d0ddfa290, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemySpeed: 3
+  enemySpeed: 2.5
   hazards:
   - {fileID: 742020427283128385, guid: 2d0467465499cea4cb0082d13ad9475a, type: 3}
   spawnDelay: 3
@@ -2340,7 +2340,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &920810659
 Transform:
   m_ObjectHideFlags: 0
@@ -5475,7 +5475,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 1287520867}
-  speed: 5
+  speed: 3
+  startDelay: 1
   gameOver: {fileID: 859533898}
 --- !u!212 &1848643179
 SpriteRenderer:
@@ -6450,5 +6451,5 @@ SceneRoots:
   - {fileID: 360376066}
   - {fileID: 100390354}
   - {fileID: 920810659}
-  - {fileID: 167824131}
   - {fileID: 1020764033}
+  - {fileID: 167824131}

@@ -33,6 +33,6 @@ public class Hazard : MonoBehaviour
     void DeleteObject()
     {
         HazardSpawner.resetGameState -= DeleteObject;
-        Destroy(gameObject);
+        Destroy(this.gameObject);
     }
 }
