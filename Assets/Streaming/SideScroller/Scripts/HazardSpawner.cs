@@ -17,7 +17,10 @@ public class HazardSpawner : MonoBehaviour
     void Update()
     {
         spawnTimer -= Time.deltaTime;
-        enemySpeed += 0.25f * Time.deltaTime;
+        if (enemySpeed < 10f)
+        {
+            enemySpeed += 0.25f * Time.deltaTime;
+        }
 
         if (spawnTimer < 0)
         {
