@@ -35,6 +35,7 @@ public class Player : MonoBehaviour
 
             Vector3 currentPos = transform.position;
             currentPos.y += speed * direction * Time.deltaTime;
+            currentPos.y = Mathf.Clamp(currentPos.y, -2f, 4.5f);
             transform.position = currentPos;
 
             score += Time.deltaTime * 5;
