@@ -14,7 +14,7 @@ public class UIStatsManager : MonoBehaviour
     public TMP_Text timeText;
 
     public float money;
-    public float goal;
+    public int goal;
     public float viewers;
     public float mood;
     public float points;
