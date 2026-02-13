@@ -21,6 +21,10 @@ public class UIStatsManager : MonoBehaviour
     public int collab;
     public int game;
 
+    float highestviewers;
+    float maxMood;
+    float numberMood;
+
     int currentday;
 
     float time = 20;
@@ -41,6 +45,11 @@ public class UIStatsManager : MonoBehaviour
         collab = GameManager.SelectedCollab;
         print(GameManager.SelectedCollab);
         game = GameManager.SelectedMinigame;
+
+        float highestviewers = 0;
+        float maxMood = 0;
+        float numberMood = 0;
+
 
         //Testing
         collab = 2;
@@ -106,6 +115,14 @@ public class UIStatsManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (highestviewers < viewers)
+        {
+            highestviewers = viewers;
+        }
+        maxMood += mood;
+        numberMood += 1;
+
+
         //Natural decay
 
         viewers += ((0.2f * mood) - 10) * Time.deltaTime;
@@ -153,6 +170,8 @@ public class UIStatsManager : MonoBehaviour
         {
             time = 0;
             print("End scene");
+            GameManager.highestviewers = highestviewers;
+            GameManager.avargeChatMood = maxMood / numberMood;
             //transition to next scene
             UnityEngine.SceneManagement.SceneManager.LoadScene(3);
         }
