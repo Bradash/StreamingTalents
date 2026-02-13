@@ -4855,6 +4855,11 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!4 &1380174561 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1a88b5d85c6372e42b7c2d3a03b9246f, type: 3}
+  m_PrefabInstance: {fileID: 834213135}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1380174562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4867,6 +4872,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 597da03254fbf3943a5c4acaf9b3dd29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 1380174560}
+  deerObject: {fileID: 1380174561}
+  DeerEmotionAni:
+  - emotion: 0
+    value: 0
+  - emotion: 1
+    value: 1
+  - emotion: 2
+    value: 1
+  - emotion: 3
+    value: 1
+  - emotion: 4
+    value: 1
 --- !u!1 &1456183907
 GameObject:
   m_ObjectHideFlags: 0

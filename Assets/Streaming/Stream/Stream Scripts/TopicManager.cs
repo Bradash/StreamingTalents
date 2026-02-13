@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static Topics;
 
 public class TopicManager : MonoBehaviour
 {
@@ -110,7 +111,7 @@ public class TopicManager : MonoBehaviour
         if (collab == 0)
         {
             DialogueController.Instance.startChain(
-                topic.DeerReaction,
+                topic.DeerReaction, topic.DeerEmotion,
                 null,
                 topic.DragonEmotion
             );
@@ -118,7 +119,7 @@ public class TopicManager : MonoBehaviour
         else if (collab == 1)
         {
             DialogueController.Instance.startChain(
-                topic.DeerReaction,
+                topic.DeerReaction, topic.DeerEmotion,
                 topic.UnicornReaction,
                 topic.UnicornEmotion
             );
@@ -126,7 +127,7 @@ public class TopicManager : MonoBehaviour
         else if (collab == 2)
         {
             DialogueController.Instance.startChain(
-                topic.DeerReaction,
+                topic.DeerReaction, topic.DeerEmotion,
                 topic.DragonReaction,
                 topic.DragonEmotion
             );

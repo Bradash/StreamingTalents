@@ -33,23 +33,23 @@ public class DialogueController : MonoBehaviour
         panel.SetActive(false);
     }
 
-    public void startChain(string mainMessage, string collabMessage, OtherEmotionBase collabEmotion)
+    public void startChain(string mainMessage, OtherEmotionBase deerEmotion, string collabMessage, OtherEmotionBase collabEmotion)
     {
         if (IsTalking) return;
         print(collabEmotion);
 
-        StartCoroutine(ReactionRoutine(mainMessage, collabMessage, collabEmotion));
+        StartCoroutine(ReactionRoutine(mainMessage, deerEmotion, collabMessage, collabEmotion));
     }
 
 
-    IEnumerator ReactionRoutine(string mainMessage, string collabMessage, OtherEmotionBase collabEmotion)
+    IEnumerator ReactionRoutine(string mainMessage, OtherEmotionBase deerEmotion, string collabMessage, OtherEmotionBase collabEmotion)
     {
         print("recived");
         print("again");
         IsTalking = true;
         panel.SetActive(true);
 
-        yield return PlaySingleReaction(mainMessage, 0, collabEmotion);
+        yield return PlaySingleReaction(mainMessage, 0, deerEmotion);
 
         if (CollabExpressionController.Instance.currentCollab != 0)
         {
@@ -70,7 +70,7 @@ public class DialogueController : MonoBehaviour
             nameText.text = "Zara:";
             messageText.color = Color.green;
             nameText.color = Color.green;
-            //Reaction
+            DeerAnimations.Instance.DeerRespondToMessage(collabEmotion, typeDuration + 0.4f);
         }
         if (person == 1)
         {

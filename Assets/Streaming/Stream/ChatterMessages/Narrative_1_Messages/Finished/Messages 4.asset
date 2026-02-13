@@ -20,7 +20,7 @@ MonoBehaviour:
   DeerEmotion: 4
   WolfEmotion: 4
   UnicornEmotion: 0
-  DragonEmotion: 0
+  DragonEmotion: 1
   DeerReaction: This is indeed gaming!
   WolfReaction: This is indeed gaming!
   UnicornReaction: Huh...?

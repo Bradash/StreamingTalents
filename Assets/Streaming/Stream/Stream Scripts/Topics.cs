@@ -10,7 +10,7 @@ public class Topics : ScriptableObject
     public string TopicName;
     public int moodChange;
     public int viewerChange;
-    public DeerEmotionBase DeerEmotion;
+    public OtherEmotionBase DeerEmotion;
     public OtherEmotionBase WolfEmotion;
     public OtherEmotionBase UnicornEmotion;
     public OtherEmotionBase DragonEmotion;

@@ -92,15 +92,15 @@ public class ChatMessage : MonoBehaviour
 
         if (collab == 0)
         {
-            DialogueController.Instance.startChain(messageData.DeerReaction, null, messageData.DragonEmotion);
+            DialogueController.Instance.startChain(messageData.DeerReaction, messageData.DeerEmotion, null, messageData.DragonEmotion);
         }
         if (collab == 1)
         {
-            DialogueController.Instance.startChain(messageData.DeerReaction, messageData.UnicornReaction, messageData.UnicornEmotion);
+            DialogueController.Instance.startChain(messageData.DeerReaction, messageData.DeerEmotion, messageData.UnicornReaction, messageData.UnicornEmotion);
         }
         if (collab == 2)
         {
-            DialogueController.Instance.startChain(messageData.DeerReaction, messageData.DragonReaction, messageData.DragonEmotion);
+            DialogueController.Instance.startChain(messageData.DeerReaction, messageData.DeerEmotion, messageData.DragonReaction, messageData.DragonEmotion);
         }
 
         bonusApplied = true;
