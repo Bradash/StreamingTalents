@@ -13,12 +13,12 @@ public class GameManager
     public static float avargeChatMood;
     public static float endOfDayMoney;
     public static float startOfDayMoney;
-    public static float todayQuota;
+    public static int todayQuota;
 
     public static float lastHighestviewers;
     public static float lastAvargeChatMood;
-    public static float lastEndOfDayMoney;
-    public static float lastStartOfDayMoney;
+    public static float lastIncome;
+    public static float lastBalance;
     public static float lastTodayQuota;
 
 

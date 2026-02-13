@@ -24,34 +24,42 @@ public class StreamResults : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
-        //Testing
-        GameManager.currentday = 3;
 
         if (GameManager.currentday == 1)
         {
             //Pre day stats
             GameManager.lastHighestviewers = 100;
             GameManager.lastAvargeChatMood = 0;
-            GameManager.lastEndOfDayMoney = 0;
-            GameManager.lastStartOfDayMoney = 0;
+            GameManager.lastIncome = 0;
+            GameManager.lastBalance = 0;
             GameManager.lastTodayQuota = 0;
         }
 
         //Make the stats
-
-
+        HighestViewers = GameManager.highestviewers;
+        AverageChatMood = GameManager.avargeChatMood;
+        TodaysIncome = GameManager.endOfDayMoney - GameManager.endOfDayMoney;
+        Quota = GameManager.todayQuota;
+        YesterdaysBalance = GameManager.lastBalance;
+        GameManager.currentmoney -= GameManager.todayQuota;
+        CurrentBalance = GameManager.currentmoney;
 
         //Put them on the text
-        print(GameManager.highestviewers);
-        print(GameManager.avargeChatMood);
+        print(HighestViewers);
+        print(AverageChatMood);
+        print(TodaysIncome);
+        print(Quota);
+        print(YesterdaysBalance);
+        print(CurrentBalance);
+
 
 
         //Make the last stats
 
         GameManager.lastHighestviewers = HighestViewers;
         GameManager.lastAvargeChatMood = AverageChatMood;
-        //GameManager.lastEndOfDayMoney = EndOfDayMoney;
-        //GameManager.lastStartOfDayMoney = StartOfDayMoney;
+        //GameManager.lastIncome = EndOfDayMoney;
+        //GameManager.lastBalance = StartOfDayMoney;
         //GameManager.lastTodayQuota = TodayQuota;
 
 

@@ -49,12 +49,6 @@ public class UIStatsManager : MonoBehaviour
         float highestviewers = 0;
         float maxMood = 0;
         float numberMood = 0;
-
-
-        //Testing
-        collab = 2;
-        GameManager.SelectedMinigame = 2;
-        game = 2;
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -94,6 +88,10 @@ public class UIStatsManager : MonoBehaviour
             points = 50;
             time = 300;
         }
+
+        GameManager.startOfDayMoney = money;
+        GameManager.todayQuota = goal;
+
     }
 
     public void AddMoney(float change)
@@ -172,6 +170,7 @@ public class UIStatsManager : MonoBehaviour
             print("End scene");
             GameManager.highestviewers = highestviewers;
             GameManager.avargeChatMood = maxMood / numberMood;
+            GameManager.endOfDayMoney = money;
             //transition to next scene
             UnityEngine.SceneManagement.SceneManager.LoadScene(3);
         }
