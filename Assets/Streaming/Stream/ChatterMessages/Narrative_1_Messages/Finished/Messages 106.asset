@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4b2eb73f1f91bc44b814a7e3f9a8e784, type: 3}
-  m_Name: Messages 26
+  m_Name: Messages 106
   m_EditorClassIdentifier: 
   Archtype: 
   NarrativeStage: 0
-  message: can you show feet?
+  message: I'm afraid of women. What should I do?
   moodChange: 0
-  viewerChange: -1
-  DeerEmotion: 3
-  WolfEmotion: 3
+  viewerChange: 2
+  DeerEmotion: 0
+  WolfEmotion: 0
   UnicornEmotion: 0
-  DragonEmotion: 0
-  DeerReaction: UH, no.
-  WolfReaction: UH, no.
-  UnicornReaction: Why would you ask that?
-  DragonReaction: 
+  DragonEmotion: 1
+  DeerReaction: Sorry, I'm not good at giving advice...
+  WolfReaction: Sorry, I'm not good at giving advice...
+  UnicornReaction: People are actually afraid of women??
+  DragonReaction: Don't tell them you watch VTubers.

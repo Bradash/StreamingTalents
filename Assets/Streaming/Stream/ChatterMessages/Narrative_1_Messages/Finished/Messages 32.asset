@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4b2eb73f1f91bc44b814a7e3f9a8e784, type: 3}
-  m_Name: Messages 79
+  m_Name: Messages 32
   m_EditorClassIdentifier: 
   Archtype: 
   NarrativeStage: 0
-  message: 30 year old man lol
-  moodChange: -1
-  viewerChange: 0
-  DeerEmotion: 0
-  WolfEmotion: 0
+  message: I'm crine bro ts so peak
+  moodChange: 1
+  viewerChange: 1
+  DeerEmotion: 1
+  WolfEmotion: 1
   UnicornEmotion: 0
-  DragonEmotion: 1
-  DeerReaction: I'm not a guy! Trust me!
-  WolfReaction: I'm not 30! I'm... younger than that.
-  UnicornReaction: 
-  DragonReaction: Me, a 30-year-old man? Hah, you wish.
+  DragonEmotion: 0
+  DeerReaction: Glad you're enjoying yourself...?
+  WolfReaction: Glad you're enjoying yourself...?
+  UnicornReaction: Hope you're having fun!
+  DragonReaction: What are you saying?
