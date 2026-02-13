@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4b2eb73f1f91bc44b814a7e3f9a8e784, type: 3}
-  m_Name: Messages 86
+  m_Name: Messages 75
   m_EditorClassIdentifier: 
   Archtype: 
   NarrativeStage: 0
-  message: Look behind you
+  message: When are you getting merch?
   moodChange: 0
-  viewerChange: 3
+  viewerChange: 0
   DeerEmotion: 0
   WolfEmotion: 0
-  UnicornEmotion: 3
+  UnicornEmotion: 0
   DragonEmotion: 0
-  DeerReaction: What do you mean? There's nothing behind me.
-  WolfReaction: What do you mean? There's nothing behind me.
-  UnicornReaction: Don't say things like that!
-  DragonReaction: 
+  DeerReaction: Uhh... not sure! I'll let you guys know if I do.
+  WolfReaction: Uhh... not sure! I'll let you guys know if I do.
+  UnicornReaction: That would be so exciting!
+  DragonReaction: Merch? I wish...

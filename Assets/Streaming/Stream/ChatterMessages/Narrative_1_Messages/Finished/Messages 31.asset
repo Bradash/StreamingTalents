@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4b2eb73f1f91bc44b814a7e3f9a8e784, type: 3}
-  m_Name: Messages 51
+  m_Name: Messages 31
   m_EditorClassIdentifier: 
   Archtype: 
   NarrativeStage: 0
-  message: I love supporting small creators <3
-  moodChange: 6
-  viewerChange: 3
-  DeerEmotion: 1
-  WolfEmotion: 1
-  UnicornEmotion: 1
-  DragonEmotion: 0
-  DeerReaction: Thank you so much!
-  WolfReaction: Thank you so much!
-  UnicornReaction: Aww, thanks!
-  DragonReaction: 
+  message: this is the worst gameplay ive ever seen
+  moodChange: -3
+  viewerChange: -2
+  DeerEmotion: 0
+  WolfEmotion: 0
+  UnicornEmotion: 0
+  DragonEmotion: 1
+  DeerReaction: Sorry to disappoint
+  WolfReaction: Sorry to disappoint...
+  UnicornReaction: We'll try harder, I promise!
+  DragonReaction: Oh, really? Let's see YOU do better.

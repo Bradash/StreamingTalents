@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4b2eb73f1f91bc44b814a7e3f9a8e784, type: 3}
-  m_Name: Messages 97
+  m_Name: Messages 109
   m_EditorClassIdentifier: 
   Archtype: 
   NarrativeStage: 0
-  message: how much can you bench
+  message: Do you have any advice on handling toxic relationships?
   moodChange: 0
-  viewerChange: 1
+  viewerChange: 0
   DeerEmotion: 0
   WolfEmotion: 0
   UnicornEmotion: 0
-  DragonEmotion: 1
-  DeerReaction: I don't really exercise...
-  WolfReaction: I don't really exercise...
-  UnicornReaction: 
-  DragonReaction: More than you, nerd.
+  DragonEmotion: 0
+  DeerReaction: Sorry, I'm not good at giving advice...
+  WolfReaction: Sorry, I'm not good at giving advice...
+  UnicornReaction: Um, maybe sit down and have an honest converation with them...
+  DragonReaction: Just break it up.
