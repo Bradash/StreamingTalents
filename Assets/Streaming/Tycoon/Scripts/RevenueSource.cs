@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UI;
 
 public class RevenueSource : MonoBehaviour
@@ -96,6 +97,7 @@ public class RevenueSource : MonoBehaviour
         if (!onCooldown)
         {
             moneyHandler.SendMessage("AddMoney", revenue);
+            UIStatsManager.Instance.points += 5;
             currentTimer = revenueTime;
             onCooldown = true;
         }

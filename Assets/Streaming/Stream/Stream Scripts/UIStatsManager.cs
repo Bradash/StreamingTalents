@@ -1,5 +1,6 @@
 using System.Threading;
 using TMPro;
+using Unity.XR.GoogleVr;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem.Controls;
@@ -23,7 +24,6 @@ public class UIStatsManager : MonoBehaviour
     int currentday;
 
     float time = 20;
-    float maxTime;
 
 
     public static UIStatsManager Instance { get; private set; }
@@ -41,6 +41,11 @@ public class UIStatsManager : MonoBehaviour
         collab = GameManager.SelectedCollab;
         print(GameManager.SelectedCollab);
         game = GameManager.SelectedMinigame;
+
+        //Testing
+        collab = 2;
+        GameManager.SelectedMinigame = 0;
+        game = 0;
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -50,28 +55,35 @@ public class UIStatsManager : MonoBehaviour
         currentday = GameManager.currentday;
         print("Day:" + GameManager.currentday);
 
-        if (currentday == 1)//Day check later
+        //Testing
+        currentday = 1;
+
+        if (currentday == 1)
         {
             money = 0;
             goal = 30;
             viewers = 100;
-            mood = 50;
+            mood = 70;
             points = 100;
-            maxTime = 80;
-            time = 60;
-            collab = 0;
-            game = 0;
+            time = 150;
+            //collab = 2;
+            //game = 0;
         }
-        if (currentday == 2)//Day check later
+        if (currentday == 2)
         {
-            goal = 200;
+            goal = 100;
             viewers = 200;
             mood = 50;
-            points = 100;
-            maxTime = 300;
+            points = 50;
+            time = 240;
+        }
+        if (currentday == 3)
+        {
+            goal = 200;
+            viewers = 250;
+            mood = 60;
+            points = 50;
             time = 300;
-            collab = collab;
-            game = game;
         }
     }
 
@@ -98,8 +110,22 @@ public class UIStatsManager : MonoBehaviour
 
         viewers += ((0.2f * mood) - 10) * Time.deltaTime;
         mood -= (0.1f+(0.2f-(points/500))) * Time.deltaTime;
-        points -= 2f * Time.deltaTime;
         time -= Time.deltaTime;
+
+        //Point decay depends on minigame
+
+        if (game == 0)
+        {
+            points -= 0 * Time.deltaTime;
+        }
+        if (game == 1)
+        {
+            points -= 10f * Time.deltaTime;
+        }
+        if (game == 2)
+        {
+            points -= 2f * Time.deltaTime;
+        }
 
         //Checks
 
@@ -138,5 +164,6 @@ public class UIStatsManager : MonoBehaviour
         moodText.text = "Viewer Mood: " + Mathf.FloorToInt(mood) + "%";
         timeText.text = "Time left: " + Mathf.FloorToInt(time);
 
+        Debug.Log("Points: " + points);
     }
 }

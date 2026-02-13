@@ -40,6 +40,11 @@ public class Player : MonoBehaviour
 
             score += Time.deltaTime * 5;
             scoreText.text = "SCORE: " + Mathf.Round(score).ToString();
+
+            if (isAlive)
+            {
+                UIStatsManager.Instance.points = score * 2;
+            }
         }
     }
 
