@@ -44,8 +44,8 @@ public class UIStatsManager : MonoBehaviour
 
         //Testing
         collab = 2;
-        GameManager.SelectedMinigame = 0;
-        game = 0;
+        GameManager.SelectedMinigame = 2;
+        game = 2;
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

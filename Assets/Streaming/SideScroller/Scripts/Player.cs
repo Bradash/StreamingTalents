@@ -8,6 +8,7 @@ using UnityEngine.SocialPlatforms.Impl;
 public class Player : MonoBehaviour
 {
     public TextMeshProUGUI scoreText;
+    public TextMeshProUGUI tutorialText;
 
     public float speed = 5f;
     int direction = -1;
@@ -22,6 +23,7 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
+        tutorialText.enabled = true;
         initialPos = transform.position;
         HazardSpawner.resetGameState += ResetPlayer;
         StartCoroutine(LockMovement());
@@ -37,6 +39,11 @@ public class Player : MonoBehaviour
             currentPos.y += speed * direction * Time.deltaTime;
             currentPos.y = Mathf.Clamp(currentPos.y, -2f, 4.5f);
             transform.position = currentPos;
+
+            if (score >= 50)
+            {
+                tutorialText.enabled = false;
+            }
 
             score += Time.deltaTime * 5;
             scoreText.text = "SCORE: " + Mathf.Round(score).ToString();

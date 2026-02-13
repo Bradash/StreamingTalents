@@ -30,7 +30,7 @@ public class DeerAnimations : MonoBehaviour
 
     void Awake()
     {
-        anim.enabled = false;
+        //anim.enabled = false;
 
         if (Instance != null && Instance != this)
         {
