@@ -1,4 +1,5 @@
 using UnityEngine;
+using static Topics;
 
 public class DeerAnimations : MonoBehaviour
 {
@@ -7,6 +8,13 @@ public class DeerAnimations : MonoBehaviour
     void Awake()
     {
         anim = GetComponent<Animator>();
+    }
+
+    [System.Serializable]
+    public class EmotionSprite
+    {
+        public OtherEmotionBase emotion;
+        public Sprite sprite;
     }
 
 
