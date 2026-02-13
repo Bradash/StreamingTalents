@@ -164,6 +164,6 @@ public class UIStatsManager : MonoBehaviour
         moodText.text = "Viewer Mood: " + Mathf.FloorToInt(mood) + "%";
         timeText.text = "Time left: " + Mathf.FloorToInt(time);
 
-        Debug.Log("Points: " + points);
+        //Debug.Log("Points: " + points);
     }
 }

@@ -68,8 +68,8 @@ public class DialogueController : MonoBehaviour
         if (person == 0)
         {
             nameText.text = "Zara:";
-            messageText.color = Color.green;
-            nameText.color = Color.green;
+            messageText.color = new Color(1f, 0.843f, 0f);
+            nameText.color = new Color(1f, 0.843f, 0f);
             DeerAnimations.Instance.DeerRespondToMessage(collabEmotion, typeDuration + 0.4f);
         }
         if (person == 1)
