@@ -17,7 +17,7 @@ public class menuScript : MonoBehaviour
 
     public void Play()
     {
-        GameManager.currentday = 2;
+        GameManager.currentday = 1;
         SceneManager.LoadScene(0);
     }
 
