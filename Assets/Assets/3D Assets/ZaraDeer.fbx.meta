@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: antler
-    second: {fileID: 2100000, guid: 964e5e0cb69d44e4aaa88111d10c471b, type: 2}
+    second: {fileID: 2100000, guid: a5b7bcde3878a2243ba31c338d2ea34f, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -18,12 +18,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: eye
-    second: {fileID: 2100000, guid: 964e5e0cb69d44e4aaa88111d10c471b, type: 2}
+    second: {fileID: 2100000, guid: 5541f81329b47434ba31ab40eaba86ad, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: hair
-    second: {fileID: 2100000, guid: 964e5e0cb69d44e4aaa88111d10c471b, type: 2}
+    second: {fileID: 2100000, guid: a5b7bcde3878a2243ba31c338d2ea34f, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
