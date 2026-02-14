@@ -3,7 +3,47 @@ guid: 1a88b5d85c6372e42b7c2d3a03b9246f
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: antler
+    second: {fileID: 2100000, guid: 964e5e0cb69d44e4aaa88111d10c471b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: boot
+    second: {fileID: 2100000, guid: 964e5e0cb69d44e4aaa88111d10c471b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye
+    second: {fileID: 2100000, guid: 964e5e0cb69d44e4aaa88111d10c471b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hair
+    second: {fileID: 2100000, guid: 964e5e0cb69d44e4aaa88111d10c471b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hand
+    second: {fileID: 2100000, guid: 964e5e0cb69d44e4aaa88111d10c471b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: head
+    second: {fileID: 2100000, guid: 964e5e0cb69d44e4aaa88111d10c471b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: leg
+    second: {fileID: 2100000, guid: 964e5e0cb69d44e4aaa88111d10c471b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sweater
+    second: {fileID: 2100000, guid: 964e5e0cb69d44e4aaa88111d10c471b, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
