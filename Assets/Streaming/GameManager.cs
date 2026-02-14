@@ -6,7 +6,7 @@ public class GameManager
     public static int SelectedMinigame;
     public static int SelectedCollab;
     public static int currentday;
-    public static int currentmoney;
+    public static float currentmoney;
 
     //Stats screen
     public static float highestviewers;
