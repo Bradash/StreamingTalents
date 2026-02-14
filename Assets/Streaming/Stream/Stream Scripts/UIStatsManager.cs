@@ -45,10 +45,6 @@ public class UIStatsManager : MonoBehaviour
         collab = GameManager.SelectedCollab;
         print(GameManager.SelectedCollab);
         game = GameManager.SelectedMinigame;
-
-        float highestviewers = 0;
-        float maxMood = 0;
-        float numberMood = 0;
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
