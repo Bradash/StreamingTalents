@@ -11,7 +11,7 @@ public class SceneLoader : MonoBehaviour
             {
                 GameManager.currentday += 1;
                 print("End Game");
-                SceneManager.LoadScene("menu");
+                SceneManager.LoadScene(0);
             }
             else
             {

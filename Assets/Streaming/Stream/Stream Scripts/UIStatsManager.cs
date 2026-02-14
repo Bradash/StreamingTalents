@@ -167,7 +167,7 @@ public class UIStatsManager : MonoBehaviour
             GameManager.endOfDayMoney = money;
             GameManager.currentmoney = money;
             //transition to next scene
-            UnityEngine.SceneManagement.SceneManager.LoadScene(3);
+            UnityEngine.SceneManagement.SceneManager.LoadScene(4);
         }
 
 
