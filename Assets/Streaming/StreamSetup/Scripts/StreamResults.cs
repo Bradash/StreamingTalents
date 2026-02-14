@@ -1,5 +1,7 @@
 using TMPro;
 using Unity.VisualScripting;
+using Unity.VisualScripting.Antlr3.Runtime.Misc;
+using UnityEditor.VersionControl;
 using UnityEngine;
 
 public class StreamResults : MonoBehaviour
@@ -38,11 +40,16 @@ public class StreamResults : MonoBehaviour
         //Make the stats
         HighestViewers = GameManager.highestviewers;
         AverageChatMood = GameManager.avargeChatMood;
-        TodaysIncome = GameManager.endOfDayMoney - GameManager.endOfDayMoney;
+        TodaysIncome = GameManager.endOfDayMoney - GameManager.startOfDayMoney;
         Quota = GameManager.todayQuota;
         YesterdaysBalance = GameManager.lastBalance;
         GameManager.currentmoney -= GameManager.todayQuota;
         CurrentBalance = GameManager.currentmoney;
+        HighestViewersChange = HighestViewers - GameManager.lastHighestviewers;
+        AverageChatMoodChange = AverageChatMood - GameManager.lastAvargeChatMood;
+        TodayIncomeChange = TodaysIncome - GameManager.lastIncome;
+        QuotaChange = Quota - QuotaChange;
+
 
         //Put them on the text
         print(HighestViewers);
@@ -51,16 +58,21 @@ public class StreamResults : MonoBehaviour
         print(Quota);
         print(YesterdaysBalance);
         print(CurrentBalance);
+        print(HighestViewersChange);
+        print(AverageChatMoodChange);
+        print(TodayIncomeChange);
+        print(QuotaChange);
 
-
+        Stats.text = "\n" + Mathf.FloorToInt(HighestViewers) + "\n" + Mathf.FloorToInt(AverageChatMood) + "\n" + Mathf.FloorToInt(TodaysIncome) + "\n" + Mathf.FloorToInt(Quota) + "\n" + Mathf.FloorToInt(YesterdaysBalance) + "\n" + Mathf.FloorToInt(CurrentBalance);
+        Changes.text = "Changes from Yesterday" + "\n" + Mathf.FloorToInt(HighestViewersChange) + "\n" + Mathf.FloorToInt(AverageChatMoodChange) + "\n" + Mathf.FloorToInt(TodayIncomeChange) + "\n" + Mathf.FloorToInt(QuotaChange);
 
         //Make the last stats
 
         GameManager.lastHighestviewers = HighestViewers;
         GameManager.lastAvargeChatMood = AverageChatMood;
-        //GameManager.lastIncome = EndOfDayMoney;
-        //GameManager.lastBalance = StartOfDayMoney;
-        //GameManager.lastTodayQuota = TodayQuota;
+        GameManager.lastIncome = TodaysIncome;
+        GameManager.lastBalance = CurrentBalance;
+        GameManager.lastTodayQuota = Quota;
 
 
         //Check for end

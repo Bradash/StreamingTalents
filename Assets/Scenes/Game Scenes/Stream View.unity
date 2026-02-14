@@ -4010,7 +4010,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.49056602, g: 0.49056602, b: 0.49056602, a: 1}
+  m_Color: {r: 0.554717, g: 0.554717, b: 0.554717, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4323,7 +4323,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -631, y: 200}
+  m_AnchoredPosition: {x: -952.52, y: 200}
   m_SizeDelta: {x: 654.97, y: 442.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1178175939
@@ -5700,7 +5700,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 1920, y: 1080}
+  m_ReferenceResolution: {x: 2560, y: 1440}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -6714,8 +6714,12 @@ MonoBehaviour:
   buttonPrefab: {fileID: 2350768115716226257, guid: b7d49d3baaca98a46b0dd220fc9e211f, type: 3}
   buttonContainer: {fileID: 75165330}
   allTopics:
-  - {fileID: 11400000, guid: bf45cb42676a97345a43a33c557324c9, type: 2}
-  - {fileID: 11400000, guid: 519b8a43e6972f44dbd04ebce4098659, type: 2}
+  - {fileID: 11400000, guid: 5cb8f93dfea469c409e4e905a141f470, type: 2}
+  - {fileID: 11400000, guid: 3de0512b7141f934d882439b8a07bab1, type: 2}
+  - {fileID: 11400000, guid: 7c711f06b485d2c4098c9b17a46073d8, type: 2}
+  - {fileID: 11400000, guid: 0ebf2b1edbd53d142b52ed7843c713af, type: 2}
+  - {fileID: 11400000, guid: 00581c183b298e2458c8fdf3286f70be, type: 2}
+  - {fileID: 11400000, guid: 5fbbdf80bd272a44690ad9314e0dea2b, type: 2}
   verticalSpacing: -320
 --- !u!4 &1889761959
 Transform:
