@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcb1a752a64962741ba7a74b60941351, type: 3}
   m_Name: TextingThread
   m_EditorClassIdentifier: 
-  day: 0
+  day: 1
   participants:
   - {fileID: 0}
   startingMessage: {fileID: 0}
