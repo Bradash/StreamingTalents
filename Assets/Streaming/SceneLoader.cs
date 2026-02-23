@@ -5,7 +5,7 @@ public class SceneLoader : MonoBehaviour
 {
     public void LoadScene(string sceneName)
     {
-        if (sceneName == "MainGame")
+        if (sceneName == "IRL")
         {
             if (GameManager.currentday == 3)
             {
