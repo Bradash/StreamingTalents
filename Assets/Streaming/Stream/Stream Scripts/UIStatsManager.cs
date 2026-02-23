@@ -171,11 +171,11 @@ public class UIStatsManager : MonoBehaviour
         }
 
 
-        moneyText.text = "Money: $" + Mathf.FloorToInt(money);
-        goalText.text = "Goal:  $" + Mathf.FloorToInt(goal);
-        ViewersText.text = "Viewers: " + Mathf.FloorToInt(viewers);
-        moodText.text = "Viewer Mood: " + Mathf.FloorToInt(mood) + "%";
-        timeText.text = "Time left: " + Mathf.FloorToInt(time);
+        moneyText.text = Mathf.FloorToInt(money).ToString() + "/" + Mathf.FloorToInt(goal).ToString();
+        //goalText.text = "Goal:  $" + Mathf.FloorToInt(goal);
+        ViewersText.text = Mathf.FloorToInt(viewers).ToString();
+        moodText.text = Mathf.FloorToInt(mood) + "%";
+        timeText.text = Mathf.FloorToInt(time).ToString();
 
         //Debug.Log("Points: " + points);
     }
