@@ -47,7 +47,7 @@ public class StreamResults : MonoBehaviour
         HighestViewersChange = HighestViewers - GameManager.lastHighestviewers;
         AverageChatMoodChange = AverageChatMood - GameManager.lastAvargeChatMood;
         TodayIncomeChange = TodaysIncome - GameManager.lastIncome;
-        QuotaChange = Quota - QuotaChange;
+        QuotaChange = Quota - GameManager.lastTodayQuota;
 
 
         //Put them on the text

@@ -5,6 +5,8 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem.Controls;
 
+
+//This script runs before all others in the scene.
 public class UIStatsManager : MonoBehaviour
 {
     public TMP_Text moneyText;
@@ -12,6 +14,9 @@ public class UIStatsManager : MonoBehaviour
     public TMP_Text ViewersText;
     public TMP_Text moodText;
     public TMP_Text timeText;
+
+    public GameObject QuitButton;
+    public GameObject QuitMenu;
 
     public float money;
     public int goal;
@@ -45,6 +50,11 @@ public class UIStatsManager : MonoBehaviour
         collab = GameManager.SelectedCollab;
         print(GameManager.SelectedCollab);
         game = GameManager.SelectedMinigame;
+
+        //Testing
+        GameManager.currentday = 99;
+        GameManager.SelectedCollab = 2;
+        GameManager.SelectedMinigame = 1;
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -53,8 +63,21 @@ public class UIStatsManager : MonoBehaviour
 
         currentday = GameManager.currentday;
         print("Day:" + GameManager.currentday);
+        QuitButton.SetActive(true);
+        QuitMenu.SetActive(false);
 
 
+        if (currentday == 99)
+        {
+            money = 0;
+            goal = 100;
+            viewers = 0;
+            mood = 40;
+            points = 100;
+            time = 80;
+            collab = 2;
+            game = 1;
+        }
         if (currentday == 1)
         {
             money = 0;
@@ -62,25 +85,27 @@ public class UIStatsManager : MonoBehaviour
             viewers = 100;
             mood = 70;
             points = 100;
-            time = 150;
+            time = 30;
             //collab = 2;
             //game = 0;
         }
         if (currentday == 2)
         {
+            money = GameManager.currentmoney;
             goal = 100;
             viewers = 200;
             mood = 50;
             points = 50;
-            time = 240;
+            time = 40;
         }
         if (currentday == 3)
         {
+            money = GameManager.currentmoney;
             goal = 200;
             viewers = 250;
             mood = 60;
             points = 50;
-            time = 300;
+            time = 50;
         }
 
         GameManager.startOfDayMoney = money;
@@ -103,6 +128,22 @@ public class UIStatsManager : MonoBehaviour
         viewers += change;
     }
 
+    public void quitCheck()
+    {
+        QuitButton.SetActive(false);
+        QuitMenu.SetActive(true);
+    }
+    public void quitEnd()
+    {
+        QuitButton.SetActive(true);
+        QuitMenu.SetActive(false);
+    }
+    public void endStream()
+    {
+        QuitButton.SetActive(false);
+        QuitMenu.SetActive(false);
+        time = 0;
+    }
 
     // Update is called once per frame
     void Update()
@@ -158,7 +199,7 @@ public class UIStatsManager : MonoBehaviour
         {
             points = 100;
         }
-        if (time < 0)
+        if (time <= 0)
         {
             time = 0;
             print("End scene");

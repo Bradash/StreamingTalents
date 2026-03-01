@@ -40,8 +40,11 @@ public class CollabExpressionController : MonoBehaviour
             Destroy(gameObject);
             return;
         }
+    }
 
-        gamePos = new Vector2(3.25f, -1);
+    private void Start()
+    {
+        gamePos = new Vector2(1.15f, -1);
         chatingPos = new Vector2(1.25f, -1);
         gameScale = new Vector2(0.15f, 0.15f);
         chatingScale = new Vector2(0.15f, 0.15f);
@@ -72,6 +75,7 @@ public class CollabExpressionController : MonoBehaviour
         }
         else
         {
+            print("Breaking here");
             collabVtuberImage.sprite = null;
         }
         startPos = collabVtuberImage.transform.localPosition;
