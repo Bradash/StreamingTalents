@@ -77,7 +77,12 @@ public class ChatMessage : MonoBehaviour
     {
         if (bonusApplied || messageData == null) return;
 
+        if (banned) return;
+
         if (DialogueController.Instance.IsTalking) return;
+
+        //Can only read it if it hasn't been read before, there is a message to be read out, they havn't been banned, and the character isn't talking
+
         // Play streamer reaction here
         // uiStatsManager.PlayReaction(messageData.DeerReaction);
 
@@ -112,7 +117,7 @@ public class ChatMessage : MonoBehaviour
 
         RemoveEffects();
 
-        UIStatsManager.Instance.AddViewers(-5);
+        MessageSpawner.Instance.PunishBans();
 
         username.color = Color.red;
         username.fontStyle = FontStyles.Bold;

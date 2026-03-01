@@ -3,12 +3,15 @@ using TMPro;
 using Unity.XR.GoogleVr;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.InputSystem.Controls;
 
 
 //This script runs before all others in the scene.
 public class UIStatsManager : MonoBehaviour
 {
+    //Big change
+
     public TMP_Text moneyText;
     public TMP_Text goalText;
     public TMP_Text ViewersText;
@@ -26,9 +29,17 @@ public class UIStatsManager : MonoBehaviour
     public int collab;
     public int game;
 
+    public RawImage moodPicture;
+    public Texture sad;
+    public Texture middle;
+    public Texture happy;
+    public RawImage clockPicture;
+    public ParticleSystem coinParticles;
+
     float highestviewers;
     float maxMood;
     float numberMood;
+    bool transitionStarted;
 
     int currentday;
 
@@ -71,10 +82,10 @@ public class UIStatsManager : MonoBehaviour
         {
             money = 0;
             goal = 100;
-            viewers = 0;
-            mood = 40;
+            viewers = 10000;
+            mood = 100;
             points = 100;
-            time = 80;
+            time = 20;
             collab = 2;
             game = 1;
         }
@@ -110,12 +121,17 @@ public class UIStatsManager : MonoBehaviour
 
         GameManager.startOfDayMoney = money;
         GameManager.todayQuota = goal;
-
+        clockPicture.color = Color.white;
+        transitionStarted = false;
     }
 
     public void AddMoney(float change)
     {
         money += change;
+        var emission = coinParticles.emission;
+        emission.SetBurst(0, new ParticleSystem.Burst(0, change));
+
+        coinParticles.Play();
     }
 
     public void AddMood(float change)
@@ -179,9 +195,9 @@ public class UIStatsManager : MonoBehaviour
 
         //Checks
 
-        if (viewers < 0)
+        if (viewers < 1)
         {
-            viewers = 0;
+            viewers = 1;
         }
         if (mood < 0)
         {
@@ -191,6 +207,20 @@ public class UIStatsManager : MonoBehaviour
         {
             mood = 99.9f;
         }
+
+        if (mood >= 60)
+        {
+            moodPicture.texture = happy;
+        }
+        else if(mood <= 30)
+        {
+            moodPicture.texture = sad;
+        }
+        else
+        {
+            moodPicture.texture = middle;
+        }
+
         if (points < 0)
         {
             points = 0;
@@ -199,16 +229,27 @@ public class UIStatsManager : MonoBehaviour
         {
             points = 100;
         }
+        if (time <= 20)
+        {
+            clockPicture.color = Color.red;
+        }
+
         if (time <= 0)
         {
             time = 0;
+
+            if (transitionStarted) return;
+
+            transitionStarted = true;
+
             print("End scene");
             GameManager.highestviewers = highestviewers;
             GameManager.avargeChatMood = maxMood / numberMood;
             GameManager.endOfDayMoney = money;
             GameManager.currentmoney = money;
             //transition to next scene
-            UnityEngine.SceneManagement.SceneManager.LoadScene(3);
+            FadeManager.Instance.FadeAndLoadScene("StreamResults");
+            //UnityEngine.SceneManagement.SceneManager.LoadScene(3);
         }
 
 
