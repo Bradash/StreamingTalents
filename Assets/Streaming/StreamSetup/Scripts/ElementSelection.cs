@@ -66,7 +66,7 @@ public class ElementSelection : MonoBehaviour
             print("Collab " + GameManager.SelectedCollab);
         }
 
-        SceneManager.LoadScene("Stream View");
+        FadeManager.Instance.FadeAndLoadScene("Stream View");
     }
 
     public bool dayCheck()

@@ -33,8 +33,7 @@ public class GameMaster : MonoBehaviour
                 break;
             case 3:
                 questName = null;
-                int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-                SceneManager.LoadScene(currentSceneIndex + 1);
+                FadeManager.Instance.FadeAndLoadScene("SteamSetup");
                 break;
         }
     }
