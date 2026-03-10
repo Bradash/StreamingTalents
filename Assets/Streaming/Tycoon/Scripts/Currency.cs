@@ -20,7 +20,7 @@ public class Currency : MonoBehaviour
 
     void Update()
     {
-        moneyText.text = "Money: $" + RoundZeros.PrintRound(money);
+        moneyText.text = "Gems:" + RoundZeros.PrintRound(money);
 
         if (timer > 15)
         {
