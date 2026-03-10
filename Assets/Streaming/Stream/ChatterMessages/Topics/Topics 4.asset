@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a3eabd5e5a7e394cb8ce8a3166543ac, type: 3}
+  m_Name: Topics 4
+  m_EditorClassIdentifier: 
+  Archtype: 
+  NarrativeStage: 0
+  TopicName: Childhood Dreams
+  moodChange: 12
+  viewerChange: 20
+  DeerEmotion: 0
+  WolfEmotion: 2
+  UnicornEmotion: 0
+  DragonEmotion: 0
+  DeerReaction: What was your biggest dream as a kid? I've dreamed of being a magical
+    girl for some reason, haha.
+  WolfReaction: What was your biggest dream as a kid? I wanted to be an ALPHA MALE
+    (this text should be unused)
+  UnicornReaction: I've always wanted to be a teacher some day! Maybe when I'm done
+    being an idol...
+  DragonReaction: Don't laugh, but... I wanted to be a space marine and shoot demons.

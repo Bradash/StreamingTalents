@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class HazardSpawner : MonoBehaviour
 {
-    public float enemySpeed = 5f;
+    public float enemySpeed = 2.5f;
     public List<GameObject> hazards;
 
-    public float spawnDelay = 3f;
-    float spawnTimer = 0f;
+    public float spawnDelay = 3.5f;
+    float spawnTimer = 0.5f;
     int difficulty = 1;
 
     public delegate void ResetGameState();
@@ -17,7 +17,10 @@ public class HazardSpawner : MonoBehaviour
     void Update()
     {
         spawnTimer -= Time.deltaTime;
-        enemySpeed += 0.1f * Time.deltaTime;
+        if (enemySpeed < 10f)
+        {
+            enemySpeed += 0.25f * Time.deltaTime;
+        }
 
         if (spawnTimer < 0)
         {
@@ -26,7 +29,7 @@ public class HazardSpawner : MonoBehaviour
             if (difficulty < 20)
             {
                 difficulty++;
-                spawnDelay -= 0.05f;
+                spawnDelay -= 0.025f;
             }
         }
     }
@@ -34,9 +37,9 @@ public class HazardSpawner : MonoBehaviour
     public void RestartGame()
     {
         resetGameState?.Invoke();
-        enemySpeed = 5f;
-        spawnDelay = 3f;
-        spawnTimer = 0f;
+        enemySpeed = 2.5f;
+        spawnDelay = 3.5f;
+        spawnTimer = 0.5f;
         difficulty = 1;
     }
 }

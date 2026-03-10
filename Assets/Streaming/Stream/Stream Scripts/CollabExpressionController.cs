@@ -26,6 +26,11 @@ public class CollabExpressionController : MonoBehaviour
     private Coroutine currentRoutine;
     private Vector2 startPos;
 
+    private Vector2 gamePos;
+    private Vector2 chatingPos;
+    private Vector2 gameScale;
+    private Vector2 chatingScale;
+
     public static CollabExpressionController Instance { get; private set; }
 
     void Awake()
@@ -34,6 +39,25 @@ public class CollabExpressionController : MonoBehaviour
         {
             Destroy(gameObject);
             return;
+        }
+    }
+
+    private void Start()
+    {
+        gamePos = new Vector2(1.15f, -1);
+        chatingPos = new Vector2(1.25f, -1);
+        gameScale = new Vector2(0.15f, 0.15f);
+        chatingScale = new Vector2(0.15f, 0.15f);
+
+        if (UIStatsManager.Instance.game == 0)
+        {
+            transform.position = chatingPos;
+            transform.localScale = chatingScale;
+        }
+        else
+        {
+            transform.position = gamePos;
+            transform.localScale = gameScale;
         }
 
         currentCollab = UIStatsManager.Instance.collab;
@@ -51,6 +75,7 @@ public class CollabExpressionController : MonoBehaviour
         }
         else
         {
+            print("Breaking here");
             collabVtuberImage.sprite = null;
         }
         startPos = collabVtuberImage.transform.localPosition;

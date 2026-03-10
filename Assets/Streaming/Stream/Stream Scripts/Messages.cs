@@ -11,7 +11,7 @@ public class Messages : ScriptableObject
     public string message;
     public int moodChange;      
     public int viewerChange;
-    public DeerEmotionBase DeerEmotion;
+    public OtherEmotionBase DeerEmotion;
     public OtherEmotionBase WolfEmotion;
     public OtherEmotionBase UnicornEmotion;
     public OtherEmotionBase DragonEmotion;

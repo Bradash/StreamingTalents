@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
-using static UnityEditor.PlayerSettings;
 
 public class MessageSpawner : MonoBehaviour
 {
@@ -13,6 +12,7 @@ public class MessageSpawner : MonoBehaviour
     float viewCount;
     float messageCounter;
     float pilledUpMessages;
+    float punishment = 0.2f;
     //int maxMessages = 13;
 
     //new Vector2(1280, 720)
@@ -20,17 +20,26 @@ public class MessageSpawner : MonoBehaviour
     public GameObject Chatter;
     //public Transform chatBox;
 
+    public static MessageSpawner Instance { get; private set; }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void Awake()
     {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        Instance = this;
+
         messageCounter = 0;
-        viewCount = 100; //Testing
     }
 
     // Update is called once per frame
     void Update()
     {
+        viewCount = UIStatsManager.Instance.viewers;
+
         if (StreamLogic.streamstate == 3)
         {
             if (messageCounter >= 2)
@@ -92,5 +101,14 @@ public class MessageSpawner : MonoBehaviour
             }
         }
     }
+
+    public void PunishBans()
+    {
+        UIStatsManager.Instance.AddMood(-punishment);
+        UIStatsManager.Instance.AddViewers(-punishment * 10);
+        punishment += 0.5f;
+        punishment -= Time.deltaTime * 0.1f;
+    }
+
 
 }

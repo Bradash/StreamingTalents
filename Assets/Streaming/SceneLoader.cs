@@ -5,11 +5,24 @@ public class SceneLoader : MonoBehaviour
 {
     public void LoadScene(string sceneName)
     {
-        if (sceneName == "MainGame")
+        if (sceneName == "IRL")
         {
-            GameManager.currentday += 1;
-            print("Day update");
+            if (GameManager.currentday == 3)
+            {
+                GameManager.currentday += 1;
+                print("End Game");
+                SceneManager.LoadScene("menu");
+            }
+            else
+            {
+                GameManager.currentday += 1;
+                print("Day update");
+                SceneManager.LoadScene(sceneName);
+            }
         }
-        SceneManager.LoadScene(sceneName);
+        else
+        {
+            SceneManager.LoadScene(sceneName);
+        }
     }
 }

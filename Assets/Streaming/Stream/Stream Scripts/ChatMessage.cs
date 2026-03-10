@@ -77,7 +77,12 @@ public class ChatMessage : MonoBehaviour
     {
         if (bonusApplied || messageData == null) return;
 
+        if (banned) return;
+
         if (DialogueController.Instance.IsTalking) return;
+
+        //Can only read it if it hasn't been read before, there is a message to be read out, they havn't been banned, and the character isn't talking
+
         // Play streamer reaction here
         // uiStatsManager.PlayReaction(messageData.DeerReaction);
 
@@ -92,15 +97,15 @@ public class ChatMessage : MonoBehaviour
 
         if (collab == 0)
         {
-            DialogueController.Instance.startChain(messageData.DeerReaction, null, messageData.DragonEmotion);
+            DialogueController.Instance.startChain(messageData.DeerReaction, messageData.DeerEmotion, null, messageData.DragonEmotion);
         }
         if (collab == 1)
         {
-            DialogueController.Instance.startChain(messageData.DeerReaction, messageData.UnicornReaction, messageData.UnicornEmotion);
+            DialogueController.Instance.startChain(messageData.DeerReaction, messageData.DeerEmotion, messageData.UnicornReaction, messageData.UnicornEmotion);
         }
         if (collab == 2)
         {
-            DialogueController.Instance.startChain(messageData.DeerReaction, messageData.DragonReaction, messageData.DragonEmotion);
+            DialogueController.Instance.startChain(messageData.DeerReaction, messageData.DeerEmotion, messageData.DragonReaction, messageData.DragonEmotion);
         }
 
         bonusApplied = true;
@@ -112,7 +117,7 @@ public class ChatMessage : MonoBehaviour
 
         RemoveEffects();
 
-        UIStatsManager.Instance.AddViewers(-5);
+        MessageSpawner.Instance.PunishBans();
 
         username.color = Color.red;
         username.fontStyle = FontStyles.Bold;
