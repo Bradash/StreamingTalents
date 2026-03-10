@@ -11,7 +11,7 @@ public class Unlock : MonoBehaviour
 
     private void Start()
     {
-        unlockCostText.text = $"Cost: ${RoundZeros.PrintRound(revenueCost)}";
+        unlockCostText.text = $"Cost: {RoundZeros.PrintRound(revenueCost)} Gems";
     }
 
     public void UnlockRevenue()

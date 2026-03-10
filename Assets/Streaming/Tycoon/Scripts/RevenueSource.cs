@@ -34,8 +34,8 @@ public class RevenueSource : MonoBehaviour
         currentTimer = 0;
         buttonText.text = sourceName;
         timerText.text = "Ready!";
-        revenueAmountText.text = "$" + RoundZeros.PrintRound(revenue);
-        upgradeCostText.text = "Cost: $" + RoundZeros.PrintRound(upgradeCost);
+        revenueAmountText.text = $"{RoundZeros.PrintRound(revenue)} Gems";
+        upgradeCostText.text = $"Cost: {RoundZeros.PrintRound(upgradeCost)} Gems";
         levelText.text = $"Level: {currentLevel.ToString()}/{maxLevel}";
 
         cooldownSlider.minValue = 0;
@@ -72,11 +72,11 @@ public class RevenueSource : MonoBehaviour
         {
             revenue *= upgradeMultiplier;
             revenue = Mathf.Round(revenue);
-            revenueAmountText.text = "$" + RoundZeros.PrintRound(revenue);
+            revenueAmountText.text = $"{RoundZeros.PrintRound(revenue)} Gems";
             moneyHandler.SendMessage("AddMoney", -upgradeCost);
             upgradeCost *= upgradeCostMultiplier;
             upgradeCost = Mathf.Round(upgradeCost);
-            upgradeCostText.text = "Cost: $" + RoundZeros.PrintRound(upgradeCost);
+            upgradeCostText.text = $"Cost: {RoundZeros.PrintRound(upgradeCost)} Gems";
             currentLevel++;
             levelText.text = $"Level: {currentLevel.ToString()}/{maxLevel}";
 
