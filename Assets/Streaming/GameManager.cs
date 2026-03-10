@@ -7,6 +7,8 @@ public class GameManager
     public static int SelectedCollab;
     public static int currentday;
     public static float currentmoney;
+    public static float musicVolume;
+    public static float sfxVolume;
 
     //Stats screen
     public static float highestviewers;
