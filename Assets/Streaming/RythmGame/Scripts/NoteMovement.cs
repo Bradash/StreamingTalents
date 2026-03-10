@@ -3,7 +3,9 @@ using UnityEngine;
 public class NoteMovement : MonoBehaviour
 {
     [SerializeField] float noteSpeed = 3f;
+    [SerializeField] int noteLane;
     string[] zone = new string[4];
+    string currentZone = "Miss";
 
     private void Start()
     {
@@ -22,6 +24,8 @@ public class NoteMovement : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+
     }
 
     private void OnTriggerStay2D(Collider2D collision)
