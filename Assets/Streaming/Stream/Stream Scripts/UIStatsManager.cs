@@ -43,7 +43,7 @@ public class UIStatsManager : MonoBehaviour
 
     int currentday;
 
-    float time = 10;
+    float time = 20;
 
 
     public static UIStatsManager Instance { get; private set; }
@@ -144,18 +144,19 @@ public class UIStatsManager : MonoBehaviour
         viewers += change;
     }
 
-    public void quitCheck()
+    public void QuitCheck()
     {
         QuitButton.SetActive(false);
         QuitMenu.SetActive(true);
     }
-    public void quitEnd()
+    public void QuitEnd()
     {
         QuitButton.SetActive(true);
         QuitMenu.SetActive(false);
     }
-    public void endStream()
+    public void EndStream()
     {
+        Debug.Log("tester");
         QuitButton.SetActive(false);
         QuitMenu.SetActive(false);
         time = 0;
