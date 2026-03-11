@@ -10,9 +10,11 @@ public class GameMaster : MonoBehaviour
     public GameObject[] gameObjects;
     public TextMeshProUGUI taskText;
     public TextMeshProUGUI dayText;
+    public tutorialManager tutorialManage;
     public void Start()
     {
         dayText.text = "Day: " + loadDay();
+        tutorialManage.playTutorial("Movement", "Use WASD to move, use the mouse to look", 7.5f);
     }
     public int loadDay()
     {

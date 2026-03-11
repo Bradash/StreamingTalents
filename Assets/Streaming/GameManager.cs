@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager
@@ -23,5 +24,9 @@ public class GameManager
     public static float lastBalance;
     public static float lastTodayQuota;
 
-
+    static public Dictionary<string, Dictionary<string, bool>> tutorialList = new()
+    {
+        {"Movement", new Dictionary<string, bool>{ { "Use WASD to move, use the mouse to look", false } } },
+        {"Interaction", new Dictionary<string, bool>{ { "Use the key E or the left mouse button to interact with highlighted objects", false } } }
+    };
 }
