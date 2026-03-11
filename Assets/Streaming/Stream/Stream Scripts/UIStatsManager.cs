@@ -43,7 +43,7 @@ public class UIStatsManager : MonoBehaviour
 
     int currentday;
 
-    float time = 20;
+    float time = 10;
 
 
     public static UIStatsManager Instance { get; private set; }
