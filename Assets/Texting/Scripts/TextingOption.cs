@@ -5,4 +5,9 @@ public class TextingOption : ScriptableObject
 {
     public string optionText;
     public TextMessage nextMessage;
+
+    public float WolfRelationChange;
+    public float UnicornRelationChange;
+    public float DragonRelationChange;
+
 }
