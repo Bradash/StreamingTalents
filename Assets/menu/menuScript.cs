@@ -17,8 +17,8 @@ public class menuScript : MonoBehaviour
 
     public void Play()
     {
-
-            FadeManager.Instance.FadeAndLoadScene("IRL");
+        GameManager.currentday = 1;
+        FadeManager.Instance.FadeAndLoadScene("IRL");
         
     }
 
