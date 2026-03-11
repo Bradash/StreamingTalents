@@ -9,6 +9,8 @@ public class SceneLoader : MonoBehaviour
         {
             if (GameManager.currentday == 3)
             {
+                SaveSystem.SaveGame();
+
                 GameManager.currentday += 1;
                 print("End Game");
                 FadeManager.Instance.FadeAndLoadScene("menu");
@@ -16,6 +18,9 @@ public class SceneLoader : MonoBehaviour
             else
             {
                 GameManager.currentday += 1;
+
+                SaveSystem.SaveGame();
+
                 print("Day update");
                 FadeManager.Instance.FadeAndLoadScene("IRL");
             }

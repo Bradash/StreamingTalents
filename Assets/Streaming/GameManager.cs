@@ -6,8 +6,14 @@ public class GameManager
     //Normal information
     public static int SelectedMinigame;
     public static int SelectedCollab;
-    public static int currentday;
-    public static float currentmoney;
+    public static int currentday; //Save
+    public static float currentmoney; // Save
+    public static float unicornRelationship; //Save
+    public static float dragonRelationship; //Save
+    public static float wolfRelationship; //Save
+
+
+
     public static float musicVolume;
     public static float sfxVolume;
 
