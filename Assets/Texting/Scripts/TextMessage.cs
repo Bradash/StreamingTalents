@@ -4,8 +4,6 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "TextMessage", menuName = "Scriptable Objects/TextMessage")]
 public class TextMessage : ScriptableObject
 {
-    public int day;
-
     public MessageGroup speaker;
 
     public bool groupChat;

@@ -13,6 +13,9 @@ public class MessageSpawner : MonoBehaviour
     float messageCounter;
     float pilledUpMessages;
     float punishment = 0.2f;
+
+    int hoverCount = 0;
+    public bool pause;
     //int maxMessages = 13;
 
     //new Vector2(1280, 720)
@@ -33,12 +36,30 @@ public class MessageSpawner : MonoBehaviour
         Instance = this;
 
         messageCounter = 0;
+
+        pause = false;
     }
 
     // Update is called once per frame
     void Update()
     {
         viewCount = UIStatsManager.Instance.viewers;
+
+        if (pause)
+        {
+            Time.timeScale = 0;
+        }
+        else if (hoverCount > 0)
+        {
+            Time.timeScale = 0.1f;
+            Debug.Log("Slowdown");
+        }
+        else
+        {
+            Time.timeScale = 1f;
+        }
+
+        //Time.timeScale = 0.5f;
 
         if (StreamLogic.streamstate == 3)
         {
@@ -110,5 +131,15 @@ public class MessageSpawner : MonoBehaviour
         punishment -= Time.deltaTime * 0.1f;
     }
 
+    public void HoverStart()
+    {
+        hoverCount++;
+    }
+
+    public void HoverEnd()
+    {
+        hoverCount--;
+        hoverCount = Mathf.Max(hoverCount, 0);
+    }
 
 }

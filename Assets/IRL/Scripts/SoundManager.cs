@@ -49,6 +49,7 @@ public class SoundManager : MonoBehaviour
             }
             UI.SetActive(true);
             Time.timeScale = 0;
+            MessageSpawner.Instance.pause = true;
         }
     }
     public void resume()
@@ -62,6 +63,7 @@ public class SoundManager : MonoBehaviour
         }
         UI.SetActive(false);
         Time.timeScale = 1;
+        MessageSpawner.Instance.pause = false;
     }
     public void musicChanged() 
     {
