@@ -1,3 +1,4 @@
+using System.Linq;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -14,7 +15,7 @@ public class GameMaster : MonoBehaviour
     public void Start()
     {
         dayText.text = "Day: " + loadDay();
-        tutorialManage.playTutorial("Movement", "Use WASD to move, use the mouse to look", 7.5f);
+        tutorialManage.playTutorial("Movement", GameManager.tutorialList["Movement"].Keys.First(), 7.5f, false);
     }
     public int loadDay()
     {

@@ -61,7 +61,6 @@ public class ObjectGrabbable : MonoBehaviour
             mat.EnableKeyword("_EMMISION");
         }
         
-        Debug.Log(highlight);
     }
     public void unhighlight()
     {

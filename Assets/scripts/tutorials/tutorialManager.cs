@@ -6,14 +6,16 @@ public class tutorialManager : MonoBehaviour
 {
 
     float timer = 0f;
+    float timerScale = 1f;
     float timeLimit = 0f;
 
 
     [SerializeField] private GameObject tutorialPanel;
     [SerializeField] private TextMeshProUGUI tutorialTitleObject;
     [SerializeField] private TextMeshProUGUI tutorialTextObject;
+    [SerializeField] private GameObject tutorialCloseButton;
 
-    public void playTutorial(string tutorialTitle, string tutorialText, float timeLimitChange)
+    public void playTutorial(string tutorialTitle, string tutorialText, float timeLimitChange, bool closeButton)
     {
         timer = 0f;
         timeLimit = timeLimitChange;
@@ -21,14 +23,25 @@ public class tutorialManager : MonoBehaviour
         if (GameManager.tutorialList[tutorialTitle][tutorialText] == true) {
             return;
                 }
-        
-        tutorialTitleObject.text = tutorialTitle;
+
+        if (closeButton == true)
+        {
+            tutorialCloseButton.SetActive(true);
+            timerScale = 0f;
+        }
+        else
+        {
+            tutorialCloseButton.SetActive(false);
+            timerScale = 1f;
+        }
+
+            tutorialTitleObject.text = tutorialTitle;
         tutorialTextObject.text = tutorialText;
         tutorialPanel.SetActive(true);
         GameManager.tutorialList[tutorialTitle][tutorialText] = true;
     }
 
-    void closeTutorial()
+    public void closeTutorial()
     {
         tutorialPanel.SetActive(false);
     }
@@ -36,7 +49,7 @@ public class tutorialManager : MonoBehaviour
     private void Update()
     {
         if (tutorialPanel.activeSelf) {
-            timer += 1 * Time.deltaTime;
+            timer += timerScale * Time.deltaTime;
 
             if (timer > timeLimit)
             {

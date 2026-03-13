@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -33,6 +34,7 @@ public class GameManager
     static public Dictionary<string, Dictionary<string, bool>> tutorialList = new()
     {
         {"Movement", new Dictionary<string, bool>{ { "Use WASD to move, use the mouse to look", false } } },
-        {"Interaction", new Dictionary<string, bool>{ { "Use the key E or the left mouse button to interact with highlighted objects", false } } }
+        {"Interaction", new Dictionary<string, bool>{ { "Use the key E or the left mouse button to interact with highlighted objects", false } } },
+        {"Stream Setup", new Dictionary<string, bool>{ { "Here is the stream setup. You can choose which game and who you will collab with. For now, you have no collabs.", false } } }
     };
 }
