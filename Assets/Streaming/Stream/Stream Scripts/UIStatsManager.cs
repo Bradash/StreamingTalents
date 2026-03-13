@@ -43,7 +43,7 @@ public class UIStatsManager : MonoBehaviour
 
     int currentday;
 
-    float time = 20;
+    float time = 40;
 
 
     public static UIStatsManager Instance { get; private set; }
@@ -63,9 +63,9 @@ public class UIStatsManager : MonoBehaviour
         game = GameManager.SelectedMinigame;
 
         //Testing
-        //GameManager.currentday = 99;
-        //GameManager.SelectedCollab = 2;
-        //GameManager.SelectedMinigame = 1;
+        GameManager.currentday = 99;
+        GameManager.SelectedCollab = 2;
+        GameManager.SelectedMinigame = 1;
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

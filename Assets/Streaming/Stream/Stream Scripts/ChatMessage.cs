@@ -16,7 +16,7 @@ public class ChatMessage : MonoBehaviour
     public Messages[] messages3;    // Stage 3
     public narrativeState gameState;
 
-    public Messages messageData;   // The picked ScriptableObject
+    public Messages messageData;   // The picked ScriptableObjects
 
     private bool effectsApplied;
     private bool committed;
@@ -205,5 +205,16 @@ public class ChatMessage : MonoBehaviour
             BanMessage();
         }
     }
+
+    void OnMouseEnter()
+    {
+        MessageSpawner.Instance.HoverStart();
+    }
+
+    void OnMouseExit()
+    {
+        MessageSpawner.Instance.HoverEnd();
+    }
+
 }
 
