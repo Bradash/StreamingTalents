@@ -1,3 +1,4 @@
+using System.Linq;
 using TMPro;
 using Unity.VisualScripting;
 using Unity.VisualScripting.Antlr3.Runtime.Misc;
@@ -27,8 +28,14 @@ public class StreamResults : MonoBehaviour
     float TodayIncomeChange;
     float QuotaChange;
 
+    public tutorialManager tutorialManage;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private void Start()
+    {
+        tutorialManage.playTutorial("Stream Results", GameManager.tutorialList["Stream Results"].Keys.First(), 10f, true);
+    }
+
     void Awake()
     {
 

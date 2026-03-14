@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c710c30c0b73d924dafa7ff82a5fea1d, type: 3}
-  m_Name: Dragon
+  m_Name: Company
   m_EditorClassIdentifier: 
-  displayName: Ember
-  defaultProfilePicture: {fileID: 21300000, guid: 5c4de631f7fadfa43b15bd2fb8fced13, type: 3}
+  displayName: Management
+  defaultProfilePicture: {fileID: 21300000, guid: 87f51a409c48e5244814716129455fdc, type: 3}
