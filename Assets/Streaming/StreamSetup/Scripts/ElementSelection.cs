@@ -7,8 +7,9 @@ using UnityEngine.UI;
 
 public class ElementSelection : MonoBehaviour
 {
-    [SerializeField] List<string> elementName = new List<string>();
-    [SerializeField] List<Sprite> elementImage = new List<Sprite>();
+    public List<string> elementName = new List<string>();
+    public List<Sprite> elementImage = new List<Sprite>();
+    public List<int> gameID;
     int currentElement = 0;
     public int selectionType; //1 = collab, 2 = game
 
@@ -24,20 +25,14 @@ public class ElementSelection : MonoBehaviour
 
     public void NextElement()
     {
-        bool allowed = dayCheck();
-        if (allowed)
-        {
             currentElement = (currentElement + 1) % elementName.Count;
             nameText.text = elementName[currentElement];
             IMG_Image.GetComponent<Image>().sprite = elementImage[currentElement];
             Debug.Log($"current element: {currentElement}");
-        }
     }
 
     public void PrevElement()
     {
-        bool allowed = dayCheck();
-        if (allowed)
         {
             if (currentElement > 0)
             {
@@ -58,30 +53,16 @@ public class ElementSelection : MonoBehaviour
     {
         if (selectionType == 2)
         {
-            GameManager.SelectedMinigame = currentElement;
+            GameManager.SelectedMinigame = gameID[currentElement];
             print("Game" + GameManager.SelectedMinigame);
         }
         if (selectionType == 1)
         {
-            GameManager.SelectedCollab = currentElement;
+            GameManager.SelectedCollab = gameID[currentElement];
             print("Collab " + GameManager.SelectedCollab);
         }
 
         FadeManager.Instance.FadeAndLoadScene("Stream View");
-    }
-
-    public bool dayCheck()
-    {
-        //Check the current element and day, see if it's allowed to change
-        if (GameManager.currentday == 1)
-        {
-            return false;
-        }
-        else
-        {
-            return true;
-        }
-
     }
 
     public void startingElement()
