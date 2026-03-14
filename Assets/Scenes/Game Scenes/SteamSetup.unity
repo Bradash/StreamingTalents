@@ -496,6 +496,60 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &234025158
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 234025160}
+  - component: {fileID: 234025159}
+  m_Layer: 0
+  m_Name: ProgressionScript
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &234025159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 234025158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d31a8a2b49fe64c41a83f82bcec7ecfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ProgressionsScript
+  CollabChoices: {fileID: 1968558971}
+  GameChoices: {fileID: 495938959}
+  CollabObjects:
+  - {fileID: 11400000, guid: 6cd0250367e15304e964dd506fe5858b, type: 2}
+  - {fileID: 11400000, guid: 6d81c80ea8f5f8143a8a8467de55584b, type: 2}
+  - {fileID: 11400000, guid: f73f5801e1ddcd647a69b6d2e81a485b, type: 2}
+  GameObjects:
+  - {fileID: 11400000, guid: 2916661e9b7a1204db8a9996a5a5cd5e, type: 2}
+  - {fileID: 11400000, guid: 45084603e7a041e4e850833a00dd5188, type: 2}
+  - {fileID: 11400000, guid: 0bc6bf859b8b4a64293347b3d15c8cc5, type: 2}
+--- !u!4 &234025160
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 234025158}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &235278158
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -650,14 +704,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd1bc0a0904edf44e830f7ab890e5fc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  elementName:
-  - Just Chatting
-  - Side Scroller
-  - Tycoon
-  elementImage:
-  - {fileID: 21300000, guid: f2bc126bc6ab7094eb5dfa33500c7cf8, type: 3}
-  - {fileID: 21300000, guid: 8bf4fe4ed549afb49bd909c530674c2f, type: 3}
-  - {fileID: 21300000, guid: be908b4ca4958544c8ef2b871558d0b3, type: 3}
+  elementName: []
+  elementImage: []
+  gameID: 
   selectionType: 2
   nameText: {fileID: 547530445}
   image: {fileID: 21300000, guid: 8bf4fe4ed549afb49bd909c530674c2f, type: 3}
@@ -3526,14 +3575,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd1bc0a0904edf44e830f7ab890e5fc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  elementName:
-  - None
-  - Ada Oni
-  - Ember Dragon
-  elementImage:
-  - {fileID: 21300000, guid: e303247c912977045a59acc7deceb566, type: 3}
-  - {fileID: 21300000, guid: 8d7cd0a1a67d8d14187b77d19425b377, type: 3}
-  - {fileID: 21300000, guid: 822e678ff8204414492b6aa2b8892425, type: 3}
+  elementName: []
+  elementImage: []
+  gameID: 
   selectionType: 1
   nameText: {fileID: 1157059773}
   image: {fileID: 0}
@@ -3838,3 +3882,4 @@ SceneRoots:
   - {fileID: 1861049895}
   - {fileID: 1506915114}
   - {fileID: 585712011}
+  - {fileID: 234025160}
