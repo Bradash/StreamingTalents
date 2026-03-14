@@ -9,8 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c710c30c0b73d924dafa7ff82a5fea1d, type: 3}
-  m_Name: Company
+  m_Script: {fileID: 11500000, guid: 7e67f127386f7904b9cd642bec853d8b, type: 3}
+  m_Name: Test_Option
   m_EditorClassIdentifier: 
-  displayName: Management
-  defaultProfilePicture: {fileID: 21300000, guid: 87f51a409c48e5244814716129455fdc, type: 3}
+  optionText: Yes
+  nextMessage: {fileID: 11400000, guid: cc47f613f5ccec14a8585af9b5976f41, type: 2}
+  WolfRelationChange: 0
+  UnicornRelationChange: 0
+  DragonRelationChange: -10

@@ -10,15 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bf1ac7be18dbff245b2e6e33e3f9aaf4, type: 3}
-  m_Name: Test message 1
+  m_Name: Test_message 3
   m_EditorClassIdentifier: 
-  day: 0
-  speaker: {fileID: 0}
+  speaker: {fileID: 11400000, guid: c816e3e4d39c47c4cbccf5dfdc110b35, type: 2}
   groupChat: 0
-  message: 
+  message: She just seems to ignore me alot
   flowType: 1
   nextMessage: {fileID: 11400000, guid: 29e8275075e858249b63d5e51b5a909c, type: 2}
   options:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: b5c3cd007c3a1384f9519d6e0a48a4f2, type: 2}
+  - {fileID: 11400000, guid: dc0f98d5f0d7b4c4c89030a4fe2869ff, type: 2}

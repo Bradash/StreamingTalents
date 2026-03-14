@@ -1,5 +1,7 @@
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MasterTextingController : MonoBehaviour
 {
@@ -13,8 +15,14 @@ public class MasterTextingController : MonoBehaviour
     public GameObject startingmessagearea;
     public GameObject messagearea;
     public GameObject newsarea;
+    public GameObject news;
+    public GameObject news0;
 
     public TextMeshProUGUI Title;
+    public Image profilePicture;
+
+    public TextingRunner runner;
+    public List<TextingThread> allThreads;
 
     public static MasterTextingController Instance { get; private set; }
 
@@ -44,6 +52,7 @@ public class MasterTextingController : MonoBehaviour
         startingmessagearea.SetActive(true);
         messagearea.SetActive(false);
         newsarea.SetActive(false);
+        news.SetActive(false);
 
         Title.text = "Messages";
 
@@ -63,8 +72,19 @@ public class MasterTextingController : MonoBehaviour
         startingmessagearea.SetActive(false);
         messagearea.SetActive(true);
         newsarea.SetActive(false);
+        news.SetActive(false);
 
         Title.text = character.displayName;
+        profilePicture.sprite = character.defaultProfilePicture;
+
+        foreach (TextingThread thread in allThreads)
+        {
+            if (thread.participants.Contains(character) && thread.day == GameManager.currentday)
+            {
+                runner.StartThread(thread);
+                break;
+            }
+        }
 
     }
 
@@ -84,10 +104,17 @@ public class MasterTextingController : MonoBehaviour
 
         Title.text = "News";
 
+        if(GameManager.currentday == 0)
+        {
+            news.SetActive(true);
+            news0.SetActive(true);
+        }
+        else
+        {
+            news.SetActive(false);
+        }
+
     }
 
-    void quitTexting()
-    {
-        FadeManager.Instance.FadeAndLoadScene("IRL");
-    }
+
 }
