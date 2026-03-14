@@ -31,6 +31,7 @@ public class GameManager
     public static float lastBalance;
     public static float lastTodayQuota;
 
+    // save this!
     static public Dictionary<string, Dictionary<string, bool>> tutorialList = new()
     {
         {"Movement", new Dictionary<string, bool>{ { "Use WASD to move, use the mouse to look", false } } },

@@ -17,14 +17,36 @@ public class ElementSelection : MonoBehaviour
 
     [SerializeField] GameObject IMG_Image;
 
+    [SerializeField] GameObject BTN_Next;
+    [SerializeField] GameObject BTN_Prev;
+
+    bool allowed;
+
     void Start()
     {
         startingElement();
     }
 
+    private void Awake()
+    {
+        allowed = dayCheck();
+
+        if (!allowed)
+        {
+            BTN_Next.SetActive(false);
+            BTN_Prev.SetActive(false);
+            IMG_Image.GetComponent<Image>().color = new Color(0.25f, 0.25f, 0.25f, 1f);
+        }
+        else
+        {
+            BTN_Next.SetActive(true);
+            BTN_Prev.SetActive(true);
+            IMG_Image.GetComponent<Image>().color = new Color(1f, 1f, 1f, 1f);
+        }
+    }
+
     public void NextElement()
     {
-        bool allowed = dayCheck();
         if (allowed)
         {
             currentElement = (currentElement + 1) % elementName.Count;
@@ -36,7 +58,6 @@ public class ElementSelection : MonoBehaviour
 
     public void PrevElement()
     {
-        bool allowed = dayCheck();
         if (allowed)
         {
             if (currentElement > 0)

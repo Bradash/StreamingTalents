@@ -677,6 +677,8 @@ MonoBehaviour:
   nameText: {fileID: 547530445}
   image: {fileID: 21300000, guid: 8bf4fe4ed549afb49bd909c530674c2f, type: 3}
   IMG_Image: {fileID: 1438244700}
+  BTN_Next: {fileID: 1111332344}
+  BTN_Prev: {fileID: 1587722326}
 --- !u!1 &547530443
 GameObject:
   m_ObjectHideFlags: 0
@@ -3678,6 +3680,8 @@ MonoBehaviour:
   nameText: {fileID: 1157059773}
   image: {fileID: 0}
   IMG_Image: {fileID: 1339088363}
+  BTN_Next: {fileID: 144772525}
+  BTN_Prev: {fileID: 1957617359}
 --- !u!1 &1985099961
 GameObject:
   m_ObjectHideFlags: 0
