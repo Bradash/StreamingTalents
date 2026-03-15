@@ -17,9 +17,9 @@ public class ProgressionsScript : MonoBehaviour
         {
             if (CollabObjects[i].dayUnlocked <= GameManager.currentday)
             {
-                //CollabChoices.elementName.Add(CollabObjects[i].elementName);//Error
-                //CollabChoices.elementImage.Add(CollabObjects[i].elementImage);//Error
-                //CollabChoices.gameID.Add(CollabObjects[i].gameID);//Error
+                CollabChoices.elementName.Add(CollabObjects[i].elementName);
+                CollabChoices.elementImage.Add(CollabObjects[i].elementImage);
+                CollabChoices.gameID.Add(CollabObjects[i].gameID);
             }
         }
     }
@@ -29,9 +29,9 @@ public class ProgressionsScript : MonoBehaviour
         {
             if (GameObjects[i].dayUnlocked <= GameManager.currentday)
             {
-                //GameChoices.elementName.Add(GameObjects[i].elementName);//Error
-                //GameChoices.elementImage.Add(GameObjects[i].elementImage);//Error
-                //GameChoices.gameID.Add(GameObjects[i].gameID);//Error
+                GameChoices.elementName.Add(GameObjects[i].elementName);
+                GameChoices.elementImage.Add(GameObjects[i].elementImage);
+                GameChoices.gameID.Add(GameObjects[i].gameID);
             }
         }
     }
