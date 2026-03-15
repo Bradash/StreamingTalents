@@ -52,7 +52,7 @@ public class MessageBubble : MonoBehaviour
         {
             profileImage.gameObject.SetActive(true);
             profileImageHelper.gameObject.SetActive(true);
-            profileImage.sprite = myMessage.speaker.defaultProfilePicture;
+            profileImage.sprite = myMessage.GroupChatspeaker.defaultProfilePicture;
         }
         else
         {

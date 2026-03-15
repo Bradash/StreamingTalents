@@ -6,5 +6,6 @@ public class TextingThread : ScriptableObject
 {
     public int day;
     public MessageGroup participants;
+    //public bool groupChat;
     public TextMessage startingMessage;
 }

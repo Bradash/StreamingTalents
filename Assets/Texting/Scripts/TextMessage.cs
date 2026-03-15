@@ -7,6 +7,7 @@ public class TextMessage : ScriptableObject
     public MessageGroup speaker;
 
     public bool groupChat;
+    public MessageGroup GroupChatspeaker;
 
     [TextArea(3, 10)]
     public string message;

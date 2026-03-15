@@ -20,6 +20,9 @@ public class TextSpawner : MonoBehaviour
     public List<TextingThread> allThreads;
     Dictionary<MessageGroup, List<TextMessage>> threadHistory = new Dictionary<MessageGroup, List<TextMessage>>();
 
+    public ScrollRect scrollRect;
+    public RectTransform contentRect;
+
     //Temp
     //public TextMessage currentMessage1;
     MessageGroup activeCharacter;
@@ -104,13 +107,8 @@ public static TextSpawner Instance { get; private set; }
             yield break;
         if (activeCharacter != message.speaker)
         {
-            if (message.speaker.displayName == "Zara")
+            if (message.speaker.displayName != "Zara")
             {
-                //Nothing
-            }
-            else
-            {
-                Debug.Log(activeCharacter + " " + message.speaker);
                 yield break;
             }
         }
@@ -125,7 +123,7 @@ public static TextSpawner Instance { get; private set; }
             threadHistory[activeCharacter].Add(message);
         }
 
-
+        Debug.Log(message.groupChat + " " + activeCharacter);
         yield return new WaitForSeconds(messageDelay);
 
         if (message == null)
@@ -134,11 +132,7 @@ public static TextSpawner Instance { get; private set; }
             yield break;
         if (activeCharacter != message.speaker)
         {
-            if (message.speaker.displayName == "Zara")
-            {
-                //Nothing
-            }
-            else
+            if (message.speaker.displayName != "Zara")
             {
                 yield break;
             }
@@ -180,6 +174,8 @@ public static TextSpawner Instance { get; private set; }
     {
         MessageBubble bubble = Instantiate(messagePrefab, messageParent);
         bubble.Setup(message, layoutGroup);
+
+        StartCoroutine(ScrollNextFrame());
     }
 
     public void SpawnOptions(List<TextingOption> options)
@@ -221,6 +217,22 @@ public static TextSpawner Instance { get; private set; }
             Destroy(child.gameObject);
         }
     }
+
+    void ScrollToBottom()
+    {
+        Canvas.ForceUpdateCanvases();
+        LayoutRebuilder.ForceRebuildLayoutImmediate(contentRect);
+
+        scrollRect.verticalNormalizedPosition = 0f;
+    }
+
+    IEnumerator ScrollNextFrame()
+    {
+        yield return null;
+
+        ScrollToBottom();
+    }
+
 
 }
 
