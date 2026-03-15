@@ -1,26 +1,37 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class menuScript : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public Button loadButton;
+
     void Start()
     {
-        
+        if (!SaveSystem.SaveExists())
+        {
+            loadButton.interactable = false;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void NewGame()
     {
-        
-    }
+        SaveSystem.DeleteSave();
 
-    public void Play()
-    {
         GameManager.currentday = 1;
-        SceneManager.LoadScene(0);
+        GameManager.currentmoney = 0;
+        GameManager.unicornRelationship = 0;
+        GameManager.dragonRelationship = 0;
+        GameManager.wolfRelationship = 0;
+
+        FadeManager.Instance.FadeAndLoadScene("IRL");
     }
 
+    public void LoadGame()
+    {
+        SaveSystem.LoadGame();
+        FadeManager.Instance.FadeAndLoadScene("IRL");
+    }
+    
     public void Quit()
     {
         Application.Quit();
