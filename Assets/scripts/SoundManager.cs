@@ -62,8 +62,11 @@ public class SoundManager : MonoBehaviour
             isFPS = false;
         }
         UI.SetActive(false);
-        Time.timeScale = 1;
-        MessageSpawner.Instance.pause = false;
+        if (!GameManager.isTutorial)
+        {
+            Time.timeScale = 1;
+            MessageSpawner.Instance.pause = false;
+        }
     }
     public void musicChanged() 
     {
@@ -78,7 +81,7 @@ public class SoundManager : MonoBehaviour
     }
     void musicLoop()
     {
-        for (int i = 0; i < sfxAudio.Length; i++)
+        for (int i = 0; i < musicStreamAudio.Length; i++)
         {
             musicStreamAudio[i].volume = GameManager.musicVolume;
         }

@@ -14,7 +14,7 @@ public class GameManager
     public static float wolfRelationship; //Save
 
 
-
+    public static bool isTutorial;
     public static float musicVolume;
     public static float sfxVolume;
 

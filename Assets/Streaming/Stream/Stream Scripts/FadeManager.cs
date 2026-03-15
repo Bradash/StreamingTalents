@@ -1,7 +1,7 @@
-using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 using System.Collections;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class FadeManager : MonoBehaviour
 {
@@ -16,14 +16,13 @@ public class FadeManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-
         Instance = this;
         DontDestroyOnLoad(gameObject);
     }
 
     public void FadeAndLoadScene(string sceneName, float fadeOutTime = 2f, float fadeInTime = 2f)
     {
-        StartCoroutine(FadeRoutine(sceneName, fadeOutTime, fadeInTime));
+            StartCoroutine(FadeRoutine(sceneName, fadeOutTime, fadeInTime));
     }
 
     private IEnumerator FadeRoutine(string sceneName, float fadeOutTime, float fadeInTime)
@@ -53,5 +52,16 @@ public class FadeManager : MonoBehaviour
 
         c.a = to;
         fadeImage.color = c;
+    }
+    private void Update()
+    {
+        if (GameManager.isTutorial)
+        {
+            Instance.gameObject.SetActive(false);
+        }
+        else
+        {
+            Instance.gameObject.SetActive(true);
+        }
     }
 }

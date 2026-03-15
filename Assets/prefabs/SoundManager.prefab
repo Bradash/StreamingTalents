@@ -194,10 +194,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   musicAudio: {fileID: 1568252433661589218}
-  sfxAudio:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  musicStreamAudio: []
+  sfxAudio: []
   musicSlider: {fileID: 7985927098972567945}
   audioSlider: {fileID: 2224678716977207259}
   UI: {fileID: 4611529496124930683}
