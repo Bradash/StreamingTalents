@@ -1,7 +1,9 @@
 using System.Collections.Generic;
+using System.Threading;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using static Unity.Collections.Unicode;
 
 public class MasterTextingController : MonoBehaviour
 {
@@ -20,9 +22,6 @@ public class MasterTextingController : MonoBehaviour
 
     public TextMeshProUGUI Title;
     public Image profilePicture;
-
-    public TextingRunner runner;
-    public List<TextingThread> allThreads;
 
     public static MasterTextingController Instance { get; private set; }
 
@@ -77,12 +76,18 @@ public class MasterTextingController : MonoBehaviour
         Title.text = character.displayName;
         profilePicture.sprite = character.defaultProfilePicture;
 
-        foreach (TextingThread thread in allThreads)
+        
+
+        foreach (TextingThread thread in TextSpawner.Instance.allThreads)
         {
-            if (thread.participants.Contains(character) && thread.day == GameManager.currentday)
+            Debug.Log(thread);
+            if (thread.participants == character && thread.day == GameManager.currentday)
             {
-                runner.StartThread(thread);
-                break;
+                TextSpawner.Instance.ClearMessages();
+                TextSpawner.Instance.ClearOptions();
+
+                TextSpawner.Instance.StartThread(thread);
+                return;
             }
         }
 

@@ -6,9 +6,13 @@ public class MessageBubble : MonoBehaviour
 {
     public TextMeshProUGUI messageText;
     public Image profileImage;
+    public Image profileImageHelper;
+
+    VerticalLayoutGroup myLayoutGroup;
+    public Image bubbleImage;
 
     public RectTransform bubbleRect;
-    public TextMessage message;
+    TextMessage myMessage;
 
     void Start()
     {
@@ -35,30 +39,39 @@ public class MessageBubble : MonoBehaviour
     }
 
 
-    public void Setup(string text, Sprite profile, bool isPlayer, bool groupChat)
+    public void Setup(TextMessage message, VerticalLayoutGroup layoutGroup)
     {
-        messageText.text = text;
+        myMessage = message;
 
-        if (groupChat)
+        //myLayoutGroup = layoutGroup;
+
+        messageText.text = myMessage.message;
+
+        
+        if (myMessage.groupChat)
         {
             profileImage.gameObject.SetActive(true);
-            profileImage.sprite = profile;
+            profileImageHelper.gameObject.SetActive(true);
+            profileImage.sprite = myMessage.speaker.defaultProfilePicture;
         }
         else
         {
             profileImage.gameObject.SetActive(false);
+            profileImageHelper.gameObject.SetActive(false);
         }
 
-        if (isPlayer)
+        if (myMessage.speaker.displayName == "Zara")
         {
-            // flip layout so message appears on right
             transform.localScale = new Vector3(-1, 1, 1);
             messageText.transform.localScale = new Vector3(-1, 1, 1);
+            bubbleImage.color = new Color(0.6f, 1f, 0.6f); // green bubble
         }
         else
         {
             transform.localScale = Vector3.one;
-            messageText.transform.localScale = Vector3.one;
+            messageText.transform.localScale = Vector3.one; 
+            bubbleImage.color = Color.white;
         }
+
     }
 }

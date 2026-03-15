@@ -12,12 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf1ac7be18dbff245b2e6e33e3f9aaf4, type: 3}
   m_Name: Test_message 7
   m_EditorClassIdentifier: 
-  speaker: {fileID: 11400000, guid: 5208373f6aeaf834093e2870af53d946, type: 2}
+  speaker: {fileID: 11400000, guid: c816e3e4d39c47c4cbccf5dfdc110b35, type: 2}
   groupChat: 0
-  message: What number am I thinking of babe?
-  flowType: 1
-  nextMessage: {fileID: 11400000, guid: 29e8275075e858249b63d5e51b5a909c, type: 2}
-  options:
-  - {fileID: 11400000, guid: 5dab721ed6b9fc2468e77d34df3a650e, type: 2}
-  - {fileID: 11400000, guid: 1da14b195f1355342a0e645f557773c8, type: 2}
-  - {fileID: 11400000, guid: 873ee83dfe5624d4bbb0980c79c44000, type: 2}
+  message: Very Long Message for Very Long People :D
+  flowType: 0
+  nextMessage: {fileID: 0}
+  options: []

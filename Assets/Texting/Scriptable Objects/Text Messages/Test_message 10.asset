@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Test_message 10
   m_EditorClassIdentifier: 
   speaker: {fileID: 11400000, guid: d37dd561f36ac4f4892d6318343dfc07, type: 2}
-  groupChat: 0
+  groupChat: 1
   message: That's not very nice Ember
   flowType: 0
   nextMessage: {fileID: 11400000, guid: c633959b0545fc64f897fdf5fa096bed, type: 2}

@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dcb1a752a64962741ba7a74b60941351, type: 3}
-  m_Name: Test_TextingThread
+  m_Name: Test_TextingThread 4
   m_EditorClassIdentifier: 
   day: 0
-  participants: {fileID: 11400000, guid: c816e3e4d39c47c4cbccf5dfdc110b35, type: 2}
-  startingMessage: {fileID: 11400000, guid: 49432b78b60802c4c99a0b46cb650c2a, type: 2}
+  participants: {fileID: 11400000, guid: f8d60f66b6528944a94d2b8f45c6bafb, type: 2}
+  startingMessage: {fileID: 0}

@@ -5,6 +5,6 @@ using UnityEngine;
 public class TextingThread : ScriptableObject
 {
     public int day;
-    public List<MessageGroup> participants;
+    public MessageGroup participants;
     public TextMessage startingMessage;
 }

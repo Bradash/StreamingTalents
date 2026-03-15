@@ -16,5 +16,5 @@ MonoBehaviour:
   groupChat: 0
   message: Thanks anyway. See you later.
   flowType: 0
-  nextMessage: {fileID: 11400000, guid: 29e8275075e858249b63d5e51b5a909c, type: 2}
+  nextMessage: {fileID: 11400000, guid: fe3930877e78a4d4cadb52061b7d31cf, type: 2}
   options: []
