@@ -21,7 +21,7 @@ public class TextSpawner : MonoBehaviour
     Dictionary<MessageGroup, List<TextMessage>> threadHistory = new Dictionary<MessageGroup, List<TextMessage>>();
 
     //Temp
-    public TextMessage currentMessage1;
+    //public TextMessage currentMessage1;
     MessageGroup activeCharacter;
 
 public static TextSpawner Instance { get; private set; }
@@ -110,6 +110,7 @@ public static TextSpawner Instance { get; private set; }
             }
             else
             {
+                Debug.Log(activeCharacter + " " + message.speaker);
                 yield break;
             }
         }
