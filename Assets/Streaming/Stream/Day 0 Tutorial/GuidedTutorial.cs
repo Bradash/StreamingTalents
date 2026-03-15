@@ -4,7 +4,6 @@ public class GuidedTutorial : MonoBehaviour
 {
     [SerializeField] private GameObject[] tutorialObjects;
     [SerializeField] private int dayTaught;
-    [SerializeField] private GameObject fakeDarkness;
     private int currentTutorial;
 
     private void Start()
@@ -12,7 +11,6 @@ public class GuidedTutorial : MonoBehaviour
         if (GameManager.currentday == dayTaught)
         {
             GameManager.isTutorial = true;
-            fakeDarkness.gameObject.SetActive(false);
             Time.timeScale = 0;
             MessageSpawner.Instance.pause = true;
             currentTutorial = 0;
@@ -35,7 +33,6 @@ public class GuidedTutorial : MonoBehaviour
         else
         {
             GameManager.isTutorial = false;
-            fakeDarkness.gameObject.SetActive(true);
             Time.timeScale = 1;
             MessageSpawner.Instance.pause = false;
         }
