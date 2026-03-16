@@ -9,6 +9,7 @@ public class LaneSpawner : MonoBehaviour
 
     [SerializeField] GameObject obstacle;
     [SerializeField] GameObject[] spawns;
+    [SerializeField] GameObject[] targets;
 
     public delegate void ResetGameState();
     public static event ResetGameState resetGameState;
@@ -26,29 +27,40 @@ public class LaneSpawner : MonoBehaviour
         {
             int randomSpawn = Random.Range(1, 7);
             Debug.Log(randomSpawn);
+            GameObject obstacle1;
+            GameObject obstacle2;
 
-            switch(randomSpawn)
+            switch (randomSpawn)
             {
                 case 1:
-                    Instantiate(obstacle, spawns[0].transform.position, Quaternion.identity);
+                    obstacle1 = Instantiate(obstacle, spawns[0].transform.position, spawns[0].transform.rotation);
+                    obstacle1.GetComponent<LaneObjects>().SetTarget(targets[0].transform.position);
                     break;
                 case 2:
-                    Instantiate(obstacle, spawns[1].transform.position, Quaternion.identity);
+                    obstacle1 = Instantiate(obstacle, spawns[1].transform.position, spawns[1].transform.rotation);
+                    obstacle1.GetComponent<LaneObjects>().SetTarget(targets[1].transform.position);
                     break;
                 case 3:
-                    Instantiate(obstacle, spawns[2].transform.position, Quaternion.identity);
+                    obstacle1 = Instantiate(obstacle, spawns[2].transform.position, spawns[2].transform.rotation);
+                    obstacle1.GetComponent<LaneObjects>().SetTarget(targets[2].transform.position);
                     break;
                 case 4:
-                    Instantiate(obstacle, spawns[0].transform.position, Quaternion.identity);
-                    Instantiate(obstacle, spawns[1].transform.position, Quaternion.identity);
+                    obstacle1 = Instantiate(obstacle, spawns[0].transform.position, spawns[0].transform.rotation);
+                    obstacle1.GetComponent<LaneObjects>().SetTarget(targets[0].transform.position);
+                    obstacle2 = Instantiate(obstacle, spawns[1].transform.position, spawns[1].transform.rotation);
+                    obstacle2.GetComponent<LaneObjects>().SetTarget(targets[1].transform.position);
                     break;
                 case 5:
-                    Instantiate(obstacle, spawns[0].transform.position, Quaternion.identity);
-                    Instantiate(obstacle, spawns[2].transform.position, Quaternion.identity);
+                    obstacle1 = Instantiate(obstacle, spawns[0].transform.position, spawns[0].transform.rotation);
+                    obstacle1.GetComponent<LaneObjects>().SetTarget(targets[0].transform.position);
+                    obstacle2 = Instantiate(obstacle, spawns[2].transform.position, spawns[2].transform.rotation);
+                    obstacle2.GetComponent<LaneObjects>().SetTarget(targets[2].transform.position);
                     break;
                 case 6:
-                    Instantiate(obstacle, spawns[1].transform.position, Quaternion.identity);
-                    Instantiate(obstacle, spawns[2].transform.position, Quaternion.identity);
+                    obstacle1 = Instantiate(obstacle, spawns[1].transform.position, spawns[1].transform.rotation);
+                    obstacle1.GetComponent<LaneObjects>().SetTarget(targets[1].transform.position);
+                    obstacle2 = Instantiate(obstacle, spawns[2].transform.position, spawns[2].transform.rotation);
+                    obstacle2.GetComponent<LaneObjects>().SetTarget(targets[2].transform.position);
                     break;
             }
 

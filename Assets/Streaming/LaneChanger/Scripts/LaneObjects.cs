@@ -9,6 +9,7 @@ public class LaneObjects : MonoBehaviour
     LaneSpawner spawner;
     float currentTime;
     bool maxSpeed = false;
+    Vector3 currentTarget;
 
     private void Start()
     {
@@ -41,11 +42,10 @@ public class LaneObjects : MonoBehaviour
                 maxSpeed = true;
             }
         }
-        float zPos = transform.position.z;
-        zPos -= objectSpeed * Time.deltaTime;
-        transform.position = new Vector3(transform.position.x, transform.position.y, zPos);
+        Vector3 direction = (currentTarget - transform.position).normalized;
+        transform.position += direction * objectSpeed * Time.deltaTime;
 
-        if (zPos < -10)
+        if (transform.position.z < -450)
         {
             Destroy(gameObject);
         }
@@ -59,5 +59,10 @@ public class LaneObjects : MonoBehaviour
     private void OnDestroy()
     {
         LaneSpawner.resetGameState -= ResetObects;
+    }
+
+    public void SetTarget(Vector3 target)
+    {
+        currentTarget = target;
     }
 }
