@@ -744,6 +744,10 @@ PrefabInstance:
       propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 30476327e22e5b1419f7e6e09ae6b203, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b2b86327896347e41ad536a4146d4450, type: 2}
     - target: {fileID: 919132149155446097, guid: 30476327e22e5b1419f7e6e09ae6b203, type: 3}
       propertyPath: m_Name
       value: windowCovers (1)
@@ -1657,6 +1661,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 8559ccf27e304454a83a373b16423f5e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: eb92cb565440c6a4eaa75157d83c3f58, type: 2}
     - target: {fileID: 919132149155446097, guid: 8559ccf27e304454a83a373b16423f5e, type: 3}
       propertyPath: m_Name
       value: kitchenChair (3)
@@ -2016,19 +2024,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 01480478cc379e54ab6515a4cdeb7648, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071067
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 01480478cc379e54ab6515a4cdeb7648, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.7071069
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 01480478cc379e54ab6515a4cdeb7648, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 01480478cc379e54ab6515a4cdeb7648, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 01480478cc379e54ab6515a4cdeb7648, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2042,10 +2050,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7906351407375733665, guid: 01480478cc379e54ab6515a4cdeb7648, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 856bcfba18d9bce44a1b3e810c6fc41a, type: 2}
+    - target: {fileID: -7371950968139528420, guid: 01480478cc379e54ab6515a4cdeb7648, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 856bcfba18d9bce44a1b3e810c6fc41a, type: 2}
+    - target: {fileID: -3522804561464001852, guid: 01480478cc379e54ab6515a4cdeb7648, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 856bcfba18d9bce44a1b3e810c6fc41a, type: 2}
+    - target: {fileID: -3244725709264309688, guid: 01480478cc379e54ab6515a4cdeb7648, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 856bcfba18d9bce44a1b3e810c6fc41a, type: 2}
     - target: {fileID: 919132149155446097, guid: 01480478cc379e54ab6515a4cdeb7648, type: 3}
       propertyPath: m_Name
       value: desk
       objectReference: {fileID: 0}
+    - target: {fileID: 1585367124297328500, guid: 01480478cc379e54ab6515a4cdeb7648, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 856bcfba18d9bce44a1b3e810c6fc41a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3977,6 +4005,10 @@ PrefabInstance:
       propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 30476327e22e5b1419f7e6e09ae6b203, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b2b86327896347e41ad536a4146d4450, type: 2}
     - target: {fileID: 919132149155446097, guid: 30476327e22e5b1419f7e6e09ae6b203, type: 3}
       propertyPath: m_Name
       value: windowCovers (2)
@@ -5286,6 +5318,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 60
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 8559ccf27e304454a83a373b16423f5e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: eb92cb565440c6a4eaa75157d83c3f58, type: 2}
     - target: {fileID: 919132149155446097, guid: 8559ccf27e304454a83a373b16423f5e, type: 3}
       propertyPath: m_Name
       value: kitchenChair
@@ -6422,6 +6458,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: cf38de676150bf84f8537ab0f9561eb6, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 87772132f61f5ce4fbdc001b73697d8a, type: 2}
     - target: {fileID: 919132149155446097, guid: cf38de676150bf84f8537ab0f9561eb6, type: 3}
       propertyPath: m_Name
       value: bed
@@ -6832,6 +6872,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 8559ccf27e304454a83a373b16423f5e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: eb92cb565440c6a4eaa75157d83c3f58, type: 2}
     - target: {fileID: 919132149155446097, guid: 8559ccf27e304454a83a373b16423f5e, type: 3}
       propertyPath: m_Name
       value: kitchenChair (2)
@@ -6919,6 +6963,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 8559ccf27e304454a83a373b16423f5e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: eb92cb565440c6a4eaa75157d83c3f58, type: 2}
     - target: {fileID: 919132149155446097, guid: 8559ccf27e304454a83a373b16423f5e, type: 3}
       propertyPath: m_Name
       value: kitchenChair (1)
@@ -7466,6 +7514,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 110a1d037dca7f44b97b24d885d9238c, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 06a6f91285cf6e14495659901a048457, type: 2}
     - target: {fileID: 919132149155446097, guid: 110a1d037dca7f44b97b24d885d9238c, type: 3}
       propertyPath: m_Name
       value: kitchenTable
@@ -7557,6 +7609,10 @@ PrefabInstance:
       propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 30476327e22e5b1419f7e6e09ae6b203, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b2b86327896347e41ad536a4146d4450, type: 2}
     - target: {fileID: 919132149155446097, guid: 30476327e22e5b1419f7e6e09ae6b203, type: 3}
       propertyPath: m_Name
       value: windowCovers
