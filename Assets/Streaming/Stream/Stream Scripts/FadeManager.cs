@@ -20,7 +20,7 @@ public class FadeManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    public void FadeAndLoadScene(string sceneName, float fadeOutTime = 2f, float fadeInTime = 2f)
+    public void FadeAndLoadScene(string sceneName, float fadeOutTime = 1f, float fadeInTime = 1f)
     {
             StartCoroutine(FadeRoutine(sceneName, fadeOutTime, fadeInTime));
     }
