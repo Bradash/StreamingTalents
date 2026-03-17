@@ -20,8 +20,10 @@ public class tutorialInteract : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.LogWarning("I work");
-        tutorialManage.playTutorial("Interaction", GameManager.tutorialList["Interaction"].Keys.First(), 7.5f, false);
+        if (GameManager.currentday == 1)
+        {
+            tutorialManage.playTutorial("Interaction", GameManager.tutorialList["Interaction"].Keys.First(), 7.5f, false);
+        }
         colliderTutorial.gameObject.SetActive(false);
 
     }
