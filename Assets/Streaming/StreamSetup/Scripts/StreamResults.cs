@@ -179,13 +179,13 @@ public class StreamResults : MonoBehaviour
 
 
         //Check for end
-        if (GameManager.currentday == 3)
+        /*if (GameManager.currentday == 3)
         {
             exitButton.text = "End Demo";
         }
         else
         {
             exitButton.text = "End Day";
-        }
+        }*/
     }
 }
