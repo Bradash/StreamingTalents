@@ -7,7 +7,7 @@ public class FadeManager : MonoBehaviour
 {
     public static FadeManager Instance;
 
-    [SerializeField] private Image fadeImage;
+    [SerializeField] public Image fadeImage;
 
     void Awake()
     {
@@ -22,7 +22,7 @@ public class FadeManager : MonoBehaviour
 
     public void FadeAndLoadScene(string sceneName, float fadeOutTime = 1f, float fadeInTime = 1f)
     {
-            StartCoroutine(FadeRoutine(sceneName, fadeOutTime, fadeInTime));
+        StartCoroutine(FadeRoutine(sceneName, fadeOutTime, fadeInTime));
     }
 
     private IEnumerator FadeRoutine(string sceneName, float fadeOutTime, float fadeInTime)
@@ -55,6 +55,8 @@ public class FadeManager : MonoBehaviour
     }
     private void Update()
     {
+        /*
+        Debug.Log(GameManager.isTutorial);
         if (GameManager.isTutorial)
         {
             Instance.gameObject.SetActive(false);
@@ -63,5 +65,6 @@ public class FadeManager : MonoBehaviour
         {
             Instance.gameObject.SetActive(true);
         }
+        */
     }
 }
