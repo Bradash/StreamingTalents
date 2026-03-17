@@ -13,6 +13,10 @@ public class GameManager
     public static float dragonRelationship; //Save
     public static float wolfRelationship; //Save
 
+    // tutorial stats
+    public static bool seenTycoon = false;
+    public static bool seenBird = false;
+
 
     public static bool isTutorial;
     public static float musicVolume;
