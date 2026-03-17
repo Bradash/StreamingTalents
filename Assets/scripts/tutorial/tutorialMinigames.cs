@@ -1,12 +1,9 @@
-using TMPro;
 using UnityEngine;
 
-public class JustChatting : MonoBehaviour
+public class tutorialMinigames : MonoBehaviour
 {
-    public DialogueController controller;
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Awake()
+    void Start()
     {
         
     }
@@ -14,6 +11,6 @@ public class JustChatting : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 }
