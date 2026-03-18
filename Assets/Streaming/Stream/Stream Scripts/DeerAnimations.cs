@@ -14,6 +14,9 @@ public class DeerAnimations : MonoBehaviour
 
     public EmotionAni[] DeerEmotionAni;
 
+    public float blinkTimer = 0f;
+    public float blinkInterval = 4f;
+
     [System.Serializable]
     public class EmotionAni
     {
@@ -48,6 +51,8 @@ public class DeerAnimations : MonoBehaviour
         //startPos = deerObject.transform.localPosition;
         anim.SetInteger("Emotion", 0);
     }
+
+
 
     public void DeerRespondToMessage(OtherEmotionBase emotion, float duration)
     {
