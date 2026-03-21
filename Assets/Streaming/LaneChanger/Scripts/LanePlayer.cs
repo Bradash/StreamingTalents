@@ -3,8 +3,8 @@ using UnityEngine;
 public class LanePlayer : MonoBehaviour
 {
     Vector3 initialPos;
-    [SerializeField] Vector3[] lanePositions;
-    Vector3 targetLane;
+    [SerializeField] Transform[] lanePositions;
+    Transform targetLane;
     int currentLane = 1;
     bool playerAlive = true;
     [SerializeField] GameObject gameOver;
@@ -15,7 +15,7 @@ public class LanePlayer : MonoBehaviour
         gameOver.SetActive(false);
         initialPos = transform.position;
         targetLane = lanePositions[currentLane];
-        transform.position = lanePositions[currentLane];
+        transform.position = lanePositions[currentLane].position;
 
         LaneSpawner.resetGameState += ResetState;
     }
@@ -44,9 +44,9 @@ public class LanePlayer : MonoBehaviour
         if (playerAlive)
         {
             Vector3 pos = transform.position;
-            if (Mathf.Abs(targetLane.x - pos.x) > 0.1f)
+            if (Mathf.Abs(targetLane.position.x - pos.x) > 0.1f)
             {
-                float direction = Mathf.Sign(targetLane.x - pos.x);
+                float direction = Mathf.Sign(targetLane.position.x - pos.x);
                 pos.x += moveSpeed * Time.deltaTime * direction;
                 transform.position = pos;
             }
@@ -62,7 +62,7 @@ public class LanePlayer : MonoBehaviour
         gameOver.SetActive(true);
     }
 
-   void ResetState()
+    void ResetState()
     {
         gameOver.SetActive(false);
         transform.position = initialPos;

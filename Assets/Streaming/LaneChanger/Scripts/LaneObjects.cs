@@ -9,20 +9,12 @@ public class LaneObjects : MonoBehaviour
     LaneSpawner spawner;
     float currentTime;
     bool maxSpeed = false;
+    Vector3 currentTarget;
 
     private void Start()
     {
         spawner = GameObject.Find("Spawns").GetComponent<LaneSpawner>();
         startTime = spawner.GetStartTime();
-
-        if (objectSpeed < initialSpeed + 10)
-        {
-            objectSpeed = initialSpeed + Time.time * 0.5f;
-        }
-        else
-        {
-            objectSpeed = 15;
-        }
 
         LaneSpawner.resetGameState += ResetObects;
     }
@@ -31,21 +23,20 @@ public class LaneObjects : MonoBehaviour
         currentTime = Time.time - startTime;
         if (!maxSpeed)
         {
-            if (objectSpeed < initialSpeed + 50)
+            if (objectSpeed < initialSpeed + 10)
             {
                 objectSpeed = initialSpeed + currentTime;
             }
             else
             {
-                objectSpeed = initialSpeed + 50;
+                objectSpeed = initialSpeed + 10;
                 maxSpeed = true;
             }
         }
-        float zPos = transform.position.z;
-        zPos -= objectSpeed * Time.deltaTime;
-        transform.position = new Vector3(transform.position.x, transform.position.y, zPos);
+        Vector3 direction = (currentTarget - transform.position).normalized;
+        transform.position += direction * objectSpeed * Time.deltaTime;
 
-        if (zPos < -10)
+        if (transform.position.z < -450)
         {
             Destroy(gameObject);
         }
@@ -59,5 +50,10 @@ public class LaneObjects : MonoBehaviour
     private void OnDestroy()
     {
         LaneSpawner.resetGameState -= ResetObects;
+    }
+
+    public void SetTarget(Vector3 target)
+    {
+        currentTarget = target;
     }
 }
