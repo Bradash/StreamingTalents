@@ -16,15 +16,6 @@ public class LaneObjects : MonoBehaviour
         spawner = GameObject.Find("Spawns").GetComponent<LaneSpawner>();
         startTime = spawner.GetStartTime();
 
-        if (objectSpeed < initialSpeed + 10)
-        {
-            objectSpeed = initialSpeed + Time.time * 0.5f;
-        }
-        else
-        {
-            objectSpeed = 15;
-        }
-
         LaneSpawner.resetGameState += ResetObects;
     }
     void Update()
@@ -32,13 +23,13 @@ public class LaneObjects : MonoBehaviour
         currentTime = Time.time - startTime;
         if (!maxSpeed)
         {
-            if (objectSpeed < initialSpeed + 50)
+            if (objectSpeed < initialSpeed + 10)
             {
                 objectSpeed = initialSpeed + currentTime;
             }
             else
             {
-                objectSpeed = initialSpeed + 50;
+                objectSpeed = initialSpeed + 10;
                 maxSpeed = true;
             }
         }

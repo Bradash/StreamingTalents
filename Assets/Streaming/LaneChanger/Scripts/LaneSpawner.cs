@@ -65,7 +65,7 @@ public class LaneSpawner : MonoBehaviour
             }
 
             currentTime = spawnTimer;
-            if (spawnTimer > 1)
+            if (spawnTimer > 1.5)
             {
                 spawnTimer -= 0.25f;
             }
