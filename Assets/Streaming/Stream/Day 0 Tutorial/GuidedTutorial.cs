@@ -11,6 +11,7 @@ public class GuidedTutorial : MonoBehaviour
         if (GameManager.currentday == dayTaught)
         {
             GameManager.isTutorial = true;
+            FadeManager.Instance.gameObject.SetActive(false);
             Time.timeScale = 0;
             MessageSpawner.Instance.pause = true;
             currentTutorial = 0;
@@ -32,7 +33,10 @@ public class GuidedTutorial : MonoBehaviour
         }
         else
         {
+            Debug.Log("Sent");
             GameManager.isTutorial = false;
+            FadeManager.Instance.gameObject.SetActive(true);
+            FadeManager.Instance.fadeImage.color = new Color(0, 0, 0, 0);
             Time.timeScale = 1;
             MessageSpawner.Instance.pause = false;
         }

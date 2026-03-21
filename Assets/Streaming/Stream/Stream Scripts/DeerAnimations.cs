@@ -14,6 +14,9 @@ public class DeerAnimations : MonoBehaviour
 
     public EmotionAni[] DeerEmotionAni;
 
+    public float blinkTimer = 0f;
+    public float blinkInterval = 4f;
+
     [System.Serializable]
     public class EmotionAni
     {
@@ -49,6 +52,8 @@ public class DeerAnimations : MonoBehaviour
         anim.SetInteger("Emotion", 0);
     }
 
+
+
     public void DeerRespondToMessage(OtherEmotionBase emotion, float duration)
     {
         if (currentRoutine != null)
@@ -82,6 +87,17 @@ public class DeerAnimations : MonoBehaviour
 
     void Update()
     {
+        //blinking
+        blinkTimer += 1 * Time.deltaTime;
+
+        if (blinkTimer >= blinkInterval)
+        {
+
+            anim.SetTrigger("Blink");
+            blinkTimer = 0f;
+            blinkInterval = Random.Range(2.5f, 5f);
+        }
+
         if (UIStatsManager.Instance.game == 0)
         {
             transform.position = chatingPos;
@@ -95,4 +111,5 @@ public class DeerAnimations : MonoBehaviour
         //transform.position = new Vector3(-3f, -8.15f, -2f);
         //print(transform.position);
     }
+
 }

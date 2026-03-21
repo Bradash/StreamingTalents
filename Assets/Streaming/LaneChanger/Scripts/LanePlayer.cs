@@ -62,7 +62,7 @@ public class LanePlayer : MonoBehaviour
         gameOver.SetActive(true);
     }
 
-   void ResetState()
+    void ResetState()
     {
         gameOver.SetActive(false);
         transform.position = initialPos;

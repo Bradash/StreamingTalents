@@ -9,12 +9,10 @@ public class Currency : MonoBehaviour
     public TextMeshProUGUI moneyText;
     public float money = 100;
 
-    public TextMeshProUGUI tutorial;
     float timer = 0;
 
     private void Awake()
     {
-        tutorial.enabled = true;
         timer = 0;
     }
 
@@ -24,7 +22,6 @@ public class Currency : MonoBehaviour
 
         if (timer > 15)
         {
-            tutorial.enabled=false;
         }
         else
         {
