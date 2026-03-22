@@ -64,7 +64,7 @@ public class UIStatsManager : MonoBehaviour
         game = GameManager.SelectedMinigame;
 
         //Testing
-        //GameManager.currentday = 99;
+        //GameManager.currentday = 7;
         //GameManager.SelectedCollab = 2;
         //GameManager.SelectedMinigame = 1;
     }

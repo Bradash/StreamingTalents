@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b2eb73f1f91bc44b814a7e3f9a8e784, type: 3}
+  m_Name: PlaceHolder
+  m_EditorClassIdentifier: 
+  Archtype: 
+  NarrativeStage: 1
+  NeedCollab: 99
+  NeedMiniGame: 99
+  message: Let me smell your feet!
+  moodChange: 0
+  viewerChange: 0
+  DeerEmotion: 3
+  WolfEmotion: 3
+  UnicornEmotion: 1
+  DragonEmotion: 2
+  DeerReaction: Ew
+  WolfReaction: Ew
+  UnicornReaction: Only if you say please
+  DragonReaction: You should kill yourself now!
