@@ -39,24 +39,24 @@ public class NoteTiming : MonoBehaviour
         switch (noteLane)
         {
             case 0:
-                if(Input.GetKeyDown(KeyCode.W)) {
+                if(Input.GetKeyDown(KeyCode.A)) {
                     HitZone();
                 }
                 break;
             case 1:
-                if (Input.GetKeyDown(KeyCode.A))
-                {
-                    HitZone();
-                }
-                break;
-            case 2:
                 if (Input.GetKeyDown(KeyCode.S))
                 {
                     HitZone();
                 }
                 break;
-            case 3:
+            case 2:
                 if (Input.GetKeyDown(KeyCode.D))
+                {
+                    HitZone();
+                }
+                break;
+            case 3:
+                if (Input.GetKeyDown(KeyCode.F))
                 {
                     HitZone();
                 }

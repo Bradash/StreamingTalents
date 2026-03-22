@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class NoteMovement : MonoBehaviour
 {
-    [SerializeField] float noteSpeed = 3f;
+    [SerializeField] float noteSpeed = 4f;
 
     private void Update()
     {
