@@ -10,13 +10,26 @@ public class SceneLoader : MonoBehaviour
         Debug.Log("Testing");
         if (sceneName == "IRL")
         {
-            if (GameManager.currentday == 3)
+            if (GameManager.currentday == 15)
             {
-                SaveSystem.SaveGame();
+                if (GameManager.currentday == 20)
+                {
+                    SaveSystem.SaveGame();
 
-                GameManager.currentday += 1;
-                print("End Game");
-                FadeManager.Instance.FadeAndLoadScene("menu");
+                    GameManager.currentday += 1;
+                    print("Finish");
+                    GameManager.currentday = 0;
+                    FadeManager.Instance.FadeAndLoadScene("menu");
+                }
+                else
+                {
+                    SaveSystem.SaveGame();
+
+                    GameManager.currentday += 1;
+                    print("End Game");
+                    GameManager.currentday = 20;
+                    FadeManager.Instance.FadeAndLoadScene("Stream Results");
+                } 
             }
             else
             {

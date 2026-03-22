@@ -89,34 +89,36 @@ public class UIStatsManager : MonoBehaviour
             collab = 2;
             game = 1;
         }
-        if (currentday == 1)
+        if (currentday == 0)
         {
             money = 0;
-            goal = 30;
-            viewers = 100;
-            mood = 70;
+            goal = 0;
+            viewers = 50;
+            mood = 100;
             points = 100;
-            time = 30;
+            time = 999;
             //collab = 2;
             //game = 0;
         }
-        if (currentday == 2)
+        if (currentday == 1)
         {
-            money = GameManager.currentmoney;
-            goal = 100;
-            viewers = 200;
-            mood = 50;
-            points = 50;
-            time = 40;
+            money = 0;
+            goal = 15;
+            viewers = 100;
+            mood = 70;
+            points = 100;
+            time = 60;
+            //collab = 2;
+            //game = 0;
         }
-        if (currentday == 3)
+        if (currentday >1)
         {
             money = GameManager.currentmoney;
-            goal = 200;
-            viewers = 250;
+            goal = currentday*15;
+            viewers = currentday*50+100;
             mood = 60;
-            points = 50;
-            time = 50;
+            points = 75;
+            time = (currentday+1)*30;
         }
 
         GameManager.startOfDayMoney = money;

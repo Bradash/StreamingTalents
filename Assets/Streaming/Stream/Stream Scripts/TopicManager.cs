@@ -58,6 +58,23 @@ public class TopicManager : MonoBehaviour
         CreateButton(t2);
     }
 
+    //ShowMyTopics(beans, anime)
+    public void ShowMyTopics(Topics topic1, Topics topic2)
+    {
+
+        topicPanel.SetActive(true);
+
+        ClearButtons();
+
+        buttonsSpawned = 0;
+
+        Topics t1 = topic1;
+        Topics t2 = topic2;
+
+        CreateButton(t1);
+        CreateButton(t2);
+    }
+
     int buttonsSpawned = 0;
 
     void CreateButton(Topics topic)

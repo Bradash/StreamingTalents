@@ -3161,6 +3161,7 @@ MonoBehaviour:
   - {fileID: 1708203440}
   - {fileID: 561171180}
   - {fileID: 1851254953}
+  targets: []
 --- !u!4 &394760298
 Transform:
   m_ObjectHideFlags: 0
@@ -6643,9 +6644,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lanePositions:
-  - {x: 2.5872273e+35, y: 9.3e-43, z: 2.5871735e+35}
-  - {x: 9.3e-43, y: 2.5872337e+35, z: 9.3e-43}
-  - {x: 2.5871735e+35, y: 9.3e-43, z: 2.58724e+35}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   gameOver: {fileID: 1178869905}
   moveSpeed: 10
 --- !u!1 &938786023
@@ -10102,6 +10103,52 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &1234523692
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1234523694}
+  - component: {fileID: 1234523693}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1234523693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1234523692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e6e53d52c111ec4bae33aace9fa285d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UsernameLoader
+  usernameList: {fileID: 11400000, guid: aa0c01e8141dbb046accf57e219764c4, type: 2}
+  csvFile: {fileID: 4900000, guid: c2892684091bc274595aebb47832a51f, type: 3}
+--- !u!4 &1234523694
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1234523692}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 960, y: 540, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1243141026
 GameObject:
   m_ObjectHideFlags: 0
@@ -19925,7 +19972,7 @@ MonoBehaviour:
   - {fileID: 2129522278}
   - {fileID: 107372816}
   - {fileID: 70154606}
-  dayTaught: 1
+  dayTaught: 0
 --- !u!4 &1924467864
 Transform:
   m_ObjectHideFlags: 0
@@ -22845,3 +22892,4 @@ SceneRoots:
   - {fileID: 1092935162}
   - {fileID: 1981171284}
   - {fileID: 382439881}
+  - {fileID: 1234523694}

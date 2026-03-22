@@ -15,6 +15,7 @@ public class ChatMessage : MonoBehaviour
     public Messages[] messages2;    // Stage 2
     public Messages[] messages3;    // Stage 3
     public narrativeState gameState;
+    public UsernameList usernameList;
 
     public Messages messageData;   // The picked ScriptableObjects
 
@@ -42,7 +43,7 @@ public class ChatMessage : MonoBehaviour
         var randomUser = GetRandomUsername();
         if (randomUser != null)
         {
-            username.text = randomUser.messageText;
+            username.text = randomUser;
         }
 
         SetRandomProfilePicture();
@@ -131,11 +132,11 @@ public class ChatMessage : MonoBehaviour
         banned = true;
     }
 
-    public Usernames GetRandomUsername()
+    public string GetRandomUsername()
     {
-        if (names.Length == 0) return null;
-        int index = Random.Range(0, names.Length);
-        return names[index];
+        if (usernameList.usernames.Count == 0) return null;
+        int index = Random.Range(0, usernameList.usernames.Count);
+        return usernameList.usernames[index];
     }
 
     public Messages GetRandomMessage()

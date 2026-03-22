@@ -38,6 +38,19 @@ public class StreamResults : MonoBehaviour
 
     void Awake()
     {
+        if (GameManager.currentday == 0)
+        {
+            Stats1.text = "Highest Viewers: \t    " + "N/A" + "\t        " + "N/A";
+            Stats2.text = "Average Chat Mood:\t    " + "N/A" + "\t        " + "N/A";
+            Stats3.text = "Today's Income: \t    " + "N/A" + "\t        " + "N/A";
+            Stats4.text = "Quota: \t\t    " + "N/A" + "\t        " + "N/A";
+
+            Stats5.text = "Yesterday's Balance:\n" + "N/A";
+            Stats6.text = "Current Balance:\n" + 0;
+
+            return;
+        }
+
 
         if (GameManager.currentday == 1)
         {

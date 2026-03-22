@@ -17,7 +17,7 @@ public class menuScript : MonoBehaviour
     {
         SaveSystem.DeleteSave();
 
-        GameManager.currentday = 1;
+        GameManager.currentday = 0;
         GameManager.currentmoney = 0;
         GameManager.unicornRelationship = 0;
         GameManager.dragonRelationship = 0;
