@@ -5,7 +5,9 @@ using static Topics;
 public class Messages : ScriptableObject
 {
     public string Archtype;  
-    public int NarrativeStage;
+    public Narrative NarrativeStage;
+    public Collab NeedCollab;
+    public MiniGame NeedMiniGame;
 
     [TextArea]
     public string message;
@@ -24,6 +26,30 @@ public class Messages : ScriptableObject
     public string UnicornReaction;
     [TextArea]
     public string DragonReaction;
+
+    public enum Narrative
+    {
+        Stage1 = 1,
+        Stage2 = 2,
+        Stage3 = 3
+    }
+
+    public enum Collab
+    {
+        Any = 99,
+        None = 0,
+        Unicorn = 1,
+        Dragon = 2
+    }
+
+    public enum MiniGame
+    {
+        Any = 99,
+        None = 0,
+        SideScroller = 1,
+        Tycoon = 2,
+        RhythmGame = 3
+    }
 
 
 }

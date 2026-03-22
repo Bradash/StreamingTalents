@@ -6264,6 +6264,7 @@ MonoBehaviour:
   points: 0
   collab: 0
   game: 0
+  narrative: 0
   moodPicture: {fileID: 1446615348}
   sad: {fileID: 2800000, guid: 87f51a409c48e5244814716129455fdc, type: 3}
   middle: {fileID: 2800000, guid: cd4482ab805d14a4f813862eb91250a1, type: 3}
@@ -18732,7 +18733,7 @@ Transform:
   m_GameObject: {fileID: 1778507300}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.12, y: -0.89, z: 0}
+  m_LocalPosition: {x: 5.12, y: -0.89, z: -1}
   m_LocalScale: {x: 0.15, y: 0.15, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

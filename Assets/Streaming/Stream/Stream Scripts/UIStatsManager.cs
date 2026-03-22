@@ -28,6 +28,7 @@ public class UIStatsManager : MonoBehaviour
     public float points;
     public int collab;
     public int game;
+    public int narrative;
 
     public RawImage moodPicture;
     public Texture sad;
@@ -77,6 +78,24 @@ public class UIStatsManager : MonoBehaviour
         QuitButton.SetActive(true);
         QuitMenu.SetActive(false);
 
+        if (currentday >= 0)
+        {
+            if (currentday >= 6)
+            {
+                if (currentday >= 10)
+                {
+                    narrative = 3;
+                }
+                else
+                {
+                    narrative = 2;
+                }
+            }
+            else
+            {
+                narrative = 1;
+            }
+        }
 
         if (currentday == 99)
         {

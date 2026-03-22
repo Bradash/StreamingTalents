@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -11,9 +12,10 @@ public class ChatMessage : MonoBehaviour
     public Usernames[] names;
     public Image profileImage;        // The UI Image
     public Sprite[] profilePictures;  // Drag sprites here
-    public Messages[] messages1;    // Stage 1
-    public Messages[] messages2;    // Stage 2
-    public Messages[] messages3;    // Stage 3
+    public Messages[] AllMessages;
+    //public Messages[] messages1;    // Stage 1
+    //public Messages[] messages2;    // Stage 2
+    //public Messages[] messages3;    // Stage 3
     public narrativeState gameState;
     public UsernameList usernameList;
 
@@ -135,30 +137,57 @@ public class ChatMessage : MonoBehaviour
     public string GetRandomUsername()
     {
         if (usernameList.usernames.Count == 0) return null;
-        int index = Random.Range(0, usernameList.usernames.Count);
+        int index = UnityEngine.Random.Range(0, usernameList.usernames.Count);
         return usernameList.usernames[index];
     }
 
     public Messages GetRandomMessage()
     {
-        if (gameState.narState == 1)
+
+        int pos;
+        bool x = false;
+        int narrative = UIStatsManager.Instance.narrative;
+        int collab = UIStatsManager.Instance.collab;
+        int minigame = UIStatsManager.Instance.game;
+
+
+        while (x == false)
         {
-            if (messages1.Length == 0) return null;
-            int index = Random.Range(0, messages1.Length);
-            return messages1[index];
+            pos = UnityEngine.Random.Range(0, AllMessages.Length);
+            Messages testMessage = AllMessages[pos];
+            x = true;
+
+            if (((int)testMessage.NarrativeStage) != narrative)
+            {
+                x = false;
+            }
+            if (((int)testMessage.NeedCollab) != 99)
+            {
+                if (((int)testMessage.NeedCollab) != collab)
+                {
+                    x = false;
+                }
+            }
+            if (((int)testMessage.NeedMiniGame) != 99)
+            {
+                if (((int)testMessage.NeedMiniGame) != minigame)
+                {
+                    x = false;
+                }
+            }
+            if (x == true)
+            {
+                return AllMessages[pos];
+            }
         }
-        if (gameState.narState == 2)
-        {
-            if (messages2.Length == 0) return null;
-            int index = Random.Range(0, messages2.Length);
-            return messages2[index];
-        }
-        if (gameState.narState == 3)
-        {
-            if (messages3.Length == 0) return null;
-            int index = Random.Range(0, messages3.Length);
-            return messages3[index];
-        }
+
+        //int index = Random.Range(0, AllMessages.Length);
+        //if (gameState.narState == 1)
+        //{
+        //    if (messages1.Length == 0) return null;
+        //    int index = Random.Range(0, messages1.Length);
+        //    return messages1[index];
+        //}
         return null;
     }
 
@@ -174,7 +203,7 @@ public class ChatMessage : MonoBehaviour
         if (profilePictures.Length == 0)
             return;
 
-        int index = Random.Range(0, profilePictures.Length);
+        int index = UnityEngine.Random.Range(0, profilePictures.Length);
         profileImage.sprite = profilePictures[index];
 
         profileImage.preserveAspect = true;
