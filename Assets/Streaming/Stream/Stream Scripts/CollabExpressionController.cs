@@ -44,10 +44,10 @@ public class CollabExpressionController : MonoBehaviour
 
     private void Start()
     {
-        gamePos = new Vector2(1.15f, -1);
-        chatingPos = new Vector2(1.25f, -1);
+        gamePos = new Vector3(1.15f, -1);
+        chatingPos = new Vector3(0.35f, 0);
         gameScale = new Vector2(0.15f, 0.15f);
-        chatingScale = new Vector2(0.15f, 0.15f);
+        chatingScale = new Vector2(0.25f, 0.25f);
 
         if (UIStatsManager.Instance.game == 0)
         {

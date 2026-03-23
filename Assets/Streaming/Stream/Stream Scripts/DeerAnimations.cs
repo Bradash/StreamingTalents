@@ -42,7 +42,7 @@ public class DeerAnimations : MonoBehaviour
         }
 
         gamePos = new Vector3(-6.89f, -7.09f, -1.99f);
-        chatingPos = new Vector3(-3, -8.15f, -1.99f);
+        chatingPos = new Vector3(-4.25f, -8.15f, -1.99f);
         gameScale = new Vector3(5, 5, 5);
         chatingScale = new Vector3(6.5f, 6.5f, 6.5f); 
 
