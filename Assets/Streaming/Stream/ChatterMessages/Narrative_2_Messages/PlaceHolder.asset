@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PlaceHolder
   m_EditorClassIdentifier: 
   Archtype: 
-  NarrativeStage: 1
+  NarrativeStage: 99
   NeedCollab: 99
   NeedMiniGame: 99
   message: Let me smell your feet!
