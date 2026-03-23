@@ -790,6 +790,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3d3e81335dcf62f489cb8bb8bd900fd3, type: 3}
   AllMessages:
   - {fileID: 11400000, guid: aeff65bb858517647803f884b82bb430, type: 2}
+  - {fileID: 11400000, guid: aeff65bb858517647803f884b82bb430, type: 2}
   gameState: {fileID: 11400000, guid: 3994a9afc7e0a9c41a10091dafa985ed, type: 2}
   usernameList: {fileID: 11400000, guid: aa0c01e8141dbb046accf57e219764c4, type: 2}
   messageData: {fileID: 0}

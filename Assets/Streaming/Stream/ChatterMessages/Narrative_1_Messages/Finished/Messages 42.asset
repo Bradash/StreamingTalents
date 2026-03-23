@@ -10,18 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4b2eb73f1f91bc44b814a7e3f9a8e784, type: 3}
-  m_Name: Messages 77
+  m_Name: Messages 42
   m_EditorClassIdentifier: 
   Archtype: 
   NarrativeStage: 0
-  message: this is such a vibe lowkey
-  moodChange: 3
-  viewerChange: 2
+  NeedCollab: 0
+  NeedMiniGame: 0
+  message: crashout incoming, i can feel it
+  moodChange: 0
+  viewerChange: 1
   DeerEmotion: 1
   WolfEmotion: 1
-  UnicornEmotion: 1
-  DragonEmotion: 1
-  DeerReaction: Thanks, glad you're having fun!
-  WolfReaction: Thanks, glad you're having fun!
-  UnicornReaction: 
-  DragonReaction: Damn right it is.
+  UnicornEmotion: 0
+  DragonEmotion: 0
+  DeerReaction: I'll be chill during this stream, I promise!
+  WolfReaction: I'll be chill during this stream, I promise!
+  UnicornReaction: I don't crash out, right guys?
+  DragonReaction: You think I can't stay calm for one stream? I'll show you, pal!

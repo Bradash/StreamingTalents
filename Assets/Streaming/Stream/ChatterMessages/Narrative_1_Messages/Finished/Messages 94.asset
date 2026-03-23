@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4b2eb73f1f91bc44b814a7e3f9a8e784, type: 3}
-  m_Name: Messages 123
+  m_Name: Messages 94
   m_EditorClassIdentifier: 
   Archtype: 
   NarrativeStage: 0
-  message: how do I apply for mod?
-  moodChange: 0
-  viewerChange: 0
+  NeedCollab: 0
+  NeedMiniGame: 0
+  message: what's with all these ads
+  moodChange: -1
+  viewerChange: -4
   DeerEmotion: 0
   WolfEmotion: 0
   UnicornEmotion: 0
   DragonEmotion: 0
-  DeerReaction: We're not taking applications at the moment, but check our website
-    for updates!
-  WolfReaction: We're not taking applications at the moment, but check our website
-    for updates!
-  UnicornReaction: 
-  DragonReaction: 
+  DeerReaction: Um... I have no control over how many ads you get. Sorry about that!
+  WolfReaction: Um... I have no control over how many ads you get. Sorry about that!
+  UnicornReaction: It's to support us in terms of monetization. Hope you don't mind!
+  DragonReaction: Not our problem. Sorry.

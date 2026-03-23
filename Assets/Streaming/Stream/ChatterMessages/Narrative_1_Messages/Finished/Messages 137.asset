@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4b2eb73f1f91bc44b814a7e3f9a8e784, type: 3}
-  m_Name: Messages 127
+  m_Name: Messages 137
   m_EditorClassIdentifier: 
   Archtype: 
   NarrativeStage: 0
-  message: are you gonna do collabs with other agencies?
-  moodChange: 0
+  NeedCollab: 0
+  NeedMiniGame: 0
+  message: Bet you cant cook anything except instant noodles
+  moodChange: -1
   viewerChange: 0
-  DeerEmotion: 0
-  WolfEmotion: 0
+  DeerEmotion: 2
+  WolfEmotion: 2
   UnicornEmotion: 0
   DragonEmotion: 0
-  DeerReaction: There's no cross-company collabs planned at the moment, but we'll
-    keep you updated!
-  WolfReaction: There's no cross-company collabs planned at the moment, but we'll
-    keep you updated!
-  UnicornReaction: 
-  DragonReaction: 
+  DeerReaction: Hey, that's not true...
+  WolfReaction: Hey, that's not true...
+  UnicornReaction: I'm sure she's a great cook!
+  DragonReaction: I'm a dragon. I can cook anything!

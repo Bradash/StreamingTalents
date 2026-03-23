@@ -10,18 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4b2eb73f1f91bc44b814a7e3f9a8e784, type: 3}
-  m_Name: Messages 23
+  m_Name: Messages 14
   m_EditorClassIdentifier: 
   Archtype: 
   NarrativeStage: 0
-  message: I feel like I've heard this voice before...
+  NeedCollab: 0
+  NeedMiniGame: 0
+  message: Hi, do you do NSFW content?
   moodChange: 0
-  viewerChange: 2
-  DeerEmotion: 4
-  WolfEmotion: 4
-  UnicornEmotion: 0
+  viewerChange: -6
+  DeerEmotion: 0
+  WolfEmotion: 0
+  UnicornEmotion: 3
   DragonEmotion: 0
-  DeerReaction: Um, any resemblance is purely coincidental!
-  WolfReaction: Um, any resemblance is purely coincidental!
-  UnicornReaction: 
-  DragonReaction: 
+  DeerReaction: Uhh, no...?
+  WolfReaction: Uhh, no...?
+  UnicornReaction: Why are people asking that?!
+  DragonReaction: This is NOT the place for that, buddy.

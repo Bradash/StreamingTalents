@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Archtype: 
   NarrativeStage: 0
+  NeedCollab: 0
+  NeedMiniGame: 0
   message: is this 18+ only?
   moodChange: 0
   viewerChange: 3
@@ -25,5 +27,5 @@ MonoBehaviour:
     please be very careful! It's a live stream, so anything could happen.
   WolfReaction: This stream isn't strictly 18+, but if you're under 18 on the internet
     please be very careful! It's a live stream, so anything could happen.
-  UnicornReaction: 
-  DragonReaction: 
+  UnicornReaction: We'll try to be as family-friendly as possible, though!
+  DragonReaction: I wouldn't show this to your grandma.

@@ -10,18 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4b2eb73f1f91bc44b814a7e3f9a8e784, type: 3}
-  m_Name: Messages 115
+  m_Name: Messages 149
   m_EditorClassIdentifier: 
   Archtype: 
   NarrativeStage: 0
-  message: what does idk stand for
+  NeedCollab: 0
+  NeedMiniGame: 0
+  message: when are you getting your 3d model?
   moodChange: 0
-  viewerChange: 2
+  viewerChange: 0
   DeerEmotion: 0
   WolfEmotion: 0
   UnicornEmotion: 0
   DragonEmotion: 0
-  DeerReaction: I don't know :(
-  WolfReaction: I don't know :(
-  UnicornReaction: 
-  DragonReaction: I don't know either...
+  DeerReaction: There's no plans for 3D streams yet, but hopefully one day!
+  WolfReaction: There's no plans for 3D streams yet, but hopefully one day!
+  UnicornReaction: If we get 3D models, we should do an offline stream together!
+  DragonReaction: Y'all are not ready for 3D Ember.

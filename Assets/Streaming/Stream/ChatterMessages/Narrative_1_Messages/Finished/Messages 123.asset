@@ -10,18 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4b2eb73f1f91bc44b814a7e3f9a8e784, type: 3}
-  m_Name: Messages 118
+  m_Name: Messages 123
   m_EditorClassIdentifier: 
   Archtype: 
   NarrativeStage: 0
-  message: This is giving me a headache.
-  moodChange: -2
-  viewerChange: -3
+  NeedCollab: 0
+  NeedMiniGame: 0
+  message: how do I apply for mod?
+  moodChange: 0
+  viewerChange: 0
   DeerEmotion: 0
   WolfEmotion: 0
   UnicornEmotion: 0
   DragonEmotion: 0
-  DeerReaction: I'm sorry to hear that...?
-  WolfReaction: I'm sorry to hear that...?
-  UnicornReaction: 
-  DragonReaction: No one's forcing you to watch...
+  DeerReaction: We're not taking applications at the moment, but check our website
+    for updates!
+  WolfReaction: We're not taking applications at the moment, but check our website
+    for updates!
+  UnicornReaction: If any spots open up, we'll try to let you know, okay?
+  DragonReaction: Just don't DM us. Please.
