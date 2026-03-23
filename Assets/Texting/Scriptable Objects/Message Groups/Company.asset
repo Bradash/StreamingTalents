@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Company
   m_EditorClassIdentifier: 
   displayName: Management
-  defaultProfilePicture: {fileID: 21300000, guid: 87f51a409c48e5244814716129455fdc, type: 3}
+  groupChat: 0
+  defaultProfilePicture: {fileID: 21300000, guid: 43fc43c3629e81a4bb10191c526a4c28, type: 3}

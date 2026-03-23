@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Deer
   m_EditorClassIdentifier: 
   displayName: Zara
+  groupChat: 0
   defaultProfilePicture: {fileID: 21300000, guid: c0fa77f6fa0003b4287190e8a9e4ba08, type: 3}

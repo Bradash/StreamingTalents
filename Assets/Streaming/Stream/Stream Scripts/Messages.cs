@@ -29,6 +29,7 @@ public class Messages : ScriptableObject
 
     public enum Narrative
     {
+        Any = 99,
         Stage1 = 1,
         Stage2 = 2,
         Stage3 = 3

@@ -157,9 +157,12 @@ public class ChatMessage : MonoBehaviour
             Messages testMessage = AllMessages[pos];
             x = true;
 
-            if (((int)testMessage.NarrativeStage) != narrative)
+            if (((int)testMessage.NarrativeStage) != 99)
             {
-                x = false;
+                if (((int)testMessage.NarrativeStage) != narrative)
+                {
+                    x = false;
+                }
             }
             if (((int)testMessage.NeedCollab) != 99)
             {
