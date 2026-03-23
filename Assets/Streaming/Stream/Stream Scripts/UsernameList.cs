@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "UsernameList", menuName = "Scriptable Objects/UsernameList")]
@@ -16,16 +17,18 @@ public class UsernameList : ScriptableObject
         {
             if (string.IsNullOrWhiteSpace(line)) continue;
 
-            // Split by comma and take the first value
-            string[] parts = line.Split(',');
-
-            string username = parts[0].Trim();
+            string username = line.Split(',')[0].Trim();
 
             if (!string.IsNullOrEmpty(username))
             {
                 usernames.Add(username);
             }
         }
+
+#if UNITY_EDITOR
+        EditorUtility.SetDirty(this);  // Marks asset as changed
+        AssetDatabase.SaveAssets();   // Actually saves it
+#endif
 
         Debug.Log("Loaded " + usernames.Count + " usernames!");
     }
