@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayName: Company Chat
   groupChat: 1
-  defaultProfilePicture: {fileID: 21300000, guid: 8bf4fe4ed549afb49bd909c530674c2f, type: 3}
+  defaultProfilePicture: {fileID: 21300000, guid: 3bae69ec351621f45a382195df8d73b6, type: 3}

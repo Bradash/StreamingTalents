@@ -20,7 +20,7 @@ public class tutorialInteract : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (GameManager.currentday == 1)
+        if (GameManager.currentday == 0)
         {
             tutorialManage.playTutorial("Interaction", GameManager.tutorialList["Interaction"].Keys.First(), 7.5f, false);
         }

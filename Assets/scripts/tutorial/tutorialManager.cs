@@ -20,7 +20,7 @@ public class tutorialManager : MonoBehaviour
         timer = 0f;
         timeLimit = timeLimitChange;
         print(GameManager.tutorialList[tutorialTitle][tutorialText]);
-        if (GameManager.tutorialList[tutorialTitle][tutorialText] == true || GameManager.currentday != 1) {
+        if (GameManager.tutorialList[tutorialTitle][tutorialText] == true || GameManager.currentday != 0) {
             return;
                 }
 

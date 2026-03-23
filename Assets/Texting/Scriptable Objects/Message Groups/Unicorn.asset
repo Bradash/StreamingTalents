@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Unicorn
   m_EditorClassIdentifier: 
   displayName: Ada
-  defaultProfilePicture: {fileID: 21300000, guid: 98a41115817451d41a44136ae954bc27, type: 3}
+  groupChat: 0
+  defaultProfilePicture: {fileID: 21300000, guid: 9e0a4bd410b3e9547a0353792ad51633, type: 3}

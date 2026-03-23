@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Dragon
   m_EditorClassIdentifier: 
   displayName: Ember
-  defaultProfilePicture: {fileID: 21300000, guid: 5c4de631f7fadfa43b15bd2fb8fced13, type: 3}
+  groupChat: 0
+  defaultProfilePicture: {fileID: 21300000, guid: a796a6cb4e8673247972517bffd8d533, type: 3}
