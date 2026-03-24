@@ -2032,6 +2032,7 @@ MonoBehaviour:
   - {fileID: 1020764032}
   - {fileID: 920810658}
   - {fileID: 100390353}
+  - {fileID: 100390353}
 --- !u!114 &167824133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20844,7 +20845,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b63a3bc9dd3237429b469f7cb630612, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::tutorialMinigames
-  laneChanger: {fileID: 602383429}
+  Rhythm: {fileID: 0}
   Flappybird: {fileID: 920810658}
   Tycoon: {fileID: 100390353}
   tutorialManager: {fileID: 106299296}

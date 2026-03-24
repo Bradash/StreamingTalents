@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1efb0b6b70e01d84b8262f1706c2fd87, type: 3}
-  m_Name: Ada
+  m_Name: Rhythm game
   m_EditorClassIdentifier: Assembly-CSharp::SelectionObject
-  elementName: Ada
-  elementImage: {fileID: 21300000, guid: 8d7cd0a1a67d8d14187b77d19425b377, type: 3}
-  gameID: 1
-  dayUnlocked: 4
+  elementName: Rhythm game
+  elementImage: {fileID: 0}
+  gameID: 3
+  dayUnlocked: 6
