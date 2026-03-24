@@ -12,7 +12,7 @@ public class DonationManager : MonoBehaviour
     public TMP_Text donationText;
 
     [Header("Usernames")]
-    public Usernames[] names;
+    public UsernameList usernameList;
 
     [Header("Display")]
     public float visibleDuration = 4f;
@@ -77,7 +77,8 @@ public class DonationManager : MonoBehaviour
 
     string GetRandomUsername()
     {
-        if (names.Length == 0) return "Anonymous";
-        return names[Random.Range(0, names.Length)].messageText;
+        if (usernameList.usernames.Count == 0) return null;
+        int index = UnityEngine.Random.Range(0, usernameList.usernames.Count);
+        return usernameList.usernames[index];
     }
 }
