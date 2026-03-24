@@ -15,7 +15,7 @@ public class GameMaster : MonoBehaviour
     public void Start()
     {
         dayText.text = "Day: " + loadDay();
-        if (GameManager.currentday == 1)
+        if (GameManager.currentday == 0)
             tutorialManage.playTutorial("Movement", GameManager.tutorialList["Movement"].Keys.First(), 7.5f, false);
     }
     public int loadDay()
