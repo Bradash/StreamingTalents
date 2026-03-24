@@ -41,7 +41,7 @@ public class GameManager
     static public Dictionary<string, Dictionary<string, bool>> tutorialList = new()
     {
         {"Movement", new Dictionary<string, bool>{ { "Use WASD to move, use the mouse to look", false } } },
-        {"Interaction", new Dictionary<string, bool>{ { "Use the key E or the left mouse button to interact with highlighted objects", false } } },
+        {"Interaction", new Dictionary<string, bool>{ { "Use the left mouse button to interact with highlighted objects", false } } },
         {"Stream Setup", new Dictionary<string, bool>{ { "Here is the stream setup. You can choose which game and who you will collab with. For now, you have no collabs or games to choose.", false } } },
         {"Streaming", new Dictionary<string, bool>{ { "A lot of things to consider.", false } } },
         {"Tycoon", new Dictionary<string, bool>{ { "Click the shops to make money, click the green button to upgrade them!", false } } },
