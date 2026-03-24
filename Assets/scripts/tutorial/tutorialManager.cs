@@ -43,6 +43,7 @@ public class tutorialManager : MonoBehaviour
 
     public void closeTutorial()
     {
+        Time.timeScale = 1;
         tutorialPanel.SetActive(false);
     }
 

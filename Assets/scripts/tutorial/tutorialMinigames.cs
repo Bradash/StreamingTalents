@@ -22,6 +22,7 @@ public class tutorialMinigames : MonoBehaviour
                 tutorialManager.playTutorial("Tycoon", GameManager.tutorialList["Tycoon"].Keys.First(), 15f, true);
             //else if (!GameManager.seenTycoon && Tycoon.activeInHierarchy)
             //    tutorialManager.playTutorial("Tycoon", GameManager.tutorialList["Tycoon"].Keys.First(), 15f, true);
+            Time.timeScale = 0;
         }
 
     }
