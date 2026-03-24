@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf1ac7be18dbff245b2e6e33e3f9aaf4, type: 3}
+  m_Name: 1 Message 2
+  m_EditorClassIdentifier: 
+  speaker: {fileID: 11400000, guid: c816e3e4d39c47c4cbccf5dfdc110b35, type: 2}
+  groupChat: 0
+  GroupChatspeaker: {fileID: 0}
+  message: I see. There isn't anything to worry about.
+  flowType: 1
+  nextMessage: {fileID: 0}
+  options:
+  - {fileID: 11400000, guid: 05027a6f06e8a9d489bef34b0fd0bbd4, type: 2}
+  - {fileID: 11400000, guid: 627cab9845b95fe4e8393e5f98428043, type: 2}

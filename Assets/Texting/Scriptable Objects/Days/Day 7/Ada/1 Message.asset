@@ -15,7 +15,10 @@ MonoBehaviour:
   speaker: {fileID: 11400000, guid: d37dd561f36ac4f4892d6318343dfc07, type: 2}
   groupChat: 0
   GroupChatspeaker: {fileID: 0}
-  message: Hello Deer.
-  flowType: 0
+  message: "I can\u2019t take this anymore, it feels like I\u2019ve been ghosted
+    by everyone lately."
+  flowType: 1
   nextMessage: {fileID: 0}
-  options: []
+  options:
+  - {fileID: 11400000, guid: ef3071797b2c927489ecf2a6166c13cc, type: 2}
+  - {fileID: 11400000, guid: b30fa6afdde2f0943b6f0bcd6dead016, type: 2}

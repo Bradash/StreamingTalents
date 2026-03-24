@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dcb1a752a64962741ba7a74b60941351, type: 3}
-  m_Name: Ada Day 5
+  m_Name: GC Day 7
   m_EditorClassIdentifier: 
-  day: 0
-  participants: {fileID: 11400000, guid: d37dd561f36ac4f4892d6318343dfc07, type: 2}
+  day: 7
+  participants: {fileID: 11400000, guid: 5b5aa307db4a47041a85e786a7a757d1, type: 2}
   startingMessage: {fileID: 0}

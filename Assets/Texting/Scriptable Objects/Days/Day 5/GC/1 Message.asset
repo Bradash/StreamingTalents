@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf1ac7be18dbff245b2e6e33e3f9aaf4, type: 3}
   m_Name: 1 Message
   m_EditorClassIdentifier: 
-  speaker: {fileID: 0}
+  speaker: {fileID: 11400000, guid: 5b5aa307db4a47041a85e786a7a757d1, type: 2}
   groupChat: 1
   GroupChatspeaker: {fileID: 11400000, guid: d37dd561f36ac4f4892d6318343dfc07, type: 2}
   message: Hi just opened this new chat for all of us to talk in!
