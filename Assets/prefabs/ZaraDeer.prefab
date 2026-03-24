@@ -614,6 +614,11 @@ MonoBehaviour:
   deerObject: {fileID: 813513057471314127}
   deerMouth: {fileID: 8051355119435657797}
   deerMouthMat: {fileID: 2100000, guid: 231b969e495bc174eae96d2009104209, type: 2}
+  deerMouthAngry: {fileID: 2100000, guid: 8bcbd64ed6b40994ab2e721c7adaa7de, type: 2}
+  deerMouthScared: {fileID: 2100000, guid: 6b465d2aa2c1f4a409d1d6a16f129696, type: 2}
+  deerMouthSmile: {fileID: 2100000, guid: 231b969e495bc174eae96d2009104209, type: 2}
+  deerMouthIdle: {fileID: 2100000, guid: 231b969e495bc174eae96d2009104209, type: 2}
+  deerMouthLaugh: {fileID: 2100000, guid: 76cb26eb1fb974d4a9849095bbad9250, type: 2}
   DeerEmotionAni:
   - emotion: 0
     value: 0
