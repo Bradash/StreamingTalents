@@ -86,9 +86,10 @@ public class DeerAnimations : MonoBehaviour
             deerMouthMat = deerMouthLaugh;
         else if (emotion == Topics.OtherEmotionBase.Neutral)
             deerMouthMat = deerMouthIdle;
-        
 
-        deerMouth.GetComponent<Renderer>().material = deerMouthMat;
+        Material[] newMats = new Material[] { deerMouthMat };
+
+        deerMouth.GetComponent<SkinnedMeshRenderer>().materials = newMats;
 
         anim.SetInteger("Emotion", target);
 
@@ -96,8 +97,9 @@ public class DeerAnimations : MonoBehaviour
 
         yield return new WaitForSeconds(duration);
 
-        deerMouthMat = Resources.Load<Material>("Assets/Assets/3D Assets/ZaraMaterials/mouthIdle.mat");
-        deerMouth.GetComponent<Renderer>().material = deerMouthMat;
+        deerMouthMat = deerMouthIdle;
+        Material[] newMatsIdle = new Material[] { deerMouthMat };
+        deerMouth.GetComponent<SkinnedMeshRenderer>().materials = newMatsIdle;
         anim.SetInteger("Emotion", 0);
         blinkSpeed = 1f;
     }
