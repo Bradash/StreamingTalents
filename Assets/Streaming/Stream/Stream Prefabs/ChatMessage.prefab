@@ -803,6 +803,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 2d711a314b0c59a4bb872f01cb24cc3a, type: 2}
   - {fileID: 11400000, guid: f9ad06ac9a0f81d4086c2847d113a3c2, type: 2}
   - {fileID: 11400000, guid: 93d04f049bc3bff4e92af4dd75927d5c, type: 2}
+  - {fileID: 11400000, guid: aeff65bb858517647803f884b82bb430, type: 2}
   gameState: {fileID: 11400000, guid: 3994a9afc7e0a9c41a10091dafa985ed, type: 2}
   usernameList: {fileID: 11400000, guid: aa0c01e8141dbb046accf57e219764c4, type: 2}
   messageData: {fileID: 0}
