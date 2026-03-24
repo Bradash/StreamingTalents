@@ -618,13 +618,14 @@ MonoBehaviour:
   - emotion: 1
     value: 1
   - emotion: 2
-    value: 1
+    value: 2
   - emotion: 3
-    value: 1
+    value: 3
   - emotion: 4
-    value: 1
+    value: 4
   blinkTimer: 0
   blinkInterval: 4
+  blinkSpeed: 1
 --- !u!4 &813513057471314127 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1a88b5d85c6372e42b7c2d3a03b9246f, type: 3}
