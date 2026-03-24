@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class NoteTriggers : MonoBehaviour
 {
+    //IMPORTANT EXAPLE OF POINTS: UIStatsManager.Instance.points += 5; (MIN: 0, MAX: 100, DEFAULT: 50)
+
     [SerializeField] GameObject timingIcon;
     VisualTiming timingScript;
     public int notesInZone = 0;
