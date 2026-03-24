@@ -16,6 +16,7 @@ public class DeerAnimations : MonoBehaviour
 
     public float blinkTimer = 0f;
     public float blinkInterval = 4f;
+    public float blinkSpeed = 1f;
 
     [System.Serializable]
     public class EmotionAni
@@ -64,6 +65,7 @@ public class DeerAnimations : MonoBehaviour
 
     IEnumerator ResponseRoutine(OtherEmotionBase emotion, float duration)
     {
+        blinkSpeed = 0f;
         int target = GetSprite(emotion);
 
         anim.SetInteger("Emotion", target);
@@ -71,6 +73,7 @@ public class DeerAnimations : MonoBehaviour
         yield return new WaitForSeconds(duration);
 
         anim.SetInteger("Emotion", 0);
+        blinkSpeed = 1f;
     }
 
     int GetSprite(OtherEmotionBase emotion)
@@ -88,7 +91,7 @@ public class DeerAnimations : MonoBehaviour
     void Update()
     {
         //blinking
-        blinkTimer += 1 * Time.deltaTime;
+        blinkTimer += blinkSpeed * Time.deltaTime;
 
         if (blinkTimer >= blinkInterval)
         {
