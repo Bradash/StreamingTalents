@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Archtype: 
   NarrativeStage: 99
-  NeedCollab: 99
-  NeedMiniGame: 99
+  NeedCollab: 0
+  NeedMiniGame: 0
   message: this is the worst gameplay ive ever seen
   moodChange: -3
   viewerChange: -2
@@ -23,7 +23,7 @@ MonoBehaviour:
   WolfEmotion: 0
   UnicornEmotion: 0
   DragonEmotion: 1
-  DeerReaction: Sorry to disappoint...
+  DeerReaction: Sorry to disappoint
   WolfReaction: Sorry to disappoint...
   UnicornReaction: We'll try harder, I promise!
   DragonReaction: Oh, really? Let's see YOU do better.

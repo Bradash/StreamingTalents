@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Messages 86
   m_EditorClassIdentifier: 
   Archtype: 
-  NarrativeStage: 0
+  NarrativeStage: 99
   NeedCollab: 0
   NeedMiniGame: 0
   message: Look behind you
@@ -22,7 +22,7 @@ MonoBehaviour:
   DeerEmotion: 0
   WolfEmotion: 0
   UnicornEmotion: 3
-  DragonEmotion: 4
+  DragonEmotion: 0
   DeerReaction: What do you mean? There's nothing behind me.
   WolfReaction: What do you mean? There's nothing behind me.
   UnicornReaction: Don't say things like that!

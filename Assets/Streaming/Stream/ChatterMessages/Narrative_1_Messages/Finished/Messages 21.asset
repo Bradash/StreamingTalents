@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Messages 21
   m_EditorClassIdentifier: 
   Archtype: 
-  NarrativeStage: 1
+  NarrativeStage: 99
   NeedCollab: 0
   NeedMiniGame: 0
   message: what languages can you speak?

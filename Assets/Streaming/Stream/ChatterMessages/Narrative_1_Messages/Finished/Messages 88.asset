@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Messages 88
   m_EditorClassIdentifier: 
   Archtype: 
-  NarrativeStage: 0
+  NarrativeStage: 99
+  NeedCollab: 0
+  NeedMiniGame: 0
   message: the fog is coming the fog is coming the fog is coming
   moodChange: 0
   viewerChange: 2

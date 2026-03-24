@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Archtype: 
   NarrativeStage: 99
-  NeedCollab: 99
-  NeedMiniGame: 99
+  NeedCollab: 0
+  NeedMiniGame: 0
   message: can you play a different game?
   moodChange: -2
   viewerChange: -2
@@ -25,5 +25,5 @@ MonoBehaviour:
   DragonEmotion: 2
   DeerReaction: This is all we're doing for now. Maybe in another stream though!
   WolfReaction: This is all we're doing for now. Maybe in another stream though!
-  UnicornReaction: Is this not enjoyable for you?
+  UnicornReaction: Is this game not enjoyable for you?
   DragonReaction: If you're not entertained, then leave.

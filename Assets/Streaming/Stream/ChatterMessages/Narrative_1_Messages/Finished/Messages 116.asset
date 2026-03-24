@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Messages 116
   m_EditorClassIdentifier: 
   Archtype: 
-  NarrativeStage: 0
+  NarrativeStage: 99
+  NeedCollab: 0
+  NeedMiniGame: 0
   message: what the hell is a vtuber
   moodChange: 0
   viewerChange: 1

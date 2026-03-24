@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Archtype: 
   NarrativeStage: 99
-  NeedCollab: 99
+  NeedCollab: 0
   NeedMiniGame: 0
   message: when is face reveal??
   moodChange: 0

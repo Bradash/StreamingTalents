@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Messages 157
   m_EditorClassIdentifier: 
   Archtype: 
-  NarrativeStage: 0
+  NarrativeStage: 99
+  NeedCollab: 0
+  NeedMiniGame: 0
   message: Whats this ones name again i cant remember
   moodChange: 0
   viewerChange: 0

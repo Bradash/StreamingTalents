@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Messages 113
   m_EditorClassIdentifier: 
   Archtype: 
-  NarrativeStage: 0
+  NarrativeStage: 99
+  NeedCollab: 0
+  NeedMiniGame: 0
   message: These streamers would never survive in the real world. Pathetic
   moodChange: -5
   viewerChange: -5

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Messages 23
   m_EditorClassIdentifier: 
   Archtype: 
-  NarrativeStage: 1
+  NarrativeStage: 99
   NeedCollab: 0
-  NeedMiniGame: 99
+  NeedMiniGame: 0
   message: I feel like I've heard this voice before...
   moodChange: 0
   viewerChange: 2
