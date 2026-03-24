@@ -89,7 +89,9 @@ public class DeerAnimations : MonoBehaviour
 
         deerMouth.GetComponent<Renderer>().material = deerMouthMat;
 
-            anim.SetInteger("Emotion", target);
+        anim.SetInteger("Emotion", target);
+        anim.SetInteger("Emotion", target);
+        Debug.Log(target + "!!!!!!!!!");
 
         yield return new WaitForSeconds(duration);
 
@@ -101,13 +103,25 @@ public class DeerAnimations : MonoBehaviour
 
     int GetSprite(OtherEmotionBase emotion)
     {
-        if (emotion == Topics.OtherEmotionBase.Neutral)
+        if (emotion == Topics.OtherEmotionBase.Smile)
         {
-            return 0;
+            return 1;
+        }
+        else if(emotion == Topics.OtherEmotionBase.Angry)
+        {
+            return 2;
+        }
+        else if (emotion == Topics.OtherEmotionBase.Scared)
+        {
+            return 3;
+        }
+        else if (emotion == Topics.OtherEmotionBase.Laugh)
+        {
+            return 4;
         }
         else
         {
-            return 1;
+            return 0;
         }
     }
 
