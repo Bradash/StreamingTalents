@@ -14,12 +14,8 @@ public class tutorialMinigames : MonoBehaviour
     {
         if (GameManager.currentday != 0)
         {
-            if (!GameManager.seenTemple && laneChanger.activeInHierarchy)
-            {
-                tutorialManager.playTutorial("Lane Changer", GameManager.tutorialList["Lane Changer"].Keys.First(), 15f, true);
-                Time.timeScale = 0;
-            }
-            else if (!GameManager.seenBird && Flappybird.activeInHierarchy) { 
+            
+            if (!GameManager.seenBird && Flappybird.activeInHierarchy) { 
                 tutorialManager.playTutorial("Cave Flyer", GameManager.tutorialList["Cave Flyer"].Keys.First(), 15f, true);
                 Time.timeScale = 0;
             }
@@ -27,10 +23,15 @@ public class tutorialMinigames : MonoBehaviour
                 tutorialManager.playTutorial("Tycoon", GameManager.tutorialList["Tycoon"].Keys.First(), 15f, true);
                 Time.timeScale = 0;
             }
-            else if (!GameManager.seenTycoon && Tycoon.activeInHierarchy) { 
-               tutorialManager.playTutorial("Tycoon", GameManager.tutorialList["Tycoon"].Keys.First(), 15f, true);
+            /*else if (!GameManager.seenTemple && laneChanger.activeInHierarchy)
+            {
+                tutorialManager.playTutorial("Lane Changer", GameManager.tutorialList["Lane Changer"].Keys.First(), 15f, true);
                 Time.timeScale = 0;
             }
+            else if (!GameManager.seenRhythm && Rhythm.activeInHierarchy) { 
+               tutorialManager.playTutorial("Rhythm", GameManager.tutorialList["Rhythm"].Keys.First(), 15f, true);
+                Time.timeScale = 0;
+            }*/
 
         }
 
