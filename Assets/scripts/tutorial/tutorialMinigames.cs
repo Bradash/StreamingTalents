@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class tutorialMinigames : MonoBehaviour
 {
-    public GameObject laneChanger;
+    public GameObject Rhythm;
     public GameObject Flappybird;
     public GameObject Tycoon;
 
