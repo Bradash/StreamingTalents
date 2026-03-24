@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Messages 49
   m_EditorClassIdentifier: 
   Archtype: 
-  NarrativeStage: 0
+  NarrativeStage: 99
+  NeedCollab: 0
+  NeedMiniGame: 0
   message: karaoke stream when?
   moodChange: 2
   viewerChange: 3

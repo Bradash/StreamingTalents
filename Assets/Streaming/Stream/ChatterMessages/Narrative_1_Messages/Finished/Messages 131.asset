@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Messages 131
   m_EditorClassIdentifier: 
   Archtype: 
-  NarrativeStage: 0
+  NarrativeStage: 99
   NeedCollab: 0
   NeedMiniGame: 0
   message: Why is membership so expensive

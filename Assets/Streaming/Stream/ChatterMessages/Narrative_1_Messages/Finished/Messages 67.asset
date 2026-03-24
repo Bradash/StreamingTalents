@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Messages 67
   m_EditorClassIdentifier: 
   Archtype: 
-  NarrativeStage: 0
+  NarrativeStage: 99
+  NeedCollab: 0
+  NeedMiniGame: 0
   message: Can you lower the volume?
   moodChange: 0
   viewerChange: 2
