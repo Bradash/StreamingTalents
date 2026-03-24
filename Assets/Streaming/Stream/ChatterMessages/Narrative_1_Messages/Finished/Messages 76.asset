@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Archtype: 
   NarrativeStage: 99
-  NeedCollab: 0
-  NeedMiniGame: 0
+  NeedCollab: 99
+  NeedMiniGame: 99
   message: this has to be ragebait
   moodChange: -2
   viewerChange: -2
@@ -26,4 +26,4 @@ MonoBehaviour:
   DeerReaction: Uhh... nope! Just a chill streamer trying to make you smile!
   WolfReaction: Uhh... nope! Just a chill streamer trying to make you smile!
   UnicornReaction: Is something wrong?
-  DragonReaction: Grr...
+  DragonReaction: Hmph...

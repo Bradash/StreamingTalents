@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Messages 57
   m_EditorClassIdentifier: 
   Archtype: 
-  NarrativeStage: 99
-  NeedCollab: 0
-  NeedMiniGame: 0
+  NarrativeStage: 1
+  NeedCollab: 99
+  NeedMiniGame: 99
   message: Have you ever seen the life drain from a man's eyes in his final moments?
   moodChange: 0
   viewerChange: 4
