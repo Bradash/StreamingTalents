@@ -31,7 +31,12 @@ public class menuScript : MonoBehaviour
         SaveSystem.LoadGame();
         FadeManager.Instance.FadeAndLoadScene("IRL");
     }
-    
+
+    public void Credits()
+    {
+        FadeManager.Instance.FadeAndLoadScene("Credits");
+    }
+
     public void Quit()
     {
         Application.Quit();
