@@ -13,6 +13,7 @@ public class NoteTiming : MonoBehaviour
     [SerializeField] float missZone = -4.7f;
     GameObject timingIcon;
     VisualTiming timingScript;
+    bool inZone = false;
     
 
     private void Start()
@@ -55,35 +56,40 @@ public class NoteTiming : MonoBehaviour
 
     private void Update()
     {
-        switch (noteLane)
+        if (inZone)
         {
-            case 0:
-                if(Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) {
-                    HitZone();
-                }
-                break;
-            case 1:
-                if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
-                {
-                    HitZone();
-                }
-                break;
-            case 2:
-                if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
-                {
-                    HitZone();
-                }
-                break;
-            case 3:
-                if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
-                {
-                    HitZone();
-                }
-                break;
+            switch (noteLane)
+            {
+                case 0:
+                    if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
+                    {
+                        HitZone();
+                    }
+                    break;
+                case 1:
+                    if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
+                    {
+                        HitZone();
+                    }
+                    break;
+                case 2:
+                    if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
+                    {
+                        HitZone();
+                    }
+                    break;
+                case 3:
+                    if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
+                    {
+                        HitZone();
+                    }
+                    break;
+            }
         }
 
-        if (transform.position.y < missZone)
+        if (inZone && transform.position.y < missZone)
         {
+            inZone = false;
             currentZone = zone[0];
             HitZone();
         }
@@ -107,6 +113,8 @@ public class NoteTiming : MonoBehaviour
         {
             currentZone = zone[4];
         }
+
+        if(!inZone) { inZone = true; }
     }
 
     void HitZone()
@@ -141,6 +149,4 @@ public class NoteTiming : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
-    
 }
