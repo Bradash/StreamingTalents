@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Messages 117
   m_EditorClassIdentifier: 
   Archtype: 
-  NarrativeStage: 99
-  NeedCollab: 0
-  NeedMiniGame: 0
+  NarrativeStage: 2
+  NeedCollab: 99
+  NeedMiniGame: 99
   message: My son keeps watching these types of streams. What is this about?
   moodChange: 0
   viewerChange: 2

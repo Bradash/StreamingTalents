@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Messages 109
   m_EditorClassIdentifier: 
   Archtype: 
-  NarrativeStage: 99
-  NeedCollab: 0
-  NeedMiniGame: 0
+  NarrativeStage: 2
+  NeedCollab: 99
+  NeedMiniGame: 99
   message: Do you have any advice on handling toxic relationships?
   moodChange: 0
   viewerChange: 0
