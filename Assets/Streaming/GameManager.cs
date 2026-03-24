@@ -47,7 +47,7 @@ public class GameManager
         {"Tycoon", new Dictionary<string, bool>{ { "Click the shops to make money, click the green button to upgrade them!", false } } },
         {"Cave Flyer", new Dictionary<string, bool>{ { "Use W and S to move around the obstacles!", false } } },
         {"Lane Changer", new Dictionary<string, bool>{ { "Use the keys A and D to avoid obstacles!", false } } },
-        {"Rhythm", new Dictionary<string, bool>{ { "Press the corrosponding keys!", false } } },
+        {"Rhythm", new Dictionary<string, bool>{ { "Press the corrosponding keys when the notes come in!", false } } },
         {"Stream Results", new Dictionary<string, bool>{ { "Great Stream! Here are the results from your stream.", false } } }
     };
 }
