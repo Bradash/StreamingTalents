@@ -962,7 +962,10 @@ MonoBehaviour:
     - The stats on corners.
 
     -
-    Use left and right click to interact with chat.'
+    Use left and right click to interact with chat.
+
+    - End Stream on bottom left
+    when you are done'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4d0b9a098ab2b094bab11acd8d2be2af, type: 2}
   m_sharedMaterial: {fileID: -3666137190791572527, guid: 4d0b9a098ab2b094bab11acd8d2be2af, type: 2}
@@ -5209,7 +5212,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You can end stream early by pressing this X button.
+  m_text: 'You can end stream early by pressing this X button.
+
+
+    When you are
+    done the test stream. Do this.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4d0b9a098ab2b094bab11acd8d2be2af, type: 2}
   m_sharedMaterial: {fileID: -3666137190791572527, guid: 4d0b9a098ab2b094bab11acd8d2be2af, type: 2}
@@ -11777,11 +11784,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Welcome to your first stream!
+  m_text: 'Welcome to your test stream!
 
 
-    Before you start, please read this
-    short tutorial!'
+    Here you can play around and see how
+    streaming works.
+
+
+    Before you start, please read this short tutorial!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4d0b9a098ab2b094bab11acd8d2be2af, type: 2}
   m_sharedMaterial: {fileID: -3666137190791572527, guid: 4d0b9a098ab2b094bab11acd8d2be2af, type: 2}
