@@ -3,7 +3,7 @@ using System.Collections;
 
 public class NoteTiming : MonoBehaviour
 {
-    [SerializeField] int noteLane;
+    public int noteLane;
     string[] zone = new string[5];
     string currentZone;
     [SerializeField] SpriteRenderer noteColor;
