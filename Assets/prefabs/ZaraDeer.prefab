@@ -612,6 +612,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 7922404406495598747}
   deerObject: {fileID: 813513057471314127}
+  deerMouth: {fileID: 8051355119435657797}
+  deerMouthMat: {fileID: 2100000, guid: 231b969e495bc174eae96d2009104209, type: 2}
   DeerEmotionAni:
   - emotion: 0
     value: 0
@@ -629,5 +631,10 @@ MonoBehaviour:
 --- !u!4 &813513057471314127 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1a88b5d85c6372e42b7c2d3a03b9246f, type: 3}
+  m_PrefabInstance: {fileID: 918897797754085156}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8051355119435657797 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -2054560076165190303, guid: 1a88b5d85c6372e42b7c2d3a03b9246f, type: 3}
   m_PrefabInstance: {fileID: 918897797754085156}
   m_PrefabAsset: {fileID: 0}
