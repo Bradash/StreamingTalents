@@ -789,8 +789,20 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 211b74b34e279664abc3a4e04b6a18bc, type: 3}
   - {fileID: 21300000, guid: 3d3e81335dcf62f489cb8bb8bd900fd3, type: 3}
   AllMessages:
-  - {fileID: 11400000, guid: aeff65bb858517647803f884b82bb430, type: 2}
-  - {fileID: 11400000, guid: aeff65bb858517647803f884b82bb430, type: 2}
+  - {fileID: 11400000, guid: 6ffb7415bb2f1704aadc8f8bbe81189b, type: 2}
+  - {fileID: 11400000, guid: 018f9f350dd626d44b0cca78ecd6a575, type: 2}
+  - {fileID: 11400000, guid: 0eae903236ce62a4d8a9ccbfc0d9bee7, type: 2}
+  - {fileID: 11400000, guid: 377bd95471803804a97f41e3a7d101af, type: 2}
+  - {fileID: 11400000, guid: 78043e3b61e7b5f45b597b840d812c2c, type: 2}
+  - {fileID: 11400000, guid: d21119c8055934447b0cfd4d3702f9c1, type: 2}
+  - {fileID: 11400000, guid: a882ada231199b34d8cd42ff8f27fd14, type: 2}
+  - {fileID: 11400000, guid: ca6a0e68623ad0443b1f4283d09309ee, type: 2}
+  - {fileID: 11400000, guid: 7fe89aa0ffbbce24b87bf42369fdb7af, type: 2}
+  - {fileID: 11400000, guid: b00051c697411194491c244f23020372, type: 2}
+  - {fileID: 11400000, guid: ebb3b697b139d0b4ca2a63e5633b73e6, type: 2}
+  - {fileID: 11400000, guid: 2d711a314b0c59a4bb872f01cb24cc3a, type: 2}
+  - {fileID: 11400000, guid: f9ad06ac9a0f81d4086c2847d113a3c2, type: 2}
+  - {fileID: 11400000, guid: 93d04f049bc3bff4e92af4dd75927d5c, type: 2}
   gameState: {fileID: 11400000, guid: 3994a9afc7e0a9c41a10091dafa985ed, type: 2}
   usernameList: {fileID: 11400000, guid: aa0c01e8141dbb046accf57e219764c4, type: 2}
   messageData: {fileID: 0}
