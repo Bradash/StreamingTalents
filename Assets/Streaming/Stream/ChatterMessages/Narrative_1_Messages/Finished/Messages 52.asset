@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Messages 52
   m_EditorClassIdentifier: 
   Archtype: 
-  NarrativeStage: 0
+  NarrativeStage: 99
+  NeedCollab: 99
+  NeedMiniGame: 99
   message: you plague ridden rat
   moodChange: -1
   viewerChange: 1

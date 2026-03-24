@@ -14,13 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Archtype: 
   NarrativeStage: 0
+  NeedCollab: 0
+  NeedMiniGame: 0
   message: Look behind you
   moodChange: 0
   viewerChange: 3
   DeerEmotion: 0
   WolfEmotion: 0
   UnicornEmotion: 3
-  DragonEmotion: 0
+  DragonEmotion: 4
   DeerReaction: What do you mean? There's nothing behind me.
   WolfReaction: What do you mean? There's nothing behind me.
   UnicornReaction: Don't say things like that!

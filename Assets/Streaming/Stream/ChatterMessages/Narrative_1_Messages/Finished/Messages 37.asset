@@ -13,13 +13,15 @@ MonoBehaviour:
   m_Name: Messages 37
   m_EditorClassIdentifier: 
   Archtype: 
-  NarrativeStage: 0
+  NarrativeStage: 99
+  NeedCollab: 99
+  NeedMiniGame: 99
   message: you should sell your bathwater
   moodChange: 0
   viewerChange: 3
   DeerEmotion: 3
   WolfEmotion: 3
-  UnicornEmotion: 0
+  UnicornEmotion: 3
   DragonEmotion: 0
   DeerReaction: What...?
   WolfReaction: What...?

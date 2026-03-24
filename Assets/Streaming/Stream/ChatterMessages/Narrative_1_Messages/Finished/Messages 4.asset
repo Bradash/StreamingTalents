@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Messages 4
   m_EditorClassIdentifier: 
   Archtype: 
-  NarrativeStage: 0
+  NarrativeStage: 99
+  NeedCollab: 99
+  NeedMiniGame: 99
   message: chat is this gaming??
   moodChange: 4
   viewerChange: 4

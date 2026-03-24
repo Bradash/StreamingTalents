@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Messages 2
   m_EditorClassIdentifier: 
   Archtype: 
-  NarrativeStage: 0
+  NarrativeStage: 1
+  NeedCollab: 99
+  NeedMiniGame: 99
   message: hows it goin
   moodChange: 2
   viewerChange: 0
