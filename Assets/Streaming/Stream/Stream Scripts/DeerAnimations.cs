@@ -68,6 +68,7 @@ public class DeerAnimations : MonoBehaviour
     {
         blinkSpeed = 0f;
         int target = GetSprite(emotion);
+        anim.SetInteger("Emotion", target);
 
         if (emotion == Topics.OtherEmotionBase.Smile)
             deerMouthMat = Resources.Load<Material>("Assets/Assets/3D Assets/ZaraMaterials/mouthSmile.mat");
@@ -82,7 +83,6 @@ public class DeerAnimations : MonoBehaviour
 
         deerMouth.GetComponent<Renderer>().material = deerMouthMat;
 
-        anim.SetInteger("Emotion", target);
         Debug.Log(target + "!!!!!!!!!");
 
         yield return new WaitForSeconds(duration);
