@@ -18,9 +18,16 @@ public class GameMaster : MonoBehaviour
         if (GameManager.currentday == 0)
             tutorialManage.playTutorial("Movement", GameManager.tutorialList["Movement"].Keys.First(), 7.5f, false);
     }
-    public int loadDay()
+    public string loadDay()
     {
-        return GameManager.currentday;
+        if (GameManager.currentday == 0)
+        {
+            return "Test Day";
+        }
+        else
+        {
+            return GameManager.currentday.ToString();
+        }
     }
     public void computerInteract()
     {
