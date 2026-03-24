@@ -7,6 +7,8 @@ public class DeerAnimations : MonoBehaviour
     public Animator anim;
     public Transform deerObject;
 
+    public GameObject deerMouth;
+    public Material deerMouthMat;
 
     int currentAnimation; //0 = idle, 1 = shock
 
@@ -54,7 +56,6 @@ public class DeerAnimations : MonoBehaviour
     }
 
 
-
     public void DeerRespondToMessage(OtherEmotionBase emotion, float duration)
     {
         if (currentRoutine != null)
@@ -68,10 +69,25 @@ public class DeerAnimations : MonoBehaviour
         blinkSpeed = 0f;
         int target = GetSprite(emotion);
 
+        if (emotion == Topics.OtherEmotionBase.Smile)
+            deerMouthMat = Resources.Load<Material>("Assets/Assets/3D Assets/ZaraMaterials/mouthSmile.mat");
+        else if (emotion == Topics.OtherEmotionBase.Angry)
+            deerMouthMat = Resources.Load<Material>("Assets/Assets/3D Assets/ZaraMaterials/mouthAngry.mat");
+        else if (emotion == Topics.OtherEmotionBase.Scared)
+            deerMouthMat = Resources.Load<Material>("Assets/Assets/3D Assets/ZaraMaterials/mouthScared.mat");
+        else
+        {
+            deerMouthMat = Resources.Load<Material>("Assets/Assets/3D Assets/ZaraMaterials/mouthIdle.mat");
+        }
+
+        deerMouth.GetComponent<Renderer>().material = deerMouthMat;
+
         anim.SetInteger("Emotion", target);
 
         yield return new WaitForSeconds(duration);
 
+        deerMouthMat = Resources.Load<Material>("Assets/Assets/3D Assets/ZaraMaterials/mouthIdle.mat");
+        deerMouth.GetComponent<Renderer>().material = deerMouthMat;
         anim.SetInteger("Emotion", 0);
         blinkSpeed = 1f;
     }
