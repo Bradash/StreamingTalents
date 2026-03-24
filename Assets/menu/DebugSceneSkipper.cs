@@ -11,7 +11,7 @@ public class DebugSceneSkipper : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.P))
         {
-            LoadNextScene();
+            //LoadNextScene();
         }
     }
 
