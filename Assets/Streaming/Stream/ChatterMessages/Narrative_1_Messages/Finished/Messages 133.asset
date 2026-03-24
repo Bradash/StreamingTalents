@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Messages 133
   m_EditorClassIdentifier: 
   Archtype: 
-  NarrativeStage: 99
-  NeedCollab: 0
-  NeedMiniGame: 0
+  NarrativeStage: 1
+  NeedCollab: 99
+  NeedMiniGame: 99
   message: is this 18+ only?
   moodChange: 0
   viewerChange: 3
