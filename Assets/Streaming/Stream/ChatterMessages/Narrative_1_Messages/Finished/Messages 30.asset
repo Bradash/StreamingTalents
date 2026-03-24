@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Archtype: 
   NarrativeStage: 99
-  NeedCollab: 0
-  NeedMiniGame: 0
+  NeedCollab: 99
+  NeedMiniGame: 99
   message: this is the best gameplay ive ever seen
   moodChange: 3
   viewerChange: 2

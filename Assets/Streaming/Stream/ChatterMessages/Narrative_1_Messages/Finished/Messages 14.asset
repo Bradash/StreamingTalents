@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Archtype: 
   NarrativeStage: 99
-  NeedCollab: 0
-  NeedMiniGame: 0
+  NeedCollab: 99
+  NeedMiniGame: 99
   message: Hi, do you do NSFW content?
   moodChange: 0
   viewerChange: -6

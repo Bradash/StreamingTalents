@@ -15,7 +15,7 @@ MonoBehaviour:
   Archtype: 
   NarrativeStage: 99
   NeedCollab: 0
-  NeedMiniGame: 0
+  NeedMiniGame: 99
   message: is this another one of those v tubers
   moodChange: 0
   viewerChange: 0

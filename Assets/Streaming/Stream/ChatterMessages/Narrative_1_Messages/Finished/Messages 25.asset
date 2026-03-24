@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Messages 25
   m_EditorClassIdentifier: 
   Archtype: 
-  NarrativeStage: 99
-  NeedCollab: 0
+  NarrativeStage: 2
+  NeedCollab: 99
   NeedMiniGame: 0
   message: milking stream????
   moodChange: -1

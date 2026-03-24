@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Messages 23
   m_EditorClassIdentifier: 
   Archtype: 
-  NarrativeStage: 99
+  NarrativeStage: 1
   NeedCollab: 0
-  NeedMiniGame: 0
+  NeedMiniGame: 99
   message: I feel like I've heard this voice before...
   moodChange: 0
   viewerChange: 2
@@ -23,7 +23,7 @@ MonoBehaviour:
   WolfEmotion: 4
   UnicornEmotion: 0
   DragonEmotion: 0
-  DeerReaction: Um, any resemblance is purely coincidental!
+  DeerReaction: Um, any resemblance to other VTubers is purely coincidental!
   WolfReaction: Um, any resemblance is purely coincidental!
   UnicornReaction: ...
   DragonReaction: ...
