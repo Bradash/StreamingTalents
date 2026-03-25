@@ -44,21 +44,21 @@ public class NoteTriggers : MonoBehaviour
                     }
                     break;
                 case 1:
-                    if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
+                    if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.UpArrow))
                     {
                         timingScript.StartTimingVisual(0);
                         UIStatsManager.Instance.points -= 5;
                     }
                     break;
                 case 2:
-                    if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
+                    if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.DownArrow))
                     {
                         timingScript.StartTimingVisual(0);
                         UIStatsManager.Instance.points -= 5;
                     }
                     break;
                 case 3:
-                    if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
+                    if (Input.GetKeyDown(KeyCode.F) || Input.GetKeyDown(KeyCode.RightArrow))
                     {
                         timingScript.StartTimingVisual(0);
                         UIStatsManager.Instance.points -= 5;
