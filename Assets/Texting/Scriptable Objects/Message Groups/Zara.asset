@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayName: Zara
   groupChat: 0
-  defaultProfilePicture: {fileID: 21300000, guid: c0fa77f6fa0003b4287190e8a9e4ba08, type: 3}
+  defaultProfilePicture: {fileID: 21300000, guid: 3341ce5d55aaa5a40b0fbf42ebc397a9, type: 3}

@@ -43,7 +43,7 @@ public class MasterTextingController : MonoBehaviour
         //Change screeen
 
         quitbutton.SetActive(true);
-        newsbutton.SetActive(true);
+        newsbutton.SetActive(false);
         newsquitbutton.SetActive(false);
         textoptions.SetActive(false);
         backarrow.SetActive(false);

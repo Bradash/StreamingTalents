@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b2eb73f1f91bc44b814a7e3f9a8e784, type: 3}
+  m_Name: CoolMessage 17
+  m_EditorClassIdentifier: Assembly-CSharp::Messages
+  Archtype: 
+  NarrativeStage: 99
+  NeedCollab: 2
+  NeedMiniGame: 99
+  message: emebr got so much aura icl
+  moodChange: 1
+  viewerChange: 1
+  DeerEmotion: 0
+  WolfEmotion: 0
+  UnicornEmotion: 3
+  DragonEmotion: 0
+  DeerReaction: Ember, they're saying you've got lots of aura.
+  WolfReaction: im so sigma
+  UnicornReaction: If you're seeing this message, something got messed up :(
+  DragonReaction: Huh? What's that supposed to mean?
