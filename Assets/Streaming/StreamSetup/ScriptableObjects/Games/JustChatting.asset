@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: JustChatting
   m_EditorClassIdentifier: Assembly-CSharp::SelectionObject
   elementName: Just Chatting
-  elementImage: {fileID: 0}
+  elementImage: {fileID: 21300000, guid: 8bf4fe4ed549afb49bd909c530674c2f, type: 3}
   gameID: 0
   dayUnlocked: 0
