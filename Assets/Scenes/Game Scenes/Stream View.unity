@@ -20883,7 +20883,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b63a3bc9dd3237429b469f7cb630612, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::tutorialMinigames
-  Rhythm: {fileID: 0}
+  Rhythm: {fileID: 64256547}
   Flappybird: {fileID: 920810658}
   Tycoon: {fileID: 100390353}
   tutorialManager: {fileID: 106299296}
