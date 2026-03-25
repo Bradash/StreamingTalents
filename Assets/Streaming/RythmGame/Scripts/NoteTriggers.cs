@@ -4,14 +4,10 @@ using UnityEngine;
 
 public class NoteTriggers : MonoBehaviour
 {
-    //IMPORTANT EXAPLE OF POINTS: UIStatsManager.Instance.points += 5; (MIN: 0, MAX: 100, DEFAULT: 50)
-
     [SerializeField] GameObject timingIcon;
     VisualTiming timingScript;
     public int notesInZone = 0;
     [SerializeField] int lane;
-
-    int noteCount = 0;
 
     private void Start()
     {
@@ -44,29 +40,28 @@ public class NoteTriggers : MonoBehaviour
                     if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
                     {
                         timingScript.StartTimingVisual(0);
-                        noteCount++;
-                        Debug.Log($"Note #{noteCount} Y-Pos: {(2.5f*Time.time) - 4f}");
+                        UIStatsManager.Instance.points -= 5;
                     }
                     break;
                 case 1:
                     if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
                     {
                         timingScript.StartTimingVisual(0);
-                        //Debug.Log("MISSED");
+                        UIStatsManager.Instance.points -= 5;
                     }
                     break;
                 case 2:
                     if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
                     {
                         timingScript.StartTimingVisual(0);
-                        //Debug.Log("MISSED");
+                        UIStatsManager.Instance.points -= 5;
                     }
                     break;
                 case 3:
                     if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
                     {
                         timingScript.StartTimingVisual(0);
-                        //Debug.Log("MISSED");
+                        UIStatsManager.Instance.points -= 5;
                     }
                     break;
             }

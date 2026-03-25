@@ -234,4 +234,4 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 569f4971793e6bf4b95911a7636a80b0, type: 3}
   - {fileID: 21300000, guid: 1743a091e6a47b848a115397cd9f756e, type: 3}
   noteIcon: {fileID: 7336155199545164051}
-  missZone: -5
+  missZone: -2.35

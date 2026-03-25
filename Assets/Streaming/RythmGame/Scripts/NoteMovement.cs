@@ -8,8 +8,10 @@ public class NoteMovement : MonoBehaviour
     private void Start()
     {
         NoteTiming script = gameObject.GetComponent<NoteTiming>();
-        
-        transform.position = new Vector3(leftLaneX + (1.5f * script.noteLane), transform.position.y, transform.position.z);
+
+        Vector3 offset = transform.localPosition;
+        offset.x = leftLaneX + (1.5f * script.noteLane);
+        transform.localPosition = offset;
     }
 
     private void Update()

@@ -122,11 +122,13 @@ public class NoteTiming : MonoBehaviour
         if (currentZone == zone[0]) //miss
         {
             timingScript.StartTimingVisual(0);
+            UIStatsManager.Instance.points -= 5;
             //Debug.Log("MISSED");
         } 
         else if (currentZone == zone[1]) //bad
         {
             timingScript.StartTimingVisual(1);
+            UIStatsManager.Instance.points -= 1;
             //Debug.Log("HIT BAD");
             Destroy(gameObject);
         } 
@@ -139,12 +141,14 @@ public class NoteTiming : MonoBehaviour
         else if (currentZone == zone[3]) //good
         {
             timingScript.StartTimingVisual(3);
+            UIStatsManager.Instance.points += 1;
             //Debug.Log("HIT GOOD");
             Destroy(gameObject);
         } 
         else //perfect
         {
             timingScript.StartTimingVisual(4);
+            UIStatsManager.Instance.points += 5;
             //Debug.Log("HIT PERFECT");
             Destroy(gameObject);
         }
