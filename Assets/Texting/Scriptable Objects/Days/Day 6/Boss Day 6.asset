@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcb1a752a64962741ba7a74b60941351, type: 3}
   m_Name: Boss Day 6
   m_EditorClassIdentifier: 
-  day: 0
+  day: 6
   participants: {fileID: 11400000, guid: f8d60f66b6528944a94d2b8f45c6bafb, type: 2}
   startingMessage: {fileID: 0}

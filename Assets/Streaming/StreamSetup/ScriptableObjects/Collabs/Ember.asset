@@ -15,4 +15,4 @@ MonoBehaviour:
   elementName: Ember
   elementImage: {fileID: 21300000, guid: 822e678ff8204414492b6aa2b8892425, type: 3}
   gameID: 2
-  dayUnlocked: 1
+  dayUnlocked: 2
