@@ -3,7 +3,7 @@ using System.Collections;
 
 public class NoteTiming : MonoBehaviour
 {
-    [SerializeField] int noteLane;
+    public int noteLane;
     string[] zone = new string[5];
     string currentZone;
     [SerializeField] SpriteRenderer noteColor;
@@ -13,6 +13,7 @@ public class NoteTiming : MonoBehaviour
     [SerializeField] float missZone = -4.7f;
     GameObject timingIcon;
     VisualTiming timingScript;
+    bool inZone = false;
     
 
     private void Start()
@@ -53,37 +54,42 @@ public class NoteTiming : MonoBehaviour
         timingScript = timingIcon.GetComponent<VisualTiming>();
     }
 
-    private void Update()
+    private void LateUpdate()
     {
-        switch (noteLane)
+        if (inZone)
         {
-            case 0:
-                if(Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) {
-                    HitZone();
-                }
-                break;
-            case 1:
-                if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
-                {
-                    HitZone();
-                }
-                break;
-            case 2:
-                if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
-                {
-                    HitZone();
-                }
-                break;
-            case 3:
-                if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
-                {
-                    HitZone();
-                }
-                break;
+            switch (noteLane)
+            {
+                case 0:
+                    if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
+                    {
+                        HitZone();
+                    }
+                    break;
+                case 1:
+                    if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
+                    {
+                        HitZone();
+                    }
+                    break;
+                case 2:
+                    if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
+                    {
+                        HitZone();
+                    }
+                    break;
+                case 3:
+                    if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
+                    {
+                        HitZone();
+                    }
+                    break;
+            }
         }
 
-        if (transform.position.y < missZone)
+        if (inZone && transform.position.y < missZone)
         {
+            inZone = false;
             currentZone = zone[0];
             HitZone();
         }
@@ -107,6 +113,8 @@ public class NoteTiming : MonoBehaviour
         {
             currentZone = zone[4];
         }
+
+        if(!inZone) { inZone = true; }
     }
 
     void HitZone()
@@ -114,33 +122,35 @@ public class NoteTiming : MonoBehaviour
         if (currentZone == zone[0]) //miss
         {
             timingScript.StartTimingVisual(0);
-            Debug.Log("MISSED");
+            UIStatsManager.Instance.points -= 5;
+            //Debug.Log("MISSED");
         } 
         else if (currentZone == zone[1]) //bad
         {
             timingScript.StartTimingVisual(1);
-            Debug.Log("HIT BAD");
+            UIStatsManager.Instance.points -= 1;
+            //Debug.Log("HIT BAD");
             Destroy(gameObject);
         } 
         else if (currentZone == zone[2]) //okay
         {
             timingScript.StartTimingVisual(2);
-            Debug.Log("HIT OKAY");
+            //Debug.Log("HIT OKAY");
             Destroy(gameObject);
         } 
         else if (currentZone == zone[3]) //good
         {
             timingScript.StartTimingVisual(3);
-            Debug.Log("HIT GOOD");
+            UIStatsManager.Instance.points += 1;
+            //Debug.Log("HIT GOOD");
             Destroy(gameObject);
         } 
         else //perfect
         {
             timingScript.StartTimingVisual(4);
-            Debug.Log("HIT PERFECT");
+            UIStatsManager.Instance.points += 5;
+            //Debug.Log("HIT PERFECT");
             Destroy(gameObject);
         }
     }
-
-    
 }

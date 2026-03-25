@@ -8,6 +8,7 @@ TagManager:
   - Good
   - Okay
   - Bad
+  - Note
   layers:
   - Default
   - TransparentFX
