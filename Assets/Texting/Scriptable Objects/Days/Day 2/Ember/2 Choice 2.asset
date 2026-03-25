@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 2 Choice 2
   m_EditorClassIdentifier: 
   optionText: So how is streaming?
-  nextMessage: {fileID: 11400000, guid: e16b0df2fa234ff49a5f6e1ffd8150e8, type: 2}
+  nextMessage: {fileID: 11400000, guid: b20c5ea0ddd4b5a43b03243e82a67b21, type: 2}
   WolfRelationChange: 0
   UnicornRelationChange: 0
   DragonRelationChange: 0

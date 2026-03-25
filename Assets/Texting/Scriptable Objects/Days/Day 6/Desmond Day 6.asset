@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcb1a752a64962741ba7a74b60941351, type: 3}
   m_Name: Desmond Day 6
   m_EditorClassIdentifier: 
-  day: 0
+  day: 6
   participants: {fileID: 11400000, guid: 5208373f6aeaf834093e2870af53d946, type: 2}
   startingMessage: {fileID: 0}
