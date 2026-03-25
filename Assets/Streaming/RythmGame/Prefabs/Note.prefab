@@ -139,7 +139,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdf16e5ec985cce4894270b5bb6f2ee5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noteSpeed: 3
+  noteSpeed: 2.5
+  leftLaneX: -2.25
 --- !u!61 &7639658252020169996
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -228,8 +229,8 @@ MonoBehaviour:
   noteLane: 0
   noteColor: {fileID: 1663685684107697272}
   noteSprites:
-  - {fileID: 21300000, guid: c1ec0c63ea9bf9b44815b2e71b12595b, type: 3}
   - {fileID: 21300000, guid: 946832fa8872fe44da99682a7c503a7f, type: 3}
+  - {fileID: 21300000, guid: c1ec0c63ea9bf9b44815b2e71b12595b, type: 3}
   - {fileID: 21300000, guid: 569f4971793e6bf4b95911a7636a80b0, type: 3}
   - {fileID: 21300000, guid: 1743a091e6a47b848a115397cd9f756e, type: 3}
   noteIcon: {fileID: 7336155199545164051}

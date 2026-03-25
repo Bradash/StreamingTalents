@@ -54,20 +54,20 @@ public class NoteTiming : MonoBehaviour
         timingScript = timingIcon.GetComponent<VisualTiming>();
     }
 
-    private void Update()
+    private void LateUpdate()
     {
         if (inZone)
         {
             switch (noteLane)
             {
                 case 0:
-                    if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
+                    if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
                     {
                         HitZone();
                     }
                     break;
                 case 1:
-                    if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
+                    if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
                     {
                         HitZone();
                     }
@@ -122,30 +122,30 @@ public class NoteTiming : MonoBehaviour
         if (currentZone == zone[0]) //miss
         {
             timingScript.StartTimingVisual(0);
-            Debug.Log("MISSED");
+            //Debug.Log("MISSED");
         } 
         else if (currentZone == zone[1]) //bad
         {
             timingScript.StartTimingVisual(1);
-            Debug.Log("HIT BAD");
+            //Debug.Log("HIT BAD");
             Destroy(gameObject);
         } 
         else if (currentZone == zone[2]) //okay
         {
             timingScript.StartTimingVisual(2);
-            Debug.Log("HIT OKAY");
+            //Debug.Log("HIT OKAY");
             Destroy(gameObject);
         } 
         else if (currentZone == zone[3]) //good
         {
             timingScript.StartTimingVisual(3);
-            Debug.Log("HIT GOOD");
+            //Debug.Log("HIT GOOD");
             Destroy(gameObject);
         } 
         else //perfect
         {
             timingScript.StartTimingVisual(4);
-            Debug.Log("HIT PERFECT");
+            //Debug.Log("HIT PERFECT");
             Destroy(gameObject);
         }
     }

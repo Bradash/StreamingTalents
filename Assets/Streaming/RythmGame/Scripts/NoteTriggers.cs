@@ -11,6 +11,8 @@ public class NoteTriggers : MonoBehaviour
     public int notesInZone = 0;
     [SerializeField] int lane;
 
+    int noteCount = 0;
+
     private void Start()
     {
         timingScript = timingIcon.GetComponent<VisualTiming>();
@@ -39,15 +41,15 @@ public class NoteTriggers : MonoBehaviour
             switch (lane)
             {
                 case 0:
-                    if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
+                    if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
                     {
                         timingScript.StartTimingVisual(0);
-                        //Debug.Log("MISSED");
-                        Debug.Log($"Note Time: {Time.time} \nNote Y-Pos: {(3*Time.time) - 3.9}");
+                        noteCount++;
+                        Debug.Log($"Note #{noteCount} Y-Pos: {(2.5f*Time.time) - 4f}");
                     }
                     break;
                 case 1:
-                    if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
+                    if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
                     {
                         timingScript.StartTimingVisual(0);
                         //Debug.Log("MISSED");
