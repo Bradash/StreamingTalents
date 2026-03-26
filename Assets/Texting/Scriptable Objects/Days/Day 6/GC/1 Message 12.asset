@@ -17,5 +17,6 @@ MonoBehaviour:
   GroupChatspeaker: {fileID: 11400000, guid: c816e3e4d39c47c4cbccf5dfdc110b35, type: 2}
   message: Memes are like everywhere.
   flowType: 0
-  nextMessage: {fileID: 11400000, guid: 230391cef623cda43a863ee934d5ac0b, type: 2}
-  options: []
+  nextMessage: {fileID: 0}
+  options:
+  - {fileID: 0}
