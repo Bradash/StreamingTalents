@@ -17,5 +17,5 @@ MonoBehaviour:
   GroupChatspeaker: {fileID: 0}
   message: Yeah, I'm sure it will be fine.
   flowType: 0
-  nextMessage: {fileID: 11400000, guid: 97dde147245759c44b493af62a7bdc07, type: 2}
+  nextMessage: {fileID: 11400000, guid: 83785347b41144847acc387bb0eba3a8, type: 2}
   options: []

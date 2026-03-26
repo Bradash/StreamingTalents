@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e67f127386f7904b9cd642bec853d8b, type: 3}
   m_Name: 2 Choice 4
   m_EditorClassIdentifier: 
-  optionText: You want to do those one a collab?
+  optionText: You want to do one of those on a collab?
   nextMessage: {fileID: 11400000, guid: 3cb0c5fcfbddea645b6ca06ba4b11665, type: 2}
   WolfRelationChange: 0
   UnicornRelationChange: 0

@@ -15,7 +15,7 @@ MonoBehaviour:
   speaker: {fileID: 11400000, guid: afaeefd1e73a2bc498e604681b57273b, type: 2}
   groupChat: 0
   GroupChatspeaker: {fileID: 0}
-  message: I'm no so good at shooters.
+  message: I'm not so good at shooters.
   flowType: 0
   nextMessage: {fileID: 11400000, guid: 3a49e761a72bdd84db3aaafd39d044de, type: 2}
   options: []

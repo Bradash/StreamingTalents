@@ -16,4 +16,4 @@ MonoBehaviour:
   nextMessage: {fileID: 11400000, guid: b419331526d7f244ba80e64d4731da91, type: 2}
   WolfRelationChange: 0
   UnicornRelationChange: 0
-  DragonRelationChange: -10
+  DragonRelationChange: 0
