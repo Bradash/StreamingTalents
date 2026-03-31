@@ -78,6 +78,11 @@ public class Pickup : MonoBehaviour
                 objectHighlight = null;
                 wasHit = false;
             }
+            else
+            {
+                objectHighlight.unhighlight();
+                objectHighlight = null;
+            }
         }
         if (timerOn)
         {
