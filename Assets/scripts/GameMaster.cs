@@ -56,7 +56,8 @@ public class GameMaster : MonoBehaviour
                 break;
             case 1:
                 gameObjects[0].SetActive(true);
-                gameObjects[2].SetActive(true);
+                gameObjects[2].transform.position = new Vector3(1.80900002f, 0.999000013f, -10.3839998f);
+                gameObjects[2].GetComponentInChildren<AudioSource>().Play();
                 taskText.text = "Task: \r\nOpen Door";
                 break;
             case 2:
