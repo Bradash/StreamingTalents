@@ -80,6 +80,8 @@ public class Pickup : MonoBehaviour
             }
             else
             {
+                if (objectHighlight == null)
+                    return;
                 objectHighlight.unhighlight();
                 objectHighlight = null;
             }

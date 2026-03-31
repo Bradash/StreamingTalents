@@ -10,7 +10,7 @@ public class SoundManager : MonoBehaviour
     [SerializeField] private Slider musicSlider;
     [SerializeField] private Slider audioSlider;
     [SerializeField] private GameObject UI;
-    private bool isFPS;
+    public bool isFPS;
 
     protected virtual void OnInit()
     {
@@ -40,16 +40,23 @@ public class SoundManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            //if locked it's an FPS
-            if (Cursor.lockState == CursorLockMode.Locked && Cursor.visible == false)
+            if (UI.activeSelf)
             {
-                Cursor.lockState = CursorLockMode.None;
-                Cursor.visible = true;
-                isFPS = true;
+                resume();
             }
-            UI.SetActive(true);
-            Time.timeScale = 0;
-            MessageSpawner.Instance.pause = true;
+            //if locked it's an FPS
+            else
+            {
+                if (Cursor.lockState == CursorLockMode.Locked && Cursor.visible == false)
+                {
+                    Cursor.lockState = CursorLockMode.None;
+                    Cursor.visible = true;
+                    isFPS = true;
+                }
+                UI.SetActive(true);
+                Time.timeScale = 0;
+                MessageSpawner.Instance.pause = true;
+            }
         }
     }
     public void resume()
