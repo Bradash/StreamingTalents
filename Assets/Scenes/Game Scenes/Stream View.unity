@@ -2341,7 +2341,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &64256548
 Transform:
   m_ObjectHideFlags: 0
@@ -61784,7 +61784,7 @@ MonoBehaviour:
   minDelay: 20
   maxDelay: 45
   topicPanel: {fileID: 75165326}
-  buttonPrefab: {fileID: 2350768115716226257, guid: b7d49d3baaca98a46b0dd220fc9e211f, type: 3}
+  buttonPrefab: {fileID: 4374125939348992204, guid: b7d49d3baaca98a46b0dd220fc9e211f, type: 3}
   buttonContainer: {fileID: 75165330}
   allTopics:
   - {fileID: 11400000, guid: 5cb8f93dfea469c409e4e905a141f470, type: 2}
@@ -65857,7 +65857,10 @@ MonoBehaviour:
 
 
     Left Click chat to reply and gain
-    views.'
+    views.
+
+
+    When you have your mouse over the chat it pauses. '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4d0b9a098ab2b094bab11acd8d2be2af, type: 2}
   m_sharedMaterial: {fileID: -3666137190791572527, guid: 4d0b9a098ab2b094bab11acd8d2be2af, type: 2}

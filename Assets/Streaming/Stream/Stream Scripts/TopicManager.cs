@@ -17,7 +17,7 @@ public class TopicManager : MonoBehaviour
     [Header("Topics")]
     public Topics[] allTopics;
 
-    public float verticalSpacing = 80f; // YOU tweak this
+    public float verticalSpacing = 1000f; // YOU tweak this
 
     Coroutine topicRoutine;
 
@@ -84,8 +84,8 @@ public class TopicManager : MonoBehaviour
         RectTransform rt = btn.GetComponent<RectTransform>();
 
         rt.anchoredPosition = new Vector2(
-            0f,
-            -buttonsSpawned * verticalSpacing
+            -790 + verticalSpacing * -3.15f * buttonsSpawned,
+            -540
         );
 
         btn.Setup(topic, this);

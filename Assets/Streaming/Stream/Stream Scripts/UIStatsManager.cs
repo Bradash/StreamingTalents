@@ -80,9 +80,9 @@ public class UIStatsManager : MonoBehaviour
 
         if (currentday >= 0)
         {
-            if (currentday >= 6)
+            if (currentday >= 4)
             {
-                if (currentday >= 10)
+                if (currentday >= 7)
                 {
                     narrative = 3;
                 }
