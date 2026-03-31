@@ -51,8 +51,9 @@ public class MessageSpawner : MonoBehaviour
         }
         else if (hoverCount > 0)
         {
-            Time.timeScale = 0.1f;
+            //Time.timeScale = 0.1f;
             Debug.Log("Slowdown");
+            return;
         }
         else
         {
