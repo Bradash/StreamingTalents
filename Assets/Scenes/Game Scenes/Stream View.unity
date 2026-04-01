@@ -3251,18 +3251,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Thank you for reading.
-
-
-    Remember:
-
-    - The stats on corners.
-
-    -
-    Use left and right click to interact with chat.
-
-    - End Stream on bottom left
-    when you are done'
+  m_text: "Remember:\n- The stats on corners.\n- Time slows down when hovering chat
+    \n- Left and right click to interact with chat.\n- End Stream on bottom left
+    when you are done"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4d0b9a098ab2b094bab11acd8d2be2af, type: 2}
   m_sharedMaterial: {fileID: -3666137190791572527, guid: 4d0b9a098ab2b094bab11acd8d2be2af, type: 2}
@@ -65853,14 +65844,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Chat will comment on your stream!
-
-
-    Left Click chat to reply and gain
-    views.
-
-
-    When you have your mouse over the chat it pauses. '
+  m_text: "Chat will comment on your stream!\n\nWhen you have your mouse over the
+    chat time slows down. \n\nLeft Click chat to reply and gain views.\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4d0b9a098ab2b094bab11acd8d2be2af, type: 2}
   m_sharedMaterial: {fileID: -3666137190791572527, guid: 4d0b9a098ab2b094bab11acd8d2be2af, type: 2}
