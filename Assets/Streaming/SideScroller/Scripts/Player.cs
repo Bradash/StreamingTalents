@@ -21,11 +21,13 @@ public class Player : MonoBehaviour
 
     [SerializeField] GameObject gameOver;
 
+    public delegate void ResetGameState();
+    public static event ResetGameState resetGameState;
+
     private void Start()
     {
         tutorialText.enabled = true;
         initialPos = transform.position;
-        HazardSpawner.resetGameState += ResetPlayer;
         StartCoroutine(LockMovement());
     }
 
@@ -53,6 +55,12 @@ public class Player : MonoBehaviour
                 UIStatsManager.Instance.points = score * 2;
             }
         }
+
+        if(!isAlive && Input.GetKeyDown(KeyCode.R))
+        {
+            ResetPlayer();
+            isAlive = true;
+        }
     }
 
     void PlayerInput()
@@ -78,6 +86,7 @@ public class Player : MonoBehaviour
 
     void ResetPlayer()
     {
+        resetGameState?.Invoke();
         transform.position = initialPos;
         score = 0;
         direction = -1;

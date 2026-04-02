@@ -11,8 +11,10 @@ public class HazardSpawner : MonoBehaviour
     float spawnTimer = 0.5f;
     int difficulty = 1;
 
-    public delegate void ResetGameState();
-    public static event ResetGameState resetGameState;
+    private void Start()
+    {
+        Player.resetGameState += RestartGame;
+    }
 
     void Update()
     {
@@ -36,7 +38,6 @@ public class HazardSpawner : MonoBehaviour
 
     public void RestartGame()
     {
-        resetGameState?.Invoke();
         enemySpeed = 2.5f;
         spawnDelay = 3.5f;
         spawnTimer = 0.5f;

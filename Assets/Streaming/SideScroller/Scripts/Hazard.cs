@@ -12,7 +12,7 @@ public class Hazard : MonoBehaviour
     void Start()
     {
         hazardSpawner = GameObject.Find("HazardSpawner").GetComponent<HazardSpawner>();
-        HazardSpawner.resetGameState += DeleteObject;
+        Player.resetGameState += DeleteObject;
     }
 
     // Update is called once per frame
@@ -32,7 +32,7 @@ public class Hazard : MonoBehaviour
 
     void DeleteObject()
     {
-        HazardSpawner.resetGameState -= DeleteObject;
+        Player.resetGameState -= DeleteObject;
         Destroy(this.gameObject);
     }
 }
