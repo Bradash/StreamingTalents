@@ -6,11 +6,26 @@ public class ProgressionsScript : MonoBehaviour
     [SerializeField] ElementSelection GameChoices;
     [SerializeField] SelectionObject[] CollabObjects;
     [SerializeField] SelectionObject[] GameObjects;
+
+    public GameObject CollabNote1;
+    public GameObject CollabNote2;
+    public GameObject GameNote1;
+    public GameObject GameNote2;
+
     private void Start()
     {
         addCSelections();
         addGSelections();
     }
+
+    private void Awake()
+    {
+        if (GameManager.currentday == 0)
+        {
+
+        }
+    }
+
     public void addCSelections()
     {
         for (int i = 0; i < CollabObjects.Length; i++)
