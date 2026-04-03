@@ -23,6 +23,12 @@ public class MasterTextingController : MonoBehaviour
     public TextMeshProUGUI Title;
     public Image profilePicture;
 
+    public GameObject managerNote;
+    public GameObject wolfNote;
+    public GameObject unicornNote;
+    public GameObject dragonNote;
+    public GameObject companyNote;
+
     public static MasterTextingController Instance { get; private set; }
 
     void Awake()
@@ -76,7 +82,27 @@ public class MasterTextingController : MonoBehaviour
         Title.text = character.displayName;
         profilePicture.sprite = character.defaultProfilePicture;
 
-        
+        if (character.name == "Boss")
+        {
+            managerNote.SetActive(false);
+        }
+        if (character.name == "Desmond")
+        {
+            wolfNote.SetActive(false);
+        }
+        if (character.name == "Ada")
+        {
+            unicornNote.SetActive(false);
+        }
+        if (character.name == "Ember")
+        {
+            dragonNote.SetActive(false);
+        }
+        if (character.name == "Boss")
+        {
+            companyNote.SetActive(false);
+        }
+
 
         foreach (TextingThread thread in TextSpawner.Instance.allThreads)
         {
