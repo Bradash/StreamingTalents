@@ -13,6 +13,8 @@ public class ElementSelection : MonoBehaviour
     int currentElement = 0;
     public int selectionType; //1 = collab, 2 = game
 
+    public List<GameObject> notification = new List<GameObject>();
+
     [SerializeField] TextMeshProUGUI nameText;
     [SerializeField] Sprite image;
 
@@ -25,6 +27,8 @@ public class ElementSelection : MonoBehaviour
 
     public void NextElement()
     {
+        RemoveNotes();
+
         currentElement = (currentElement + 1) % elementName.Count;
         nameText.text = elementName[currentElement];
         IMG_Image.GetComponent<Image>().sprite = elementImage[currentElement];
@@ -33,6 +37,8 @@ public class ElementSelection : MonoBehaviour
 
     public void PrevElement()
     {
+        RemoveNotes();
+
         {
             if (currentElement > 0)
             {
@@ -81,5 +87,16 @@ public class ElementSelection : MonoBehaviour
         }
 
         //This is here because for other days you don't get to pick we want to start on that element.
+    }
+
+    void RemoveNotes()
+    {
+        foreach (GameObject obj in notification)
+        {
+            if (obj != null)
+            {
+                obj.SetActive(false);
+            }
+        }
     }
 }
