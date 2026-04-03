@@ -11,7 +11,24 @@ public class DebugSceneSkipper : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.P))
         {
-            //LoadNextScene();
+            LoadNextScene();
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            GameManager.currentday -= 1;
+            Debug.Log("Current day is: " + GameManager.currentday);
+        }
+
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            GameManager.currentday += 1;
+            Debug.Log("Current day is: " + GameManager.currentday);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 

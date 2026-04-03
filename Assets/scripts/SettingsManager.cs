@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class SoundManager : MonoBehaviour
+public class SettingsManager : MonoBehaviour
 {
     [SerializeField] private AudioSource musicAudio;
     [SerializeField] private AudioSource[] musicStreamAudio;
@@ -26,7 +26,7 @@ public class SoundManager : MonoBehaviour
         }
         if (SceneManager.GetActiveScene().name == "IRL")
         {
-            musicAudio.pitch = 1 - GameManager.currentday/30;
+            musicAudio.pitch = 1 - GameManager.currentday / 30;
         }
         musicSlider.value = GameManager.musicVolume;
         audioSlider.value = GameManager.sfxVolume;
@@ -38,54 +38,30 @@ public class SoundManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        
+    }
+
+    public void openMenu()
+    {
+        if (UI.activeSelf)
         {
-            if (UI.activeSelf)
-            {
-                resume();
-            }
-            //if locked it's an FPS
-            else
-            {
-                if (Cursor.lockState == CursorLockMode.Locked && Cursor.visible == false)
-                {
-                    Cursor.lockState = CursorLockMode.None;
-                    Cursor.visible = true;
-                    isFPS = true;
-                }
-                UI.SetActive(true);
-                Time.timeScale = 0;
-                MessageSpawner.Instance.pause = true;
-            }
+            resume();
+        }
+        //if locked it's an FPS
+        else
+        {
+            UI.SetActive(true);
         }
     }
+
+
     public void resume()
     {
         //if FPS lock it again after unpause
-        if (isFPS)
-        {
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
-            isFPS = false;
-        }
         UI.SetActive(false);
-        if (!GameManager.isTutorial)
-        {
-            Time.timeScale = 1;
-            MessageSpawner.Instance.pause = false;
-        }
-    }
-    public void QuitGame()
-    {
-        //if FPS lock it again after unpause
-        UI.SetActive(false);
-        Time.timeScale = 1;
-        MessageSpawner.Instance.pause = false;
-
-        SceneManager.LoadScene("menu");
     }
 
-    public void musicChanged() 
+    public void musicChanged()
     {
         GameManager.musicVolume = musicSlider.value;
         musicAudio.volume = GameManager.musicVolume;

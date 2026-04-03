@@ -33884,6 +33884,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SoundManager
       objectReference: {fileID: 0}
+    - target: {fileID: 1865536582419051516, guid: 49d54b7489db3f6488b2e7a7ca3e96fb, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3230744652331073330, guid: 49d54b7489db3f6488b2e7a7ca3e96fb, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -33952,6 +33956,18 @@ PrefabInstance:
       propertyPath: 'musicStreamAudio.Array.data[3]'
       value: 
       objectReference: {fileID: 1626538206}
+    - target: {fileID: 8009504458281357729, guid: 49d54b7489db3f6488b2e7a7ca3e96fb, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8746369532828701779, guid: 49d54b7489db3f6488b2e7a7ca3e96fb, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8989180779908765954, guid: 49d54b7489db3f6488b2e7a7ca3e96fb, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
