@@ -20,9 +20,32 @@ public class ProgressionsScript : MonoBehaviour
 
     private void Awake()
     {
-        if (GameManager.currentday == 0)
+        CollabNote1.SetActive(false);
+        CollabNote2.SetActive(false);
+        GameNote1.SetActive(false);
+        GameNote2.SetActive(false);
+        
+        if (GameManager.currentday == 2)
         {
-
+            CollabNote1.SetActive(true);
+            CollabNote2.SetActive(true);
+            GameNote1.SetActive(true);
+            GameNote2.SetActive(true);
+        }
+        if (GameManager.currentday == 3)
+        {
+            GameNote1.SetActive(true);
+            GameNote2.SetActive(true);
+        }
+        if (GameManager.currentday == 4)
+        {
+            CollabNote1.SetActive(true);
+            CollabNote2.SetActive(true);
+        }
+        if (GameManager.currentday == 6)
+        {
+            GameNote1.SetActive(true);
+            GameNote2.SetActive(true);
         }
     }
 
