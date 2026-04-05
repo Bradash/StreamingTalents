@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcb1a752a64962741ba7a74b60941351, type: 3}
   m_Name: Ada Day 8
   m_EditorClassIdentifier: 
-  day: 0
+  day: 8
   participants: {fileID: 11400000, guid: d37dd561f36ac4f4892d6318343dfc07, type: 2}
   startingMessage: {fileID: 0}

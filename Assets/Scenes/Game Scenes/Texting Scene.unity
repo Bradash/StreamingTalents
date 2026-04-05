@@ -176,9 +176,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Breaking news:\n\nAda has been gaining lot of popularity lately! \nShe
-    celebrated her 1st anniversary being one of the long running Vtubers of streaming
-    talents!\r\n\r\n"
+  m_text: "Ada has been gaining lot of popularity lately! \nShe celebrated her 1st
+    anniversary being one of the long running Vtubers of streaming talents!\r\n\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1160,21 +1159,21 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Breaking news:
+  m_text: 'Streaming Talents agency found abusing their talents! Taking all the salary,
+    giving the talent''s low pay.
+
+    Charity money was taken and kept by the agency!
+
+    Sponsors
+    where reveal to be scams!
+
+    Sponsored games  would take players personal information
+    including credit card information.
+
+    Fans currently are searching ways to
+    help the talents with the revealed evidence of low paying salaries.
 
 
-    Streaming Talents agency found abusing their talents!
-    Taking all the salary, giving the talent''s low pay.
-
-    Charity money was
-    taken and kept by the agency!
-
-    Sponsors where reveal to be scams!
-
-    Sponsored
-    games  would take players personal information including credit card information.
-
-    
 
 '
   m_isRightToLeft: 0
@@ -2457,24 +2456,21 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Breaking news:
+  m_text: 'AI Streamer outplacing many streamers today!
 
 
-    AI Streamer outplacing many streamers today!
 
-    
-
-    GDQX
-    a non-vtuber starts using the Vtuber tag to gain popularity.
+    GDQX a non-vtuber
+    starts using the Vtuber tag to gain popularity.
 
 
-    Could Vtuber
-    become irrelevant in the next years?
+    Could Vtuber become irrelevant
+    in the next years?
 
-    Twowitch Trend Analysts beleive VTuber
-    might just be a temporary trend.
+    Twowitch Trend Analysts beleive VTuber might just be
+    a temporary trend.
 
-    
+
 
 '
   m_isRightToLeft: 0
@@ -2673,7 +2669,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1389841555}
   m_Father: {fileID: 2098103971}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -3204,24 +3201,21 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Breaking news:
+  m_text: 'Fans outraged that Zara has a boyfriend? Leaked DM screenshots spread
+    through the internet!
 
 
-    Fans outraged that Zara has a boyfriend? Leaked DM
-    screenshots spread through the internet!
 
-    
+    Ember discrimitory? Ember mentions her opinion on
+    game violence and fiction, ends with a lot of backlash!
 
-    Ember discrimitory? Ember
-    mentions her opinion on game violence and fiction, ends with a lot of backlash!
 
-    
 
-    Is
-    ada fit for the internet? Fans think she lacks any sort of humor and don''t believe
-    she is a "real vtuber".
+    Is ada fit for
+    the internet? Fans think she lacks any sort of humor and don''t believe she is
+    a "real vtuber".
 
-    
+
 
 '
   m_isRightToLeft: 0
@@ -3831,10 +3825,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Breaking news:\n\nDarknessBillPill goes homeless! Got in debt from excessive
-    spending money of sumo wrestling.\n\r\nDissapearance of Rumi the Cat, from streaming
-    talents, fans speculate wherther the she might be dead. \n\nAda & Ember expresses
-    devastation over the dissapearance, but has not stated what happened to her."
+  m_text: "DarknessBillPill goes homeless! Got in debt from excessive spending money
+    of sumo wrestling.\n\r\nDissapearance of Rumi the Cat, from streaming talents,
+    fans speculate wherther the she might be dead. \n\nAda & Ember expresses devastation
+    over the dissapearance, but has not stated what happened to her."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4967,6 +4961,158 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1389841554
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1389841555}
+  - component: {fileID: 1389841557}
+  - component: {fileID: 1389841556}
+  m_Layer: 5
+  m_Name: Test News Day 0 (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1389841555
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389841554}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 801938158}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 46.4}
+  m_SizeDelta: {x: 526.42, y: 628.33}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1389841556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389841554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'Streaming Talents is speculated to not be sustainable.
+
+    Leaks shows
+    agency wasting money on crypto and AI investments.
+
+
+    Are they going to try
+    to replace the Vtuber with AI? - Dr4gonFan
+
+    What about their talents are
+    they even being paid much?
+
+    - July13490
+
+    This seems like misinformation,
+    the corporation seems fine, and crypto isn''t even that bad. - InventorPioneer'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_characterHorizontalScale: 1
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1389841557
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389841554}
+  m_CullTransparentMesh: 1
 --- !u!1 &1474190737
 GameObject:
   m_ObjectHideFlags: 0
@@ -6524,9 +6670,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Breaking news:\n\nZara a new Vtuber debuting for Streaming Talents! \nTune
-    in for a new set of talented Vtubers to take over the world! Zara the deer and
-    Ember the Dragon!"
+  m_text: "Zara a new Vtuber debuting for Streaming Talents! \nTune in for a new
+    set of talented Vtubers to take over the world! Zara the deer and Ember the Dragon!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7841,19 +7986,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Breaking news:
-
-
-    The large debut was a pretty good success. The Streaming
-    Talents have started off their career!
+  m_text: 'The large debut was a pretty good success. The Streaming Talents have
+    started off their career!
 
     Zara design is very cute. - BladeMaster325
 
     Ember
     is best girl, change my mind. - TheIntelectual
 
-    Ada is pretty relatable
-    - ShySpirit
+    Ada is pretty relatable -
+    ShySpirit
 
 '
   m_isRightToLeft: 0
@@ -8417,24 +8559,21 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Breaking news:
+  m_text: 'Rumors surrounding the agency Streaming Talents, and their treatment of
+    the talents.
 
 
-    Rumors surrounding the agency Streaming Talents,
-    and their treatment of the talents.
+    It could be just all a conspiracy - Entrepreneur13
 
 
-    It could be just all a conspiracy -
-    Entrepreneur13
+    I
+    think there''s something wrong with how tired the VTubers look lately. - Chadman68
 
 
-    I think there''s something wrong with how tired the VTubers
-    look lately. - Chadman68
+    I
+    hope they are okay... - F3licia
 
 
-    I hope they are okay... - F3licia
-
-    
 
 '
   m_isRightToLeft: 0

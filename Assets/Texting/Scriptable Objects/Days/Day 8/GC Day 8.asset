@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcb1a752a64962741ba7a74b60941351, type: 3}
   m_Name: GC Day 8
   m_EditorClassIdentifier: 
-  day: 0
+  day: 8
   participants: {fileID: 11400000, guid: 5b5aa307db4a47041a85e786a7a757d1, type: 2}
-  startingMessage: {fileID: 0}
+  startingMessage: {fileID: 11400000, guid: d9a1dbd173cdd274a8e074a26207cbb2, type: 2}

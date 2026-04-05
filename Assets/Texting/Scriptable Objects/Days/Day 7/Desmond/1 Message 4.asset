@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf1ac7be18dbff245b2e6e33e3f9aaf4, type: 3}
+  m_Name: 1 Message 4
+  m_EditorClassIdentifier: 
+  speaker: {fileID: 11400000, guid: 5208373f6aeaf834093e2870af53d946, type: 2}
+  groupChat: 0
+  GroupChatspeaker: {fileID: 0}
+  message: Yes, your fans, I need you to hold a little longer. We need to hit the
+    company at it's core. Some of them have been investigating for a while.
+  flowType: 0
+  nextMessage: {fileID: 11400000, guid: 90a1c1295ea7ac44bae8591b49558b78, type: 2}
+  options: []
