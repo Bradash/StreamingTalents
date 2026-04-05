@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b2eb73f1f91bc44b814a7e3f9a8e784, type: 3}
+  m_Name: Stage2Message 34
+  m_EditorClassIdentifier: Assembly-CSharp::Messages
+  Archtype: 
+  NarrativeStage: 2
+  NeedCollab: 99
+  NeedMiniGame: 99
+  message: You might not wanna check your fanart tag right now... weird stuff
+  moodChange: 0
+  viewerChange: 0
+  DeerEmotion: 3
+  WolfEmotion: 0
+  UnicornEmotion: 0
+  DragonEmotion: 3
+  DeerReaction: Is it that bad...?
+  WolfReaction: 
+  UnicornReaction: I wonder how many people are drawing me...
+  DragonReaction: I've seen some WILD stuff on mine. I'd be careful.
