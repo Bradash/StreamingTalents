@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e67f127386f7904b9cd642bec853d8b, type: 3}
   m_Name: 2 Choice 5
   m_EditorClassIdentifier: 
-  optionText: He pretty much got luckier than me. Built connections in the space
-    underground. He was always about building a safe community by himself.
+  optionText: He built connections in the space underground. He was always about
+    building a safe community by himself.
   nextMessage: {fileID: 11400000, guid: e3f947a5b600fdd4dab370bdb719fea1, type: 2}
   WolfRelationChange: 0
   UnicornRelationChange: 0
