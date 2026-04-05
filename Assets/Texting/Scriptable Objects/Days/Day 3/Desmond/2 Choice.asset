@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e67f127386f7904b9cd642bec853d8b, type: 3}
   m_Name: 2 Choice
   m_EditorClassIdentifier: 
-  optionText: No
-  nextMessage: {fileID: 11400000, guid: 2958e1384a7c9234f91ca59069dcc2f6, type: 2}
+  optionText: It's okay, just a little nervous.
+  nextMessage: {fileID: 11400000, guid: 4709ac4747a085949afab299e858f4c3, type: 2}
   WolfRelationChange: 0
   UnicornRelationChange: 0
   DragonRelationChange: 0

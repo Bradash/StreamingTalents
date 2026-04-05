@@ -15,7 +15,7 @@ MonoBehaviour:
   speaker: {fileID: 11400000, guid: afaeefd1e73a2bc498e604681b57273b, type: 2}
   groupChat: 0
   GroupChatspeaker: {fileID: 0}
-  message: You want to do one of those on a collab?
+  message: Hate is a strong word.
   flowType: 0
-  nextMessage: {fileID: 11400000, guid: 23b81826fc06a1a4691d4ef255864e8f, type: 2}
+  nextMessage: {fileID: 11400000, guid: e5a70fd06ec46e049b8db4ec7cd6241f, type: 2}
   options: []

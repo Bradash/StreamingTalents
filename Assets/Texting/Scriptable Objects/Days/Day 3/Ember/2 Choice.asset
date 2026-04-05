@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e67f127386f7904b9cd642bec853d8b, type: 3}
   m_Name: 2 Choice
   m_EditorClassIdentifier: 
-  optionText: "I haven\u2019t, who's that"
-  nextMessage: {fileID: 11400000, guid: 6b604e5e8358a7d4585e9f980eea5406, type: 2}
+  optionText: Huh?
+  nextMessage: {fileID: 11400000, guid: 6f395304928df744eb6863984ffe9b74, type: 2}
   WolfRelationChange: 0
   UnicornRelationChange: 0
   DragonRelationChange: 0

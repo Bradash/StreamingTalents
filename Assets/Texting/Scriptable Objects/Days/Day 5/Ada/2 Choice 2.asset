@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e67f127386f7904b9cd642bec853d8b, type: 3}
   m_Name: 2 Choice 2
   m_EditorClassIdentifier: 
-  optionText: I get that feeling when playing RPGs.
-  nextMessage: {fileID: 11400000, guid: 82ff524d1d650ac4ebac40ef63984a69, type: 2}
+  optionText: Nah, you are fine.
+  nextMessage: {fileID: 11400000, guid: ea6d497b4e95fb347925931e505d3c9b, type: 2}
   WolfRelationChange: 0
-  UnicornRelationChange: 5
+  UnicornRelationChange: 0
   DragonRelationChange: 0

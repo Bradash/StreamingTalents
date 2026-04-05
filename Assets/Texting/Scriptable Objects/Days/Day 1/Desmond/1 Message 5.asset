@@ -15,7 +15,7 @@ MonoBehaviour:
   speaker: {fileID: 11400000, guid: afaeefd1e73a2bc498e604681b57273b, type: 2}
   groupChat: 0
   GroupChatspeaker: {fileID: 0}
-  message: Yeah, I'm sure it will be fine.
+  message: I am now the entertainer.
   flowType: 0
   nextMessage: {fileID: 11400000, guid: 83785347b41144847acc387bb0eba3a8, type: 2}
   options: []

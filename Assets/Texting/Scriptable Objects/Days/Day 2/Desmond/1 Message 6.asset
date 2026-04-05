@@ -15,7 +15,7 @@ MonoBehaviour:
   speaker: {fileID: 11400000, guid: afaeefd1e73a2bc498e604681b57273b, type: 2}
   groupChat: 0
   GroupChatspeaker: {fileID: 0}
-  message: Are you sure though?
+  message: ' I hope I can make something good out of this.'
   flowType: 0
-  nextMessage: {fileID: 11400000, guid: 97dde147245759c44b493af62a7bdc07, type: 2}
+  nextMessage: {fileID: 11400000, guid: dea6f2d8ddfb31c42a68385a46e5699d, type: 2}
   options: []

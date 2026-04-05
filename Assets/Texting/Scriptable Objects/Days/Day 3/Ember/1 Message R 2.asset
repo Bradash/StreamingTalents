@@ -15,7 +15,7 @@ MonoBehaviour:
   speaker: {fileID: 11400000, guid: afaeefd1e73a2bc498e604681b57273b, type: 2}
   groupChat: 0
   GroupChatspeaker: {fileID: 0}
-  message: People can play for that long?
+  message: Oh that's what you mean.
   flowType: 0
-  nextMessage: {fileID: 11400000, guid: c7920bfd2d71d734dab07c3a56b15a15, type: 2}
+  nextMessage: {fileID: 11400000, guid: 255c61d4eacecd143be09ca1e29d3d83, type: 2}
   options: []

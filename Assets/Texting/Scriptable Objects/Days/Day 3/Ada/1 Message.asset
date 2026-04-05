@@ -15,7 +15,9 @@ MonoBehaviour:
   speaker: {fileID: 11400000, guid: d37dd561f36ac4f4892d6318343dfc07, type: 2}
   groupChat: 0
   GroupChatspeaker: {fileID: 0}
-  message: Hello Deer.
-  flowType: 0
+  message: Do you like stories games?
+  flowType: 1
   nextMessage: {fileID: 0}
-  options: []
+  options:
+  - {fileID: 11400000, guid: 0326d6c5165c9eb48bd3708727c05116, type: 2}
+  - {fileID: 11400000, guid: 073967310c9d50641916b0c9df2d2a12, type: 2}

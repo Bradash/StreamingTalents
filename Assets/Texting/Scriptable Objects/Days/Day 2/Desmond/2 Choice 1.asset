@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e67f127386f7904b9cd642bec853d8b, type: 3}
   m_Name: 2 Choice 1
   m_EditorClassIdentifier: 
-  optionText: Yeah, I'm sure it will be fine.
-  nextMessage: {fileID: 11400000, guid: 49e510243dadd8c4e97be0f0b7a9f68a, type: 2}
-  WolfRelationChange: 15
+  optionText: You are doing a lot, thank you for all the help.
+  nextMessage: {fileID: 11400000, guid: 84b1cb74a573a6c458aa11341d95550d, type: 2}
+  WolfRelationChange: 0
   UnicornRelationChange: 0
   DragonRelationChange: 0

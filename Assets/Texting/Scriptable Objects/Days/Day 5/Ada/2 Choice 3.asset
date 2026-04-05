@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e67f127386f7904b9cd642bec853d8b, type: 3}
   m_Name: 2 Choice 3
   m_EditorClassIdentifier: 
-  optionText: I guess
-  nextMessage: {fileID: 11400000, guid: 8fb27b62b0068b442803f4b36afde853, type: 2}
+  optionText: "It\u2019s going to be okay. I'm still here."
+  nextMessage: {fileID: 11400000, guid: db420a2bafa56b041a85ba8d4658b339, type: 2}
   WolfRelationChange: 0
-  UnicornRelationChange: -5
+  UnicornRelationChange: 0
   DragonRelationChange: 0

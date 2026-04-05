@@ -15,7 +15,7 @@ MonoBehaviour:
   speaker: {fileID: 11400000, guid: 5208373f6aeaf834093e2870af53d946, type: 2}
   groupChat: 0
   GroupChatspeaker: {fileID: 0}
-  message: You don't have to be nervous, you got this.
+  message: You are getting popular!
   flowType: 1
   nextMessage: {fileID: 0}
   options:

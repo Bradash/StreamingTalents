@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e67f127386f7904b9cd642bec853d8b, type: 3}
   m_Name: 2 Choice
   m_EditorClassIdentifier: 
-  optionText: Alright, I will look into it.
-  nextMessage: {fileID: 11400000, guid: e293b21a32f87f74c92df4f0000823ed, type: 2}
+  optionText: Will you be raising the salary on the performance I've done? Just was
+    wondering as my views have been going up.
+  nextMessage: {fileID: 11400000, guid: aad3c7abf20884d4da5af9dbda180dce, type: 2}
   WolfRelationChange: 0
   UnicornRelationChange: 0
   DragonRelationChange: 0
