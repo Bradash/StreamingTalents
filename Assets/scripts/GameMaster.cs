@@ -14,7 +14,7 @@ public class GameMaster : MonoBehaviour
     public tutorialManager tutorialManage;
     public BoxCollider coffeeMachineCollider;
 
-    public IRLFadeManager Instance;
+    public IRLFadeManager IRLFadeManager;
 
     public void Start()
     {
@@ -51,7 +51,7 @@ public class GameMaster : MonoBehaviour
                 break;
             case 4:
                 questName = null;
-                Instance.FadeAndLoadScene("SteamSetup");
+                FadeManager.Instance.FadeAndLoadScene("SteamSetup");
                 break;
         }
     }
@@ -62,7 +62,7 @@ public class GameMaster : MonoBehaviour
             case 0:
                 break;
             case 1:
-                Instance.bathroomFade();
+                IRLFadeManager.bathroomFade();
                 coffeeMachineCollider.enabled = true;
                 gameObjects[0].SetActive(false);
                 taskText.text = "Task: \r\nMake Coffee";
