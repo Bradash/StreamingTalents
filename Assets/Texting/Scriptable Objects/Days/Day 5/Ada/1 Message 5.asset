@@ -15,8 +15,9 @@ MonoBehaviour:
   speaker: {fileID: 11400000, guid: d37dd561f36ac4f4892d6318343dfc07, type: 2}
   groupChat: 0
   GroupChatspeaker: {fileID: 0}
-  message: That's awesome!
+  message: I just don't know how to go and talk to her.
   flowType: 1
   nextMessage: {fileID: 0}
   options:
-  - {fileID: 11400000, guid: f07987d1e53c92d42b2ffe8c1f1b8d05, type: 2}
+  - {fileID: 11400000, guid: dd49af441a3274647b4c858fc7d3ad34, type: 2}
+  - {fileID: 11400000, guid: b5bda092d4c9db8438bd021ad88e7374, type: 2}

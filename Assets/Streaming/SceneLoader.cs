@@ -10,10 +10,10 @@ public class SceneLoader : MonoBehaviour
         Debug.Log("Testing");
         if (sceneName == "IRL")
         {
-            if (GameManager.currentday == 7)
+            if (GameManager.currentday == 8)
             {
                 SaveSystem.SaveGame();
-                GameManager.currentday = 7;
+                GameManager.currentday = 8;
                 FadeManager.Instance.FadeAndLoadScene("Credits");
             }
             else

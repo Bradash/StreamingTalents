@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e67f127386f7904b9cd642bec853d8b, type: 3}
   m_Name: 2 Choice 2
   m_EditorClassIdentifier: 
-  optionText: Are you sure though?
+  optionText: Yeah.
   nextMessage: {fileID: 11400000, guid: 09126600f94dd934ab708dd2c9e9dc80, type: 2}
   WolfRelationChange: 0
   UnicornRelationChange: 0

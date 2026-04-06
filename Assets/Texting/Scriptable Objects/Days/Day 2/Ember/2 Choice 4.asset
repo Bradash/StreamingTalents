@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e67f127386f7904b9cd642bec853d8b, type: 3}
   m_Name: 2 Choice 4
   m_EditorClassIdentifier: 
-  optionText: It's just, having so much attention, it's strange.
-  nextMessage: {fileID: 11400000, guid: 8c0dba7cca4c6d346b81bf122e4818bd, type: 2}
+  optionText: You shouldn't really do that though.
+  nextMessage: {fileID: 11400000, guid: d04632974a230c54da8d493ca8b575d7, type: 2}
   WolfRelationChange: 0
   UnicornRelationChange: 0
   DragonRelationChange: 0

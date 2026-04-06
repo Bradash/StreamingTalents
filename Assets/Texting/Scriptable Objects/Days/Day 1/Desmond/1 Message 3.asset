@@ -15,7 +15,7 @@ MonoBehaviour:
   speaker: {fileID: 11400000, guid: 5208373f6aeaf834093e2870af53d946, type: 2}
   groupChat: 0
   GroupChatspeaker: {fileID: 0}
-  message: You got this.
+  message: Yeah! Zara the deer!
   flowType: 0
   nextMessage: {fileID: 0}
   options: []

@@ -15,8 +15,8 @@ MonoBehaviour:
   speaker: {fileID: 11400000, guid: 5208373f6aeaf834093e2870af53d946, type: 2}
   groupChat: 0
   GroupChatspeaker: {fileID: 0}
-  message: So how's your first stream?
+  message: Things going well?
   flowType: 1
   nextMessage: {fileID: 0}
   options:
-  - {fileID: 11400000, guid: f43796848a54eaf4ab4f8403abc7c813, type: 2}
+  - {fileID: 11400000, guid: 8ed40116934570b4fa80aa479c6ab0a9, type: 2}

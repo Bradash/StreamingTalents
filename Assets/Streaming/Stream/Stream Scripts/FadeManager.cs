@@ -25,6 +25,8 @@ public class FadeManager : MonoBehaviour
         StartCoroutine(FadeRoutine(sceneName, fadeOutTime, fadeInTime));
     }
 
+    
+
     private IEnumerator FadeRoutine(string sceneName, float fadeOutTime, float fadeInTime)
     {
         yield return Fade(0f, 1f, fadeOutTime);
@@ -36,7 +38,9 @@ public class FadeManager : MonoBehaviour
         yield return Fade(1f, 0f, fadeInTime);
     }
 
-    private IEnumerator Fade(float from, float to, float duration)
+    
+
+    public IEnumerator Fade(float from, float to, float duration)
     {
         float time = 0f;
 

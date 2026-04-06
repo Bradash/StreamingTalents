@@ -552,14 +552,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Thank You For Playing The Beta!\nGive us feedback and tune in for the
-    full release soon!\n\nCredits:\nCore Team Members:\n\nAndrew Williams \n(Minigames
-    Programmer, UI Designer, and 2D Artist)\n\nBrandon Hutchison \n(3D Environment
-    Artist, 2D Character Artist, Writer, Tutorial Programmer)\n\nEthan Lo \n(Chat
-    Dialogue Writer, Main Writer)\n\nMaclean Mealey \n(Stream Select, Chat, End Screen,
-    Texting and Tutorial Programmer, UI Designer, Writer)\n\nOwen Spreadbury \n(3D
-    Character Artist, 3D Environment Artist, 2D Artist,  Streaming Setup Design,
-    Tutorial Programmer)\n\nLingge Zhao \n(Special Thanks)\n\nAssets:\nhttps://pebonius.itch.io/portraits-64x64px\n\nActors:\nZara,
+  m_text: "Thank You For Playing This Demo!\nYou may provide feedback and tune in
+    for the full release!\n\n\nCredits:\n\n\nAndrew Williams \n(Minigames Programmer,
+    UI Designer, and 2D Artist)\n\nBrandon Hutchison \n(3D Environment Artist, 2D
+    Character Artist, Writer, Tutorial Programmer)\n\nEthan Lo \n(Chat Dialogue Writer,
+    Main Writer)\n\nMaclean Mealey \n(Stream Select, Chat, End Screen, Texting and
+    Tutorial Programmer, UI Designer, Writer)\n\nOwen Spreadbury \n(3D Character
+    Artist, 3D Environment Artist, 2D Artist,  Streaming Setup Design, Tutorial Programmer/Designer)\n\nLingge
+    Zhao \n(Special Thanks)\n\nAssets:\nChatter Portraits:\nhttps://pebonius.itch.io/portraits-64x64px\n\nActors:\nZara,
     Ember, Ada, Desmond, and Ed"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4d0b9a098ab2b094bab11acd8d2be2af, type: 2}
@@ -587,10 +587,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25.3
-  m_fontSizeBase: 36
+  m_fontSize: 21
+  m_fontSizeBase: 21
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0

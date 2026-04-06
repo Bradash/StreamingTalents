@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e67f127386f7904b9cd642bec853d8b, type: 3}
   m_Name: 2 Choice
   m_EditorClassIdentifier: 
-  optionText: Yeah
-  nextMessage: {fileID: 11400000, guid: ddf5afcf63523904b93bcf1b3be522cb, type: 2}
+  optionText: Ok
+  nextMessage: {fileID: 11400000, guid: 73b5190b19d2b6e40a2b05320b0ae51f, type: 2}
   WolfRelationChange: 0
-  UnicornRelationChange: 5
+  UnicornRelationChange: -10
   DragonRelationChange: 0

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e67f127386f7904b9cd642bec853d8b, type: 3}
   m_Name: 2 Choice
   m_EditorClassIdentifier: 
-  optionText: It's okay, just a little nervous.
+  optionText: It's really interesting. There are so many people talking, it's crazy.
   nextMessage: {fileID: 11400000, guid: 52be956195657304981faa59381e2557, type: 2}
   WolfRelationChange: 0
   UnicornRelationChange: 0

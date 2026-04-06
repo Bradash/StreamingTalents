@@ -15,8 +15,9 @@ MonoBehaviour:
   speaker: {fileID: 11400000, guid: d37dd561f36ac4f4892d6318343dfc07, type: 2}
   groupChat: 0
   GroupChatspeaker: {fileID: 0}
-  message: It's one of my favorite parts of games, when they teach you valuable lessons
-    in life.
-  flowType: 0
-  nextMessage: {fileID: 11400000, guid: b3c327588c9d64c4fb6e013eb0d49bb6, type: 2}
-  options: []
+  message: "I just wished I wasn\u2019t pushed away. Do I ever cause you trouble?"
+  flowType: 1
+  nextMessage: {fileID: 0}
+  options:
+  - {fileID: 11400000, guid: 9794432272d7e73449446e0270725d7f, type: 2}
+  - {fileID: 11400000, guid: 4e2894b60157a7e479e807332b5f5ef3, type: 2}

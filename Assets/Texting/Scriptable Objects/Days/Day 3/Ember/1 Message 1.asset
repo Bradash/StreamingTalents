@@ -15,8 +15,8 @@ MonoBehaviour:
   speaker: {fileID: 11400000, guid: c816e3e4d39c47c4cbccf5dfdc110b35, type: 2}
   groupChat: 0
   GroupChatspeaker: {fileID: 0}
-  message: He's been trying to fight the same boss for the 84th time.
+  message: It was really funny.
   flowType: 1
   nextMessage: {fileID: 0}
   options:
-  - {fileID: 11400000, guid: 7d4a6e7380eeaa447ad55e1ed40b532e, type: 2}
+  - {fileID: 11400000, guid: 368c21641ecbcaa44951ff67346a26ea, type: 2}

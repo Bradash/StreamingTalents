@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Rhythm game
   m_EditorClassIdentifier: Assembly-CSharp::SelectionObject
   elementName: Rhythm game
-  elementImage: {fileID: 21300000, guid: 8bf4fe4ed549afb49bd909c530674c2f, type: 3}
+  elementImage: {fileID: 21300000, guid: 67ee8ddb621d3084e9ca318972c7b64f, type: 3}
   gameID: 3
   dayUnlocked: 6

@@ -15,7 +15,7 @@ MonoBehaviour:
   speaker: {fileID: 11400000, guid: afaeefd1e73a2bc498e604681b57273b, type: 2}
   groupChat: 0
   GroupChatspeaker: {fileID: 0}
-  message: No
+  message: Sorry to hear that.
   flowType: 0
-  nextMessage: {fileID: 11400000, guid: 762a8a78dfdb47b46a014e4088f1d2ce, type: 2}
+  nextMessage: {fileID: 11400000, guid: 3ef9f723e09ddb14baacf2a42fbf9012, type: 2}
   options: []

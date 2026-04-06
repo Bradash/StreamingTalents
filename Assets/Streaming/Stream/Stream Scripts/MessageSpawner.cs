@@ -126,10 +126,17 @@ public class MessageSpawner : MonoBehaviour
 
     public void PunishBans()
     {
+        //Old system
+        /*
         UIStatsManager.Instance.AddMood(-punishment);
         UIStatsManager.Instance.AddViewers(-punishment * 10);
         punishment += 0.5f;
         punishment -= Time.deltaTime * 0.1f;
+        */
+
+        //New system
+
+        UIStatsManager.Instance.AddViewers(-1);
     }
 
     public void HoverStart()

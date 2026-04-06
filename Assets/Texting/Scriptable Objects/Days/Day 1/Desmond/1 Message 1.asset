@@ -15,7 +15,7 @@ MonoBehaviour:
   speaker: {fileID: 11400000, guid: afaeefd1e73a2bc498e604681b57273b, type: 2}
   groupChat: 0
   GroupChatspeaker: {fileID: 0}
-  message: It's okay, just a little nervous.
+  message: It's really interesting. There are so many people talking, it's crazy.
   flowType: 0
   nextMessage: {fileID: 11400000, guid: 1fb0eff11db41c544a7004bd82533359, type: 2}
   options: []

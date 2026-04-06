@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Desmond Day 2
   m_EditorClassIdentifier: 
   day: 2
-  participants: {fileID: 0}
-  startingMessage: {fileID: 0}
+  participants: {fileID: 11400000, guid: 5208373f6aeaf834093e2870af53d946, type: 2}
+  startingMessage: {fileID: 11400000, guid: 36d94f3c462b1214ea25851fac7ef6c1, type: 2}

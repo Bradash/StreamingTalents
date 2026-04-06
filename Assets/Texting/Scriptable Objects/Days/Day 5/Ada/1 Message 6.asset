@@ -15,8 +15,7 @@ MonoBehaviour:
   speaker: {fileID: 11400000, guid: d37dd561f36ac4f4892d6318343dfc07, type: 2}
   groupChat: 0
   GroupChatspeaker: {fileID: 0}
-  message: I always like to know if people like playing similar games.
-  flowType: 1
-  nextMessage: {fileID: 0}
-  options:
-  - {fileID: 11400000, guid: f07987d1e53c92d42b2ffe8c1f1b8d05, type: 2}
+  message: "Thank you\u2026"
+  flowType: 0
+  nextMessage: {fileID: 11400000, guid: a883f4feda8187246b221b34e5067102, type: 2}
+  options: []

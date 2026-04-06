@@ -15,9 +15,8 @@ MonoBehaviour:
   speaker: {fileID: 11400000, guid: 5208373f6aeaf834093e2870af53d946, type: 2}
   groupChat: 0
   GroupChatspeaker: {fileID: 0}
-  message: You don't have to be nervous, you got this.
+  message: Doing what I can to support us.
   flowType: 1
   nextMessage: {fileID: 0}
   options:
-  - {fileID: 11400000, guid: c9b59a34eacf08744bc6762a0c722962, type: 2}
-  - {fileID: 11400000, guid: 07044c0a53094344e82a2614bd0cb494, type: 2}
+  - {fileID: 11400000, guid: ae0178c488ef6604498fc95148165722, type: 2}

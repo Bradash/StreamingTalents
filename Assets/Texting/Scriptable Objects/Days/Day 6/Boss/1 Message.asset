@@ -15,7 +15,9 @@ MonoBehaviour:
   speaker: {fileID: 11400000, guid: f8d60f66b6528944a94d2b8f45c6bafb, type: 2}
   groupChat: 0
   GroupChatspeaker: {fileID: 0}
-  message: Hello Deer.
-  flowType: 0
+  message: From what we've seen thing have not gone well for the company. We need
+    you to put some more energy into streaming.
+  flowType: 1
   nextMessage: {fileID: 0}
-  options: []
+  options:
+  - {fileID: 11400000, guid: 8d3400ae98cffcf4594114afccc66c81, type: 2}

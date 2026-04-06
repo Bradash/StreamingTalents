@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf1ac7be18dbff245b2e6e33e3f9aaf4, type: 3}
   m_Name: 1 Message
   m_EditorClassIdentifier: 
-  speaker: {fileID: 11400000, guid: c816e3e4d39c47c4cbccf5dfdc110b35, type: 2}
+  speaker: {fileID: 11400000, guid: 5208373f6aeaf834093e2870af53d946, type: 2}
   groupChat: 0
-  message: Hello Deer.
-  flowType: 0
-  nextMessage: {fileID: 11400000, guid: 66e4d80fe8dd24e4485d2db2aea9b6d1, type: 2}
-  options: []
+  GroupChatspeaker: {fileID: 0}
+  message: Hey, things going alright?
+  flowType: 1
+  nextMessage: {fileID: 0}
+  options:
+  - {fileID: 11400000, guid: a5bf752ba4a747547bd5b14560d8b8bc, type: 2}

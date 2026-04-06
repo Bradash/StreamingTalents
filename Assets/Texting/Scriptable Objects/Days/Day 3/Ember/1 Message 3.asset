@@ -15,9 +15,8 @@ MonoBehaviour:
   speaker: {fileID: 11400000, guid: c816e3e4d39c47c4cbccf5dfdc110b35, type: 2}
   groupChat: 0
   GroupChatspeaker: {fileID: 0}
-  message: You gotta do what you gotta do to get money.
+  message: What did you think I mean't?
   flowType: 1
   nextMessage: {fileID: 0}
   options:
-  - {fileID: 11400000, guid: e942f210f2423f3428a076ad1b73c9b6, type: 2}
-  - {fileID: 11400000, guid: 89ec535a2010f37458deca4dc7015b43, type: 2}
+  - {fileID: 11400000, guid: 09c57c371aa82ce46baabc9beb70782a, type: 2}

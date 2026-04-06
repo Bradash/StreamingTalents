@@ -15,7 +15,8 @@ MonoBehaviour:
   speaker: {fileID: 11400000, guid: 5208373f6aeaf834093e2870af53d946, type: 2}
   groupChat: 0
   GroupChatspeaker: {fileID: 0}
-  message: You got this.
-  flowType: 0
+  message: You know it matters to me, both our dreams to come true.
+  flowType: 1
   nextMessage: {fileID: 0}
-  options: []
+  options:
+  - {fileID: 11400000, guid: a20f435fb17e5784dac2815c2d2f5480, type: 2}

@@ -15,8 +15,9 @@ MonoBehaviour:
   speaker: {fileID: 11400000, guid: c816e3e4d39c47c4cbccf5dfdc110b35, type: 2}
   groupChat: 0
   GroupChatspeaker: {fileID: 0}
-  message: What's up.
+  message: Yeah, but he also always asks his chat for money and stuff so he keeps
+    playing.
   flowType: 1
   nextMessage: {fileID: 0}
   options:
-  - {fileID: 11400000, guid: b4cca939f60f95741aa414d50432b0e0, type: 2}
+  - {fileID: 11400000, guid: 08d410da21603d746a644c4efa02e68a, type: 2}

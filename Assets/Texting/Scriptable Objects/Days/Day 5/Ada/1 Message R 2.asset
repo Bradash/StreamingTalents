@@ -15,7 +15,7 @@ MonoBehaviour:
   speaker: {fileID: 11400000, guid: afaeefd1e73a2bc498e604681b57273b, type: 2}
   groupChat: 0
   GroupChatspeaker: {fileID: 0}
-  message: I get that feeling when playing RPGs.
+  message: Nah, you are fine.
   flowType: 0
-  nextMessage: {fileID: 11400000, guid: 9972c87bd37094b468a1c2888e857452, type: 2}
+  nextMessage: {fileID: 11400000, guid: 2d2f656b43d51864db6785ed664ea267, type: 2}
   options: []

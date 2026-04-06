@@ -15,8 +15,8 @@ MonoBehaviour:
   speaker: {fileID: 11400000, guid: f8d60f66b6528944a94d2b8f45c6bafb, type: 2}
   groupChat: 0
   GroupChatspeaker: {fileID: 0}
-  message: Next day you will give some sponsored games to play. Please do play them.
+  message: Great work on your streams, things are going steady.
   flowType: 1
   nextMessage: {fileID: 0}
   options:
-  - {fileID: 11400000, guid: 8ff9a7cd47261584f926fbedca400611, type: 2}
+  - {fileID: 11400000, guid: 505137434d36d6e4f94dc94f85c66af9, type: 2}

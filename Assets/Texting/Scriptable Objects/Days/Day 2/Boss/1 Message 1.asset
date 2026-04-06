@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf1ac7be18dbff245b2e6e33e3f9aaf4, type: 3}
   m_Name: 1 Message 1
   m_EditorClassIdentifier: 
-  speaker: {fileID: 11400000, guid: afaeefd1e73a2bc498e604681b57273b, type: 2}
+  speaker: {fileID: 11400000, guid: f8d60f66b6528944a94d2b8f45c6bafb, type: 2}
   groupChat: 0
   GroupChatspeaker: {fileID: 0}
-  message: Alright, I will look into it.
-  flowType: 0
+  message: As you know by the contract, you'll be paid what you signed up for.
+  flowType: 1
   nextMessage: {fileID: 0}
   options:
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 2836ff34d7a2e1045b22b4914b4c6cd8, type: 2}

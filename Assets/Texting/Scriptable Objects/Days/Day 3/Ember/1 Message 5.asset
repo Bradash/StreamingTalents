@@ -15,7 +15,9 @@ MonoBehaviour:
   speaker: {fileID: 11400000, guid: c816e3e4d39c47c4cbccf5dfdc110b35, type: 2}
   groupChat: 0
   GroupChatspeaker: {fileID: 0}
-  message: DarknessBillPill needs his Bill paid.
-  flowType: 0
+  message: Just get good bro!
+  flowType: 1
   nextMessage: {fileID: 0}
-  options: []
+  options:
+  - {fileID: 11400000, guid: bfa30e0d48913d34abc184b87e65e32f, type: 2}
+  - {fileID: 11400000, guid: 883b37e760eaaba4ea3e1e09449508d5, type: 2}

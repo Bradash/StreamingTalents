@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf1ac7be18dbff245b2e6e33e3f9aaf4, type: 3}
   m_Name: 1 Message 1
   m_EditorClassIdentifier: 
-  speaker: {fileID: 11400000, guid: afaeefd1e73a2bc498e604681b57273b, type: 2}
+  speaker: {fileID: 11400000, guid: c816e3e4d39c47c4cbccf5dfdc110b35, type: 2}
   groupChat: 0
   GroupChatspeaker: {fileID: 0}
-  message: What's wazzup?
-  flowType: 0
-  nextMessage: {fileID: 11400000, guid: 2006c9f7a7112ad44988ec27816f0225, type: 2}
-  options: []
+  message: He's been trying to fight the same boss for the 84th time.
+  flowType: 1
+  nextMessage: {fileID: 0}
+  options:
+  - {fileID: 11400000, guid: 7d4a6e7380eeaa447ad55e1ed40b532e, type: 2}

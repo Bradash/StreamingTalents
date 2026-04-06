@@ -15,8 +15,8 @@ MonoBehaviour:
   speaker: {fileID: 11400000, guid: c816e3e4d39c47c4cbccf5dfdc110b35, type: 2}
   groupChat: 0
   GroupChatspeaker: {fileID: 0}
-  message: Have you seen DarknessBillPill?
+  message: I just burned a viewer.
   flowType: 1
   nextMessage: {fileID: 0}
   options:
-  - {fileID: 11400000, guid: a5182eea54971e448a6aab8cbc9648fe, type: 2}
+  - {fileID: 11400000, guid: 5a860deda6c242e45bccf3593a26737c, type: 2}

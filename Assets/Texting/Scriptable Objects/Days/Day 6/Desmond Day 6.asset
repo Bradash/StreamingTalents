@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   day: 6
   participants: {fileID: 11400000, guid: 5208373f6aeaf834093e2870af53d946, type: 2}
-  startingMessage: {fileID: 0}
+  startingMessage: {fileID: 11400000, guid: 0723e3abf6d47e64c86613d8e4b010ca, type: 2}

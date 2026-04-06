@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e67f127386f7904b9cd642bec853d8b, type: 3}
   m_Name: 2 Choice 4
   m_EditorClassIdentifier: 
-  optionText: You shouldn't really do that though.
-  nextMessage: {fileID: 11400000, guid: d04632974a230c54da8d493ca8b575d7, type: 2}
+  optionText: I'm not so good at shooters.
+  nextMessage: {fileID: 11400000, guid: 145e30205afcf52469c2ff507aa50e4c, type: 2}
   WolfRelationChange: 0
   UnicornRelationChange: 0
   DragonRelationChange: 0

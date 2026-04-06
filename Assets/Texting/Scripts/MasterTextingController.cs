@@ -17,11 +17,26 @@ public class MasterTextingController : MonoBehaviour
     public GameObject startingmessagearea;
     public GameObject messagearea;
     public GameObject newsarea;
+
     public GameObject news;
     public GameObject news0;
+    public GameObject news1;
+    public GameObject news2;
+    public GameObject news3;
+    public GameObject news4;
+    public GameObject news5;
+    public GameObject news6;
+    public GameObject news7;
+    public GameObject news8;
 
     public TextMeshProUGUI Title;
     public Image profilePicture;
+
+    public GameObject managerNote;
+    public GameObject wolfNote;
+    public GameObject unicornNote;
+    public GameObject dragonNote;
+    public GameObject companyNote;
 
     public static MasterTextingController Instance { get; private set; }
 
@@ -76,7 +91,27 @@ public class MasterTextingController : MonoBehaviour
         Title.text = character.displayName;
         profilePicture.sprite = character.defaultProfilePicture;
 
-        
+        if (character.name == "Boss")
+        {
+            managerNote.SetActive(false);
+        }
+        if (character.name == "Desmond")
+        {
+            wolfNote.SetActive(false);
+        }
+        if (character.name == "Ada")
+        {
+            unicornNote.SetActive(false);
+        }
+        if (character.name == "Ember")
+        {
+            dragonNote.SetActive(false);
+        }
+        if (character.name == "Boss")
+        {
+            companyNote.SetActive(false);
+        }
+
 
         foreach (TextingThread thread in TextSpawner.Instance.allThreads)
         {
@@ -109,14 +144,53 @@ public class MasterTextingController : MonoBehaviour
 
         Title.text = "News";
 
-        if(GameManager.currentday == 0)
+        news.SetActive(true);
+
+        news0.SetActive(false);
+        news1.SetActive(false);
+        news2.SetActive(false);
+        news3.SetActive(false);
+        news4.SetActive(false);
+        news5.SetActive(false);
+        news6.SetActive(false);
+        news7.SetActive(false);
+        news8.SetActive(false);
+
+        if (GameManager.currentday == 0)
         {
-            news.SetActive(true);
             news0.SetActive(true);
         }
-        else
+        if (GameManager.currentday == 1)
         {
-            news.SetActive(false);
+            news1.SetActive(true);
+        }
+        if (GameManager.currentday == 2)
+        {
+            news2.SetActive(true);
+        }
+        if (GameManager.currentday == 3)
+        {
+            news3.SetActive(true);
+        }
+        if (GameManager.currentday == 4)
+        {
+            news4.SetActive(true);
+        }
+        if (GameManager.currentday == 5)
+        {
+            news5.SetActive(true);
+        }
+        if (GameManager.currentday == 6)
+        {
+            news6.SetActive(true);
+        }
+        if (GameManager.currentday == 7)
+        {
+            news7.SetActive(true);
+        }
+        if (GameManager.currentday == 8)
+        {
+            news8.SetActive(true);
         }
 
     }

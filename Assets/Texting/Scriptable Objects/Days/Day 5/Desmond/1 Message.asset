@@ -15,7 +15,7 @@ MonoBehaviour:
   speaker: {fileID: 11400000, guid: 5208373f6aeaf834093e2870af53d946, type: 2}
   groupChat: 0
   GroupChatspeaker: {fileID: 0}
-  message: Hello Deer.
+  message: It doesn't seem like they've mentioned anything about my name anywhere.
   flowType: 0
-  nextMessage: {fileID: 0}
+  nextMessage: {fileID: 11400000, guid: f5a46063c8223f44b83ee50249045f24, type: 2}
   options: []

@@ -15,7 +15,7 @@ MonoBehaviour:
   speaker: {fileID: 11400000, guid: afaeefd1e73a2bc498e604681b57273b, type: 2}
   groupChat: 0
   GroupChatspeaker: {fileID: 0}
-  message: Hello Deer.
+  message: About what happened days ago, why did you become a vtuber?
   flowType: 0
-  nextMessage: {fileID: 0}
+  nextMessage: {fileID: 11400000, guid: 00ce07e9b6976ec4eb19c602ef43a036, type: 2}
   options: []

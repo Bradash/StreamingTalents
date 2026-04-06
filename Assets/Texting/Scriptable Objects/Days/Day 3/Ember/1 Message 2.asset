@@ -15,9 +15,8 @@ MonoBehaviour:
   speaker: {fileID: 11400000, guid: c816e3e4d39c47c4cbccf5dfdc110b35, type: 2}
   groupChat: 0
   GroupChatspeaker: {fileID: 0}
-  message: Yeah, but he also always asks his chat for money and stuff so he keeps
-    playing.
+  message: Yeah completely destroyed in a match. All kills no deaths.
   flowType: 1
   nextMessage: {fileID: 0}
   options:
-  - {fileID: 11400000, guid: 08d410da21603d746a644c4efa02e68a, type: 2}
+  - {fileID: 11400000, guid: 603dd616f2384be41af31152c16d599a, type: 2}

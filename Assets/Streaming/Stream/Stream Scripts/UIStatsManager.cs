@@ -78,7 +78,7 @@ public class UIStatsManager : MonoBehaviour
         QuitButton.SetActive(true);
         QuitMenu.SetActive(false);
 
-        if (currentday >= 0)
+        if (currentday > 0)
         {
             if (currentday >= 4)
             {
@@ -95,6 +95,10 @@ public class UIStatsManager : MonoBehaviour
             {
                 narrative = 1;
             }
+        }
+        else
+        {
+            narrative = 0;
         }
 
         if (currentday == 99)
@@ -115,7 +119,7 @@ public class UIStatsManager : MonoBehaviour
             viewers = 50;
             mood = 100;
             points = 100;
-            time = 999;
+            time = 60;
             //collab = 2;
             //game = 0;
         }
@@ -137,7 +141,7 @@ public class UIStatsManager : MonoBehaviour
             viewers = currentday*50+100;
             mood = 60;
             points = 75;
-            time = (currentday+1)*30;
+            time = (currentday+2)*20;
         }
 
         GameManager.startOfDayMoney = money;

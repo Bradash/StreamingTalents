@@ -15,7 +15,8 @@ MonoBehaviour:
   speaker: {fileID: 11400000, guid: d37dd561f36ac4f4892d6318343dfc07, type: 2}
   groupChat: 0
   GroupChatspeaker: {fileID: 0}
-  message: You'll get it if you try some story games sometime.
-  flowType: 0
+  message: "I don\u2019t even know if ember hates me right now."
+  flowType: 1
   nextMessage: {fileID: 0}
-  options: []
+  options:
+  - {fileID: 11400000, guid: 3ae6a538f94c4284187324876c223144, type: 2}

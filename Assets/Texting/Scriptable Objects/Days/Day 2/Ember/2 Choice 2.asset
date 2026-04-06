@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e67f127386f7904b9cd642bec853d8b, type: 3}
   m_Name: 2 Choice 2
   m_EditorClassIdentifier: 
-  optionText: So how is streaming?
-  nextMessage: {fileID: 11400000, guid: b20c5ea0ddd4b5a43b03243e82a67b21, type: 2}
+  optionText: People can play for that long?
+  nextMessage: {fileID: 11400000, guid: ae311bc8fa7632d45b76440fa020be14, type: 2}
   WolfRelationChange: 0
   UnicornRelationChange: 0
   DragonRelationChange: 0
