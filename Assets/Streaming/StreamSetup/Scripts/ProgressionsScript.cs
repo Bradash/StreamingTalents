@@ -37,7 +37,7 @@ public class ProgressionsScript : MonoBehaviour
             GameNote1.SetActive(true);
             GameNote2.SetActive(true);
         }
-        if (GameManager.currentday == 4)
+        if (GameManager.currentday == 3)
         {
             CollabNote1.SetActive(true);
             CollabNote2.SetActive(true);
