@@ -57,6 +57,11 @@ public class MasterTextingController : MonoBehaviour
     {
         //Change screeen
 
+        if (TextSpawner.Instance.inMessage == true)
+        {
+            return;
+        }
+
         quitbutton.SetActive(true);
         newsbutton.SetActive(true);
         newsquitbutton.SetActive(false);
@@ -76,6 +81,8 @@ public class MasterTextingController : MonoBehaviour
     public void showMessage(MessageGroup character)
     {
         //Change screeen
+
+        TextSpawner.Instance.inMessage = true;
 
         quitbutton.SetActive(false);
         newsbutton.SetActive(false);

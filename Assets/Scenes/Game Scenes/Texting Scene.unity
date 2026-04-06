@@ -2376,6 +2376,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b9844a3afa76bf841893282b784dffcf, type: 2}
   scrollRect: {fileID: 469832242}
   contentRect: {fileID: 164257230}
+  backArrow: {fileID: 566354866}
+  inMessage: 0
 --- !u!224 &638646390
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2754,8 +2756,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 34
+  m_fontSizeBase: 34
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

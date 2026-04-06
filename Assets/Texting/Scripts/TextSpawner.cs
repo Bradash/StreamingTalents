@@ -23,6 +23,9 @@ public class TextSpawner : MonoBehaviour
     public ScrollRect scrollRect;
     public RectTransform contentRect;
 
+    public GameObject backArrow;
+    public bool inMessage;
+
     //Temp
     //public TextMessage currentMessage1;
     MessageGroup activeCharacter;
@@ -38,11 +41,13 @@ public static TextSpawner Instance { get; private set; }
         }
 
         Instance = this;
+
+        inMessage = false;
     }
 
     void Start()
     {
-        
+        inMessage = false;
     }
 
     private void Update()
@@ -56,17 +61,26 @@ public static TextSpawner Instance { get; private set; }
 
     public void StartConversation(TextMessage firstMessage)
     {
+        inMessage = true;
+        backArrow.SetActive(false);
+
         StartCoroutine(RunMessage(firstMessage));
     }
 
     public void StartThread(TextingThread thread)
     {
+        inMessage = true;
+        backArrow.SetActive(false);
         if (thread == null)
+        {
+            EndConversation();
             return;
+        }
 
         if (thread.startingMessage == null)
         {
             Debug.LogWarning("Thread has no starting message.");
+            EndConversation();
             return;
         }
 
@@ -148,7 +162,19 @@ public static TextSpawner Instance { get; private set; }
 
         else if (message.flowType == MessageFlowType.Question)
         {
-            SpawnOptions(message.options);
+            if (message.options == null || message.options.Count == 0)
+            {
+                EndConversation();
+            }
+            else
+            {
+                SpawnOptions(message.options);
+            }
+        }
+
+        if (message.flowType == MessageFlowType.Auto && message.nextMessage == null)
+        {
+            EndConversation();
         }
     }
 
@@ -159,7 +185,14 @@ public static TextSpawner Instance { get; private set; }
 
         if (message.flowType == MessageFlowType.Question)
         {
-            SpawnOptions(message.options);
+            if (message.options == null || message.options.Count == 0)
+            {
+                EndConversation();
+            }
+            else
+            {
+                SpawnOptions(message.options);
+            }
         }
         else if (message.flowType == MessageFlowType.Auto)
         {
@@ -198,7 +231,10 @@ public static TextSpawner Instance { get; private set; }
     public void ContinueConversation(TextMessage message)
     {
         if (message == null)
+        {
+            EndConversation();
             return;
+        }
 
         Spawn(message);
 
@@ -206,7 +242,18 @@ public static TextSpawner Instance { get; private set; }
 
         if (message.flowType == MessageFlowType.Question)
         {
-            SpawnOptions(message.options);
+            if (message.options == null || message.options.Count == 0)
+            {
+                EndConversation();
+            }
+            else
+            {
+                SpawnOptions(message.options);
+            }
+        }
+        else if (message.nextMessage == null)
+        {
+            EndConversation();
         }
     }
 
@@ -231,6 +278,15 @@ public static TextSpawner Instance { get; private set; }
         yield return null;
 
         ScrollToBottom();
+    }
+
+    public void EndConversation()
+    {
+        inMessage = false;
+        backArrow.SetActive(true);
+
+        Debug.Log("Conversation ended");
+        // exitButton.interactable = true;
     }
 
 
