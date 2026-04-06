@@ -13,7 +13,7 @@ public class SceneLoader : MonoBehaviour
             if (GameManager.currentday == 8)
             {
                 SaveSystem.SaveGame();
-                GameManager.currentday = 8;
+                GameManager.currentday = 9;
                 FadeManager.Instance.FadeAndLoadScene("Credits");
             }
             else
