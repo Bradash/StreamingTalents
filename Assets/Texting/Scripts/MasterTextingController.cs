@@ -107,7 +107,7 @@ public class MasterTextingController : MonoBehaviour
         {
             dragonNote.SetActive(false);
         }
-        if (character.name == "Boss")
+        if (character.name == "GC")
         {
             companyNote.SetActive(false);
         }
