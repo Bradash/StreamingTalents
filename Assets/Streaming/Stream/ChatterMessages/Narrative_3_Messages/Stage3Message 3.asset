@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b2eb73f1f91bc44b814a7e3f9a8e784, type: 3}
+  m_Name: Stage3Message 3
+  m_EditorClassIdentifier: Assembly-CSharp::Messages
+  Archtype: 
+  NarrativeStage: 3
+  NeedCollab: 0
+  NeedMiniGame: 99
+  message: She doesn't seem as cheerful as usual
+  moodChange: 0
+  viewerChange: -2
+  DeerEmotion: 0
+  WolfEmotion: 0
+  UnicornEmotion: 0
+  DragonEmotion: 0
+  DeerReaction: Sorry, I'm just not really feeling it today.
+  WolfReaction: 
+  UnicornReaction: 
+  DragonReaction: 
