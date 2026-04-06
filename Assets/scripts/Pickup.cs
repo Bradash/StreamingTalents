@@ -42,7 +42,8 @@ public class Pickup : MonoBehaviour
                                 gameMaster.quest1Progress++;
                                 TextMeshProUGUI.text = objectGrabbable.objectDescription;
                                 timerOn = true;
-                                gameMaster.objectInteract();
+                                Debug.Log(gameMaster.quest1Progress);
+                                gameMaster.objectInteract();                            
                             }
                             if (!objectGrabbable.interactOnce)
                             {

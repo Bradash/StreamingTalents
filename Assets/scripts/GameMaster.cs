@@ -12,6 +12,10 @@ public class GameMaster : MonoBehaviour
     public TextMeshProUGUI taskText;
     public TextMeshProUGUI dayText;
     public tutorialManager tutorialManage;
+    public BoxCollider coffeeMachineCollider;
+
+    public IRLFadeManager Instance;
+
     public void Start()
     {
         dayText.text = "Day: " + loadDay();
@@ -22,7 +26,7 @@ public class GameMaster : MonoBehaviour
     {
         if (GameManager.currentday == 0)
         {
-            return "Test Day";
+            return "Tutorial Day";
         }
         else
         {
@@ -34,17 +38,20 @@ public class GameMaster : MonoBehaviour
         switch (quest1Progress)
         {
             case 0:
+                questName = "I need to head to the bathroom";
+                break;
+            case 1:
                 questName = "I need to make coffee";
                 break;
-                case 1:
-                questName = "I need to get food";
-                break; 
             case 2:
-                questName = "I need to pick up the food";
+                questName = "I need to get food";
                 break;
             case 3:
+                questName = "I need to pick up the food";
+                break;
+            case 4:
                 questName = null;
-                FadeManager.Instance.FadeAndLoadScene("SteamSetup");
+                Instance.FadeAndLoadScene("SteamSetup");
                 break;
         }
     }
@@ -55,19 +62,25 @@ public class GameMaster : MonoBehaviour
             case 0:
                 break;
             case 1:
-                gameObjects[0].SetActive(true);
-                gameObjects[2].transform.position = new Vector3(1.80900002f, 0.999000013f, -10.3839998f);
-                gameObjects[2].GetComponentInChildren<AudioSource>().Play();
-                taskText.text = "Task: \r\nOpen Door";
+                Instance.bathroomFade();
+                coffeeMachineCollider.enabled = true;
+                gameObjects[0].SetActive(false);
+                taskText.text = "Task: \r\nMake Coffee";
                 break;
             case 2:
                 gameObjects[1].SetActive(true);
-                gameObjects[0].SetActive(false);
-                taskText.text = "Task: \r\nGet Food";
+                gameObjects[3].transform.position = new Vector3(1.80900002f, 0.999000013f, -10.3839998f);
+                gameObjects[3].GetComponentInChildren<AudioSource>().Play();
+                taskText.text = "Task: \r\nOpen Door";
                 break;
             case 3:
+                gameObjects[2].SetActive(true);
                 gameObjects[1].SetActive(false);
-                gameObjects[3].SetActive(true);
+                taskText.text = "Task: \r\nGet Food";
+                break;
+            case 4:
+                gameObjects[2].SetActive(false);
+                gameObjects[4].SetActive(true);
                 taskText.text = "Task: \r\nGo to PC";
                 break;
         }
