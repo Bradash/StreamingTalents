@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: SideScroller
   m_EditorClassIdentifier: Assembly-CSharp::SelectionObject
   elementName: Side Scroller
-  elementImage: {fileID: 21300000, guid: be908b4ca4958544c8ef2b871558d0b3, type: 3}
+  elementImage: {fileID: 21300000, guid: ff15146d6bd8bf646bde6cef59e61eb8, type: 3}
   gameID: 1
   dayUnlocked: 3
