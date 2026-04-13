@@ -20,7 +20,10 @@ public class GameMaster : MonoBehaviour
     {
         dayText.text = "Day: " + loadDay();
         if (GameManager.currentday == 0)
+        {
             tutorialManage.playTutorial("Movement", GameManager.tutorialList["Movement"].Keys.First(), 7.5f, false);
+        }
+
     }
     public string loadDay()
     {
