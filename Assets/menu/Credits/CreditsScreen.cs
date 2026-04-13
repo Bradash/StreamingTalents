@@ -10,12 +10,14 @@ public class CreditsScreen : MonoBehaviour
 
     public GameObject money;
     public TextMeshProUGUI moneyText;
+    public int moneyNum;
 
     private void Update()
     {
         if (GameManager.currentday == 9)
         {
-            moneyText.text = GameManager.currentmoney.ToString();
+            moneyNum = (int)GameManager.currentmoney;
+            moneyText.text = moneyNum.ToString();
 
             EndScreen.SetActive(true);
             money.SetActive(true);
